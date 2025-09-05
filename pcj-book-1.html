@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Library</title>
+</head>
+<body>
+    <h1>Percy Jackson and the Lightning Theif</h1>
+    <div class="hint">Click the right edge to turn the page. Click the left edge to turn back. You can also use the buttons at the bottom of each page.</div>
+
+    <div class="book" aria-label="Interactive storybook">
+      <div class="hardcover" aria-hidden="true"></div>
+
+      <!-- PAGE 1 -->
+      <input id="p1" type="checkbox" aria-hidden="true" />
+      <section class="page" role="region" aria-labelledby="pg1">
+        <div class="front">
+          <div>
+            <div class="kicker">A novel</div>
+            <h1 id="pg1">Percy Jackson and the Lightning Theif</h1>
+            <p class="meta">by Rick Riordan</p>
+          </div>
+          <div class="story">
+            It started as a whisper on the wind. In the quiet town of Lumen, streetlamps hummed like bees and windows glowed like jars of fireflies.
+          </div>
+          <div class="nav">
+            <span></span>
+            <label class="btn" for="p1">Open Book →</label>
+          </div>
+          <label class="hotspot-next" for="p1" aria-label="Open book"></label>
+        </div>
+        <div class="back">
+          <div>
+            <div class="kicker">Chapter 1</div>
+            <h2>Something in the Sky</h2>
+          </div>
+          <div class="story">
+            On the horizon, a silver seam appeared—like someone had unzipped the night. A single star slipped through and skittered across the clouds.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p1">← Back</label>
+            <label class="btn" for="p2">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p1" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p2" aria-label="Next page"></label>
+        </div>
+      </section>
+
+      <!-- PAGE 2 -->
+      <input id="p2" type="checkbox" aria-hidden="true" />
+      <section class="page" role="region" aria-labelledby="pg2">
+        <div class="front">
+          <div>
+            <div class="kicker">Chapter 2</div>
+            <h2 id="pg2">The Map of Lights</h2>
+          </div>
+          <div class="story">
+            In Mira’s pocket was a crinkled map of constellations. But tonight, the sky scribbled new lines—as if inviting her to redraw the world.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p1">← Back</label>
+            <label class="btn" for="p2">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p1" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p2" aria-label="Next page"></label>
+        </div>
+        <div class="back">
+          <div>
+            <div class="kicker">Interlude</div>
+            <h2>Footsteps on Rooftops</h2>
+          </div>
+          <div class="story">
+            She climbed the bakery stairs. The town stretched below like an open book—every window a sentence, every roof a page.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p2">← Back</label>
+            <label class="btn" for="p3">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p2" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p3" aria-label="Next page"></label>
+        </div>
+      </section>
+
+      <!-- PAGE 3 -->
+      <input id="p3" type="checkbox" aria-hidden="true" />
+      <section class="page" role="region" aria-labelledby="pg3">
+        <div class="front">
+          <div>
+            <div class="kicker">Chapter 3</div>
+            <h2 id="pg3">Where Wishes Land</h2>
+          </div>
+          <div class="story">
+            The falling stars didn’t burn out. They nested in the town’s flower boxes, blinking softly like sleepy sparrows.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p2">← Back</label>
+            <label class="btn" for="p3">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p2" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p3" aria-label="Next page"></label>
+        </div>
+        <div class="back">
+          <div>
+            <div class="kicker">Finale</div>
+            <h2>The Quiet After</h2>
+          </div>
+          <div class="story">
+            By dawn, the sky was sewn shut again. Mira folded the new map—edges warm, ink still dreaming—and slid it into her pocket.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p3">← Back</label>
+            <label class="btn" for="p4">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p3" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p4" aria-label="Next page"></label>
+        </div>
+      </section>
+
+      <!-- PAGE 4 -->
+      <input id="p4" type="checkbox" aria-hidden="true" />
+      <section class="page" role="region" aria-labelledby="pg4">
+        <div class="front">
+          <div>
+            <div class="kicker">Epilogue</div>
+            <h2 id="pg4">Keep This Map</h2>
+          </div>
+          <div class="story">
+            This book is yours now. Add your own constellations—your own turns of the page—and pass it on.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p3">← Back</label>
+            <label class="btn" for="p4">Next →</label>
+          </div>
+          <label class="hotspot-prev" for="p3" aria-label="Go back"></label>
+          <label class="hotspot-next" for="p4" aria-label="Next page"></label>
+        </div>
+        <div class="back">
+          <div>
+            <div class="kicker">The End</div>
+            <h2>Thanks for Reading</h2>
+          </div>
+          <div class="story">
+            Made with semantic HTML + CSS transforms. No JavaScript required.
+          </div>
+          <div class="nav">
+            <label class="btn" for="p4">← Back</label>
+            <span class="btn" role="button" aria-disabled="true" style="opacity:.5">Back Cover</span>
+          </div>
+          <label class="hotspot-prev" for="p4" aria-label="Go back"></label>
+        </div>
+      </section>
+</body>
+</html>
