@@ -10,6 +10,12 @@
     * { box-sizing: border-box; }
     html, body { height: 100%; }
     body {
+      margin: 0; display: grid; place-items: center; min-height: 100vh; text-align: center;
+      background: radial-gradient(1200px 700px at 50% 20%, #ffffff, #e9ecf3);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+    }
+    .book-page {
       margin: 0; display: grid; place-items: center right; min-height: 100vh; text-align: center;
       background: radial-gradient(1200px 700px at 50% 20%, #ffffff, #e9ecf3);
       font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
