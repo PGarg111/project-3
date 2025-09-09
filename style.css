@@ -7,22 +7,31 @@
     --muted: #555;
 }
 
-/* Theme toggles controlled by checkbox states */
+ /* Controls styling 
+.controls { position: fixed; top:10px; right:10px; }
+input[type=radio] { display: none; }
+label { 
+    background:#eee; 
+    padding:.4rem .6rem; 
+    border-radius:4px; 
+    cursor:pointer;
+    margin-left: 2px;
+}
+
+/* Change font-size when a radio is checked 
+#small:checked ~ .book { --font-size: 16px; }
+#medium:checked ~ main { --font-size: 18px; }
+#large:checked ~ main { --font-size: 22px; } */
+
 #toggle-theme:checked~body,
 .reader-page #toggle-theme:checked~.reader-page {
-    /* fallback, some browsers need explicit */
     --bg: #0f1113;
     --fg: #e6eef3;
     --muted: #9fb0bb;
 }
 
-/* Big text */
-#big-text:checked~body,
-.reader-page #big-text:checked~.reader-page {
-    --type-size: 20px;
-}
+    
 
-/* Basic layout */
 * {
     box-sizing: border-box;
 }
@@ -38,7 +47,6 @@ body {
     padding: 1rem;
 }
 
-/* Header */
 .site-header,
 .reader-header {
     max-width: var(--max-width);
@@ -83,7 +91,6 @@ body {
     user-select: none;
 }
 
-/* Library list */
 .library {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -108,7 +115,6 @@ body {
     text-decoration: none;
 }
 
-/* TOC */
 .toc {
     max-width: var(--max-width);
     margin: 0 auto 1rem;
@@ -125,7 +131,6 @@ body {
     font-size: .95rem;
 }
 
-/* Book content */
 .book {
     max-width: var(--max-width);
     margin: 0 auto 2rem;
@@ -148,7 +153,6 @@ body {
     font-size: 1.4rem;
 }
 
-/* Make links obvious */
 a {
     color: #0366d6;
 }
@@ -172,17 +176,14 @@ a {
         break-inside: avoid;
     }
 
-    /* helps prevent awkward splits */
 }
 
-/* Accessibility: focus styles */
 a:focus,
 .control:focus {
     outline: 3px solid #9ecaff;
     outline-offset: 2px;
 }
 
-/* Print-friendly */
 @media print {
     body {
         background: #fff;
