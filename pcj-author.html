@@ -12,19 +12,20 @@
 
 <body class="book-page">
 
-    <body class="reader-page">
+    <body class="reader-page dark-mode">
         <header class="reader-header">
             <a class="back" href="test.html">← Library</a>
             <h1 class="book-title">Percy Jackson and the Lightning Thief</h1>
 
-            <!-- CSS-only controls using checkboxes -->
             <div class="reader-controls">
-                <label for="toggle-theme" class="control">🌓</label>
-                <input id="toggle-theme" type="checkbox" class="control-input" />
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
             </div>
-            <div class="controls">
-                <button onclick="resizeText(-5)">A-</button>
-                <button onclick="resizeText(2)">A+</button>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
             </div>
 
         </header>
@@ -81,6 +82,10 @@
             function resizeText(change) {
                 size += change;
                 document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
             }
         </script>
 
