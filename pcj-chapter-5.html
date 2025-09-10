@@ -12,19 +12,22 @@
 
 <body class="book-page">
 
-    <body class="reader-page">
+    <body class="reader-page dark-mode">
         <header class="reader-header">
             <a class="back" href="test.html">← Library</a>
             <h1 class="book-title">Percy Jackson and the Lightning Thief</h1>
 
-            <!-- CSS-only controls using checkboxes -->
             <div class="reader-controls">
-                <label for="toggle-theme" class="control">🌓</label>
-                <input id="toggle-theme" type="checkbox" class="control-input" />
+                <button class="control" onclick="toggleTheme()">🌓</button>
 
-                <label for="big-text" class="control">A+</label>
-                <input id="big-text" type="checkbox" class="control-input" />
             </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
         </header>
 
         <nav class="toc">
@@ -300,7 +303,8 @@
                     said my real name, which I never told anybody&mdash;“what will people think of your ‘science’ two
                     thousand years from now?” Mr. D continued. “Hmm? They will call it primitive mumbo jumbo. That’s
                     what. Oh, I love mortals&mdash;they have absolutely no sense of perspective. They think they’ve come
-                    <i class="calibre7">so-o-o</i> far. And have they, Chiron? Look at this boy and tell me.”</p>
+                    <i class="calibre7">so-o-o</i> far. And have they, Chiron? Look at this boy and tell me.”
+                </p>
                 <p class="calibre17">I wasn’t liking Mr. D much, but there was something about the way he called me
                     mortal, as if…he wasn’t. It was enough to put a lump in my throat, to suggest why Grover was
                     dutifully minding his cards, chewing his soda can, and keeping his mouth shut.</p>
@@ -407,7 +411,8 @@
                     the heart of the flame. It is the great power of the West. And so Olympus is here. And we are here.”
                 </p>
                 <p class="calibre17">It was all too much, especially the fact that I seemed to be included in Chiron’s
-                    <i class="calibre7">we</i>, as if I were part of some club.</p>
+                    <i class="calibre7">we</i>, as if I were part of some club.
+                </p>
                 <p class="calibre17">“Who are you, Chiron? Who…who am I?”</p>
                 <p class="calibre17">Chiron smiled. He shifted his weight as if he were going to get up out of his
                     wheelchair, but I knew that was impossible. He was paralyzed from the waist down.</p>
@@ -433,6 +438,18 @@
             </article>
 
         </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
 
         <footer class="reader-footer">
             <div class="footer-left">
