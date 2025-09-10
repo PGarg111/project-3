@@ -23,14 +23,12 @@ label {
 #medium:checked ~ main { --font-size: 18px; }
 #large:checked ~ main { --font-size: 22px; } */
 
-#toggle-theme:checked~body,
-.reader-page #toggle-theme:checked~.reader-page {
-    --bg: #0f1113;
-    --fg: #e6eef3;
-    --muted: #9fb0bb;
+body.dark-mode{
+    --bg: #111111;
+    --fg: #e6e6e6;
+    --muted: #555;
 }
 
-    
 
 * {
     box-sizing: border-box;
@@ -45,6 +43,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 1rem;
+    font-size: var(--type-size, 18px);
+
 }
 
 .site-header,
@@ -234,7 +234,7 @@ table img {
     transform: scale(1.05);
     transition: transform 0.3s ease;
     width: 200px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -245,7 +245,7 @@ table img {
     transform: scale(1.05);
     transition: transform 0.3s ease;
     width: 400px;
-    height: 400px;
+    height: 600px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
