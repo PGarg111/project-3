@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>City Spies</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="test.html">← Library</a>
+            <h1 class="book-title">City Spies</h1>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <a href="city-spies.html">Chapter 1</a>
+            <a href="cs-chapter-2.html"><strong>Chapter 2</strong></a>
+            <a href="c-chapter-3.html">Chapter 3</a>
+            <a href="cs-chapter-4.html">Chapter 4</a>
+            <a href="cs-chapter-5.html">Chapter 5</a>
+            <a href="cs-chapter-6.html">Chapter 6</a>
+            <a href="cs-chapter-7.html">Chapter 7</a>
+            <a href="cs-chapter-8.html">Chapter 8</a>
+            <a href="cs-chapter-9.html">Chapter 9</a>
+            <a href="cs-chapter-10.html">Chapter 10</a>
+            <a href="cs-chapter-11.html">Chapter 11</a>
+            <a href="cs-chapter-12.html">Chapter 12</a>
+            <a href="cs-chapter-13.html">Chapter 13</a>
+            <a href="cs-chapter-14.html">Chapter 14</a>
+            <a href="cs-chapter-15.html">Chapter 15</a>
+            <a href="cs-chapter-16.html">Chapter 16</a>
+            <a href="cs-chapter-17.html">Chapter 17</a>
+            <a href="cs-chapter-18.html">Chapter 18</a>
+            <a href="cs-chapter-19.html">Chapter 19</a>
+            <a href="cs-chapter-20.html">Chapter 20</a>
+            <a href="cs-chapter-21.html">Chapter 21</a>
+            <a href="cs-chapter-22.html">Chapter 22</a>
+            <a href="cs-chapter-23.html">Chapter 23</a>
+            <a href="cs-chapter-24.html">Chapter 24</a>
+            <a href="cs-chapter-25.html">Chapter 25</a>
+            <a href="cs-chapter-26.html">Chapter 26</a>
+            <a href="cs-chapter-27.html">Chapter 27</a>
+            <a href="cs-chapter-28.html">Chapter 28</a>
+            <a href="cs-chapter-29.html">Chapter 29</a>
+            <a href="cs-chapter-30.html">Chapter 30</a>
+            <a href="cs-chapter-31.html">Chapter 31</a>
+            <a href="cs-chapter-32.html">Chapter 32</a>
+            <a href="cs-chapter-33.html">Chapter 33</a>
+            <a href="cs-chapter-34.html">Chapter 34</a>
+
+
+
+        </nav>
+
+        <main class="book">
+            <article id="ch2" class="chapter">
+                <h2>2. <strong>Crunchem Hall</strong></h2>
+                <p>
+                <p> The reports in Sara's file were accurate. She didn’t trust people. Especially adults. To be fair,not
+                    many had given her reason to do so. There’d been a few nice teachers along the way. And two
+                    goodfoster families. But that was about it. Now, as she sat in a holding cell waiting to be called
+                    intothe courtroom, she was having second thoughts about trusting a man who called himself Mother and
+                    carried at least three phony passports in his briefcase. </p>
+                <p>"Rich girl, you gonna help me out?"</p>
+                <p>There were only three other girls in the cell, but it took Sara a moment to realize this one was
+                    talking to her. She almost laughed at the absurdity of it.</p>
+                </p>
+            </article>
+
+        </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <footer class="reader-footer">
+            <div class="footer-left">
+                <a href="city-spies.html">Previous Chapter</a>
+            </div>
+            <div class="footer-center">
+                <small>End of book — <a href="index.html">Back to library</a></small>
+            </div>
+            <div class="footer-right">
+                <a href="cs-chapter-3.html">Next Chapter</a>
+            </div>
+        </footer>
+
+    </body>
+</body>
+
+</html>
