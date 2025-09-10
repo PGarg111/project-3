@@ -43,7 +43,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 1rem;
-    font-size: var(--type-size, 18px);
 
 }
 
@@ -121,8 +120,9 @@ body {
     padding: .5rem;
     display: flex;
     gap: 1rem;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    transform: rotate(0.28deg);
 }
 
 .toc a {
@@ -200,9 +200,6 @@ a:focus,
         column-width: auto;
     }
 }
-
-
-
 
 .topbar {
     position: fixed;
