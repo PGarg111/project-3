@@ -16,6 +16,31 @@
         <header class="reader-header">
             <a class="back" href="test.html">← Library</a>
             <h1 class="book-title">Percy Jackson and the Lightning Thief</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+
+                <audio id="bg-music"
+                    src="Flying_ Relaxing Sleep Music for Meditation, Stress Relief & Relaxation by Peder B. Helland [1ZYbU82GVz4].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
 
             <div class="reader-controls">
                 <button class="control" onclick="toggleTheme()">🌓</button>
@@ -66,7 +91,8 @@
                     <span class="calibre5">GOT OVER THE FACT THAT</span> my Latin teacher was a horse, we had a nice
                     tour, though I was careful not to walk behind him. I’d done pooper-scooper patrol in the Macy’s
                     Thanksgiving Day Parade a few times, and, I’m sorry, I did not trust Chiron’s back end the way I
-                    trusted his front.</p>
+                    trusted his front.
+                </p>
                 <p class="calibre17">We passed the volleyball pit. Several of the campers nudged each other. One pointed
                     to the minotaur horn I was carrying. Another said, “That’s <i class="calibre7">him</i>.”</p>
                 <p class="calibre17">Most of the campers were older than me. Their satyr friends were bigger than

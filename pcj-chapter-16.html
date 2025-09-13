@@ -16,6 +16,31 @@
         <header class="reader-header">
             <a class="back" href="test.html">← Library</a>
             <h1 class="book-title">Percy Jackson and the Lightning Thief</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+
+                <audio id="bg-music"
+                    src="Flying_ Relaxing Sleep Music for Meditation, Stress Relief & Relaxation by Peder B. Helland [1ZYbU82GVz4].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
 
             <div class="reader-controls">
                 <button class="control" onclick="toggleTheme()">🌓</button>
