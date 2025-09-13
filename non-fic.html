@@ -25,6 +25,31 @@
 
     <h1 class="header">Non-Fiction Books</h1>
     <div>
+        <button id="play-btn">Play Music</button>
+        <button id="pause-btn">Pause Music</button>
+
+        <audio id="bg-music"
+            src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+            loop style="display: none;">
+        </audio>
+
+        <script>
+            const music = document.getElementById('bg-music');
+            const playBtn = document.getElementById('play-btn');
+            const pauseBtn = document.getElementById('pause-btn');
+
+            music.volume = 0.5;
+
+            playBtn.addEventListener('click', () => {
+                music.play();
+            });
+
+            pauseBtn.addEventListener('click', () => {
+                music.pause();
+            });
+        </script>
+    </div>
+    <div>
         <div class="back-link">
             <a href="index.html">← Back</a>
         </div>
@@ -35,30 +60,31 @@
                         <figure>
                             <a href="bright-places.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/91JTGZzlzbL._UF1000,1000_QL80_.jpg"
-                                    alt="All the Bright Places by Jennifer Niven">
+                                    src="https://m.media-amazon.com/images/I/81ygmVMug9L._UF1000,1000_QL80_.jpg"
+                                    alt="The 57 Bus: A True Story of Two Teenagers and the Crime That Changed Their Lives by Dashka Slater">
                             </a>
-                            <p><strong>All the Bright Places by Jennifer Niven</strong></p>
+                            <p><strong>The 57 Bus: A True Story of Two Teenagers and the Crime That Changed Their Lives
+                                    by Dashka Slater</strong></p>
                         </figure>
                     </td>
                     <td>
                         <figure>
                             <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/91FclpIQfoL._UF1000,1000_QL80_.jpg"
-                                    alt="Felix Ever After by Kacen Callender">
+                                    src="https://m.media-amazon.com/images/I/71XqP2ndvDL._UF1000,1000_QL80_.jpg"
+                                    alt="I Will Always Write Back by Caitlin Alifirenka & Martin Ganda">
                             </a>
-                            <p><strong>Felix Ever After by Kacen Callender</strong></p>
+                            <p><strong>I Will Always Write Back by Caitlin Alifirenka & Martin Ganda</strong></p>
                         </figure>
                     </td>
                     <td>
                         <figure>
                             <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/81c40GumSkL._UF1000,1000_QL80_.jpg"
-                                    alt="Foolish Hearts by Emma Mills">
+                                    src="https://m.media-amazon.com/images/I/713jIoMO3UL._UF1000,1000_QL80_.jpg"
+                                    alt="Sapiens: A Brief History of Humankind by Yuval Noah Harari">
                             </a>
-                            <p><strong>Foolish Hearts by Emma Mills</strong></p>
+                            <p><strong>Sapiens: A Brief History of Humankind by Yuval Noah Harari</strong></p>
                         </figure>
                     </td>
 
@@ -69,30 +95,31 @@
                         <figure>
                             <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/814wqBWSyOL._UF1000,1000_QL80_.jpg"
-                                    alt="The Perks of Being a Wallflower by Stephen Chbosky">
+                                    src="https://upload.wikimedia.org/wikipedia/en/4/4f/The_official_poster_for_the_film_Hidden_Figures%2C_2016.jpg"
+                                    alt="Hidden Figures by Margot Lee Shetterly">
                             </a>
-                            <p><strong>The Perks of Being a Wallflower by Stephen Chbosky</strong></p>
+                            <p><strong>Hidden Figures by Margot Lee Shetterly</strong></p>
                         </figure>
                     </td>
                     <td>
                         <figure>
                             <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/71CY50T1sML._UF1000,1000_QL80_.jpg"
-                                    alt="Eleanor & Park by Rainbow Rowell">
+                                    src="https://m.media-amazon.com/images/I/81Czh6XQdTL._UF1000,1000_QL80_.jpg"
+                                    alt="Just Mercy: A Story of Justice and Redemption by Bryan Stevenson">
                             </a>
-                            <p><strong>Eleanor & Park by Rainbow Rowell</strong></p>
+                            <p><strong>Just Mercy: A Story of Justice and Redemption by Bryan Stevenson</strong></p>
                         </figure>
                     </td>
                     <td>
                         <figure>
                             <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
-                                    src="https://www.hachettebookgroup.com/wp-content/uploads/2024/01/9780316123242.jpg?w=427"
-                                    alt="The DUFF by Kody Keplinger">
+                                    src="https://m.media-amazon.com/images/I/91+gy3By6gL._UF1000,1000_QL80_.jpg"
+                                    alt="The Family Romanov: Murder, Rebellion, and the Fall of Imperial Russia by Candace Fleming">
                             </a>
-                            <p><strong>The DUFF by Kody Keplinger</strong></p>
+                            <p><strong>The Family Romanov: Murder, Rebellion, and the Fall of Imperial Russia by Candace
+                                    Fleming</strong></p>
                         </figure>
                     </td>
                 </tr>

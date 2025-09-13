@@ -1,33 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Story Heaven</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
-  
+
 
 </head>
+
 <body>
-    <div class="topbar">
-        <a href="test.html">Fantasy</a>
-        <a href="practice.html">Mystery</a>
-        <a href="practice.html">Sci-Fi</a>
-        <a href="practice.html">Realistic Fiction</a>
-        <a href="index.html">Home</a>
-        <a href="practice.html">Horror/Thriller</a>
-        <a href="practice.html">Romance</a>
-        <a href="practice.html">Historical Fiction</a>
-        <a href="practice.html">Non-Fiction</a>
-    </div>
+  <div class="topbar">
+    <a href="test.html">Fantasy</a>
+    <a href="practice.html">Mystery</a>
+    <a href="practice.html">Sci-Fi</a>
+    <a href="practice.html">Realistic Fiction</a>
+    <a href="index.html">Home</a>
+    <a href="practice.html">Horror/Thriller</a>
+    <a href="practice.html">Romance</a>
+    <a href="practice.html">Historical Fiction</a>
+    <a href="practice.html">Non-Fiction</a>
+  </div>
+
+
+
+
 
   <div class="wrap">
     <h1>Digital Library</h1>
-    <p>Welcome to your free digital library! In this library you will find all the new and popular books for middle and high schoolers. The website is divided using the different genres. All you have to do is click on the genre you wan't to read and then navigate through the page looking for which book/series you want to read. </p>
-    
+    <p>Welcome to your free digital library! In this library you will find all the new and popular books for middle and
+      high schoolers. The website is divided using the different genres. All you have to do is click on the genre you
+      wan't to read and then navigate through the page looking for which book you want to read.
+    </p>
+    <div>
+      <button id="play-btn">Play Music</button>
+      <button id="pause-btn">Pause Music</button>
 
+      <audio id="bg-music"
+        src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+        loop style="display: none;">
+      </audio>
+
+      <script>
+        const music = document.getElementById('bg-music');
+        const playBtn = document.getElementById('play-btn');
+        const pauseBtn = document.getElementById('pause-btn');
+
+        music.volume = 0.5;
+
+        playBtn.addEventListener('click', () => {
+          music.play();
+        });
+
+        pauseBtn.addEventListener('click', () => {
+          music.pause();
+        });
+      </script>
     </div>
+
+    <h2>Featured Books</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td rowspan="2">
+            <figure>
+              <a href="pcj-book-1.html" target="_blank">
+                <img id="picture-1" class="picture-2"
+                  src="https://images.booksense.com/images/477/051/9781368051477.jpg" alt="PCJ-Book1">
+              </a>
+              <p><strong>Percy Jackson and the Lightning Thief</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="hunger-games.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/61I24wOsn8L._UF1000,1000_QL80_.jpg" alt="Hunger Games">
+              </a>
+              <p><strong>The Hunger Games</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="pho-love.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/81qtvOG+7+L._UF1000,1000_QL80_.jpg"
+                  alt="A Pho Love Story by Loan Le">
+              </a>
+              <p><strong>A Pho Love Story by Loan Le</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="bright-places.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/91JTGZzlzbL._UF1000,1000_QL80_.jpg"
+                  alt="All the Bright Places by Jennifer Niven">
+              </a>
+              <p><strong>All the Bright Places by Jennifer Niven</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="war-life.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/81IhHL17BhL._UF1000,1000_QL80_.jpg"
+                  alt="The War That Saved My Life by Kimberly Brubaker Bradley">
+              </a>
+              <p><strong>The War That Saved My Life by Kimberly Brubaker Bradley</strong></p>
+            </figure>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <figure>
+              <a href="downstairs-girl.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/819vpe55YVL._UF1000,1000_QL80_.jpg"
+                  alt="The Downstairs Girl by Stacey Lee">
+              </a>
+              <p><strong>The Downstairs Girl by Stacey Lee</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="bright-places.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/81ygmVMug9L._UF1000,1000_QL80_.jpg"
+                  alt="The 57 Bus: A True Story of Two Teenagers and the Crime That Changed Their Lives by Dashka Slater">
+              </a>
+              <p><strong>The 57 Bus: A True Story of Two Teenagers and the Crime That Changed Their Lives by Dashka
+                  Slater</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="gg-murder.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://m.media-amazon.com/images/I/81x-tjdbZgL._UF1000,1000_QL80_.jpg"
+                  alt="Good Girl's Guide to Murder">
+              </a>
+              <p><strong>Good Girl's Guide to Murder</strong></p>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="city-spies.html" target="_blank">
+                <img id="picture-1" class="picture-1"
+                  src="https://highfivebooks.org/cdn/shop/files/9781534414921.jpg?v=1718334342" alt="City Spies">
+              </a>
+              <p><strong>City Spies</strong></p>
+            </figure>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
   </div>
 </body>
+
 </html>

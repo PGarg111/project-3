@@ -25,6 +25,31 @@
 
     <h1 class="header">Realistic Fiction Books</h1>
     <div>
+        <button id="play-btn">Play Music</button>
+        <button id="pause-btn">Pause Music</button>
+
+        <audio id="bg-music"
+            src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+            loop style="display: none;">
+        </audio>
+
+        <script>
+            const music = document.getElementById('bg-music');
+            const playBtn = document.getElementById('play-btn');
+            const pauseBtn = document.getElementById('pause-btn');
+
+            music.volume = 0.5;
+
+            playBtn.addEventListener('click', () => {
+                music.play();
+            });
+
+            pauseBtn.addEventListener('click', () => {
+                music.pause();
+            });
+        </script>
+    </div>
+    <div>
         <div class="back-link">
             <a href="index.html">← Back</a>
         </div>

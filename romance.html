@@ -25,6 +25,31 @@
 
     <h1 class="header">Romance Books</h1>
     <div>
+      <button id="play-btn">Play Music</button>
+      <button id="pause-btn">Pause Music</button>
+
+      <audio id="bg-music"
+        src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+        loop style="display: none;">
+      </audio>
+
+      <script>
+        const music = document.getElementById('bg-music');
+        const playBtn = document.getElementById('play-btn');
+        const pauseBtn = document.getElementById('pause-btn');
+
+        music.volume = 0.5;
+
+        playBtn.addEventListener('click', () => {
+          music.play();
+        });
+
+        pauseBtn.addEventListener('click', () => {
+          music.pause();
+        });
+      </script>
+    </div>
+    <div>
         <div class="back-link">
             <a href="index.html">← Back</a>
         </div>
@@ -33,7 +58,17 @@
                 <tr>
                     <td>
                         <figure>
-                            <a href="chemical-hearts.html" target="_blank">
+                            <a href="pho-love.html" target="_blank">
+                                <img id="picture-1" class="picture-1"
+                                    src="https://m.media-amazon.com/images/I/81qtvOG+7+L._UF1000,1000_QL80_.jpg"
+                                    alt="A Pho Love Story by Loan Le">
+                            </a>
+                            <p><strong>A Pho Love Story by Loan Le</strong></p>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <a href="page-not-found.html" target="_blank">
                                 <img id="picture-1" class="picture-1"
                                     src="https://m.media-amazon.com/images/I/71GLMf7x4BL._UF894,1000_QL80_.jpg"
                                     alt="Our Chemical Hearts by Krystal Sutherland">
@@ -51,16 +86,7 @@
                             <p><strong>To All the Boys I’ve Loved Before by Jenny Han</strong></p>
                         </figure>
                     </td>
-                    <td>
-                        <figure>
-                            <a href="page-not-found.html" target="_blank">
-                                <img id="picture-1" class="picture-1"
-                                    src="https://m.media-amazon.com/images/I/81qtvOG+7+L._UF1000,1000_QL80_.jpg"
-                                    alt="A Pho Love Story by Loan Le">
-                            </a>
-                            <p><strong>A Pho Love Story by Loan Le</strong></p>
-                        </figure>
-                    </td>
+                    
                     <td>
                         <figure>
                             <a href="page-not-found.html" target="_blank">
