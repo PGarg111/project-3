@@ -14,8 +14,33 @@
 
     <body class="reader-page dark-mode">
         <header class="reader-header">
-            <a class="back" href="test.html">← Library</a>
+            <a class="back" href="practice.html">← Library</a>
             <h1 class="book-title">City Spies</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+
+                <audio id="bg-music"
+                    src="Flying_ Relaxing Sleep Music for Meditation, Stress Relief & Relaxation by Peder B. Helland [1ZYbU82GVz4].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
 
             <div class="reader-controls">
                 <button class="control" onclick="toggleTheme()">🌓</button>
@@ -75,107 +100,189 @@
             <article id="ch3" class="chapter">
                 <h2><strong>3.</strong> Brooklyn</h2>
                 <p>
-                    <p class="calibre1"><span class="calibre16">Rather than a prisoner transport</span>  bus, Sara left the courthouse  in  a  limousine  with  two  people  who  claimed  to  be spies. Surprisingly, she had no doubt that that’s exactly what they were. She just wasn’t sure how she fit into their plans.</p>
-<p class="calibre17">“Let me get this straight,” she said as they took Atlantic Avenue deeper into Brooklyn. “You two are a team?”</p>
-<p class="calibre17">“Part of one,” answered Sydney.</p>
-<p class="calibre17">“And you came here to see if I was a good fit for that team?”</p>
-<p class="calibre17">“That’s right,” said Mother.</p>
-<p class="calibre17">“Am I?”</p>
-<p class="calibre17">“So far, it’s quite promising,” he said, “but we can’t be certain until we conduct some more tests.”</p>
-<p class="calibre17">“What do you mean, <i class="calibre8">more</i> tests?” she said. “I haven’t taken any.”</p>
-<p class="calibre17">“Actually, you’ve taken two so far,” he answered. “First when I asked  you  to  hack  into  the  juvenile  justice  portal  and  make  me your  attorney.  That’s  performance  under  pressure.  An  essential skill.” He turned to Sydney. “She did it in under two minutes.”</p>
-<p class="calibre17">“Impressive,” said Sydney.</p>
-<p class="calibre17">“The second was trusting me in the courtroom,” he continued. “That  demonstrated  your  ability  to  adapt  to  rapidly  changing situations. Also essential.”</p>
-<p class="calibre17">“I wish I could’ve been there to see it,” said Sydney.</p>
-<p class="calibre17">“It’s too bad,” joked Mother. “I was sensational.”</p>
-<p id="calibre_link-28" class="calibre17">Sydney rolled her eyes and shared a look with Sara. “By the way, I did some shopping earlier.” Sydney handed her two department store bags. “I tried to guess your sizes and what you might like.”</p>
-<p class="calibre17">Sara looked in the bags. “You bought me clothes?”</p>
-<p class="calibre17">“Just to hold you over until we can get you a proper wardrobe,” she replied.</p>
-<p class="calibre17">“Although, most days you’ll wear your school uniform,” added Mother.</p>
-<p class="calibre17">Sara  gave  him  a  curious  look.  “My  school  doesn’t  have  a uniform.”</p>
-<p class="calibre17">“About that. You’re going to be enrolled in a new school called Kinloch Abbey.”</p>
-<p class="calibre17">“Sounds  about  as  fake  as  Crunchem  Hall,”  she  said.  “Let  me guess. It’s from <i class="calibre8">James and the Giant Peach</i>.”</p>
-<p class="calibre17">“No, this one’s not in a book,” Mother said. “It’s in Scotland.” Sara  waited  for  him  to  laugh,  but  he  didn’t.  She  waited  some more, but there was still no laugh.</p>
-<p class="calibre17">“You’re serious?”</p>
-<p class="calibre17">“It’s a bit posh,” said Sydney. “After all, part of it’s in a castle. But once you get over that, you’ll like it.”</p>
-<p class="calibre17">“We’re going to Scotland?!”</p>
-<p class="calibre17">Instead of answering, Mother leaned toward the driver and asked, “Can you please turn left and take us to house number 197?”</p>
-<p class="calibre17">“We’re pressed for time,”  Sydney reminded him. “If we miss this flight, we’ll lose an entire day.”</p>
-<p class="calibre17">“I know, I know,” he reassured her. “It’s just a quick detour for context. Besides, I really want to see it.”</p>
-<p class="calibre17">“I’m sorry,” Sara interrupted, “but can we get back to the whole Scotland thing?”</p>
-<p id="calibre_link-29" class="calibre17">“Shortly,” Mother assured her as the limo parked in front of a three-story  redbrick  town  house.  “First,  tell  me  what  you  know about Winston Churchill.”</p>
-<p class="calibre17">“Absolutely  nothing,”  she  said  blankly.  “The  name  sounds  … kind of familiar, but that’s it.”</p>
-<p class="calibre17">“Jaw-dropping,” he said disapprovingly. “Kinloch will take care of that in a tick. But, for now, just know that as prime minister during World War Two, Churchill saved Britain and quite possibly the world from annihilation. He’s a personal hero of mine and did more for the British Secret Intelligence Service than anyone else.”</p>
-<p class="calibre17">“Okay,” she said. “So why are you telling me this?”</p>
-<p class="calibre17">“Because his mother was born in this house.” He gestured out the window. “Think about that. The mother of the man who saved Britain wasn’t from London or Oxford or some grand estate out in Surrey.  She was from Brooklyn, just like  you. So it follows that we’d come full circle back here to find you. Brooklyn’s imprinted on our DNA.” He turned his attention back to the driver. “Okay,we can move along now.”</p>
-<p class="calibre17">The limo started again.</p>
-<p class="calibre17">“That’s  interesting and all,” said Sara. “But it really doesn’t answer my question. Are you  seriously  taking  me  to  Scotland? Because I don’t even have a passport.”</p>
-<p class="calibre17">He popped open his briefcase  and  handed  her  two  British passports, each with her picture and a phony name. “Pick the one you like better.”</p>
-<p class="calibre17">“Of  course,”  she  replied,  shaking  her  head.  “You  have  all  the passports you want. How’d you get this picture of me?”</p>
-<p class="calibre17">“That bit about us being spies?” he said. “We’re exceptionally good at getting things. As to your first question, yes, we’re taking you to Scotland. Whether you stay there or not, however, will be entirely up to you.”</p>
-<p id="calibre_link-30" class="calibre17">“How do you mean?” she asked.</p>
-<p class="calibre17">“Soon  you’ll  start  classes  at  Kinloch.  It’s  one  of  the  top boarding schools in the UK. You’ll get a first-rate education. And if  you’re  happy  there,  you  can  continue  until  you  graduate  and leave for university. That’s option one.”</p>
-<p class="calibre17">“And if I don’t like it?” she asked.</p>
-<p class="calibre17">“Option two,” he answered. “If, at the end of the school year, you decide Kinloch’s not right for you or that you miss living in the  States  too  much,  we’ll  find  you  a  proper  home  back  here  in America.  It  won’t  be  like  the  ones  you’ve  been  stuck  in  before. We’ll get you a good family. I’ll see to that. Although, we might want  to  avoid  metropolitan  New  York  because  of  the  whole business  about  them  believing  that  you’re  in  detention somewhere.”</p>
-<p class="calibre17">“Good point,” she said. “But what does any of that have to do with spies and MI6?”</p>
-<p class="calibre17">“Not a thing.” He leaned in conspiratorially and added, “Option three is the one that involves the Secret Intelligence Service.”</p>
-<p class="calibre17">She looked at both of them before saying, “Then option three is the one I want to hear about.”</p>
-<p class="calibre17">“You attend Kinloch not as a boarder but as a day student,” said Sydney. “And you live at the farm with Monty, me, and the rest of the team.” “Monty?” asked Sara. “Who’s that?”</p>
-<p class="calibre17">“Dr.  Alexandra  Montgomery,”  said  Mother.  “She’s  a biophysicist-slash-cryptologist who loves to bake. Think of her as part Marie Curie and part Mary Poppins.”</p>
-<p class="calibre17">“She’s brilliant,” said Sydney. “You’re going to love her.”</p>
-<p class="calibre17">“And the rest of the team?” asked Sara.</p>
-<p class="calibre17">“Kids like you and me who Mother’s found around the globe,” said Sydney. “They’re amazing.” She rethought this for a moment. “I mean, the boys totally drive me bonkers and I usually want to strangle them, but other than that they’re amazing.”</p>
-<p class="calibre17">“How many are there?”</p>
-<p class="calibre17">“Two  boys  and  another  girl,”  she  said.  “Paris,  Rio,  and  Kat. When  you  join  the  team,  you  have  to  create  an  entirely  new identity. It’s hard to keep track of all the aliases and fake names, so we just call each other by where we’re from. That way we still have a small connection to our past.”</p>
-<p class="calibre17">“There’s a city called Kat?” asked Sara.</p>
-<p class="calibre17">“Kathmandu,” answered Mother. “It’s in Nepal but that’s rather a mouthful, so we just go with Kat.”</p>
-<p class="calibre17">“That means I’d be Brooklyn,” Sara said, liking the sound of it.</p>
-<p class="calibre17">“<i class="calibre8">If</i> you decide to join,” stressed Mother.</p>
-<p class="calibre17">“What does <i class="calibre8">joining</i> even mean?” she asked.</p>
-<p class="calibre17">“It means that in addition to your studies at Kinloch,” he said, “you’ll receive instruction in espionage, counterintelligence, self-defense, code-breaking, and other assorted goodies.”</p>
-<p class="calibre17">“My favorite assorted goody is explosives,” said Sydney. “I like making things go boom.”</p>
-<p class="calibre17">“So we’re talking spy school?”</p>
-<p class="calibre17">“Yes,”  said  Mother.  “But  not  just  school.  We  go  on  real missions. We face genuine danger.”</p>
-<p class="calibre17">“And you said that there’s a mission coming up that you want me to go on,” Sara replied.</p>
-<p class="calibre17">Mother  sighed.  “Normally,  you  receive  extensive  training before you go into the field, but we’re in a pinch at the moment. There’s  an  operation  in  three  weeks,  and  we  find  ourselves  one person down.”</p>
-<p class="calibre17">“And if that person’s me?”</p>
-<p class="calibre17">“Then  I  would  limit  your  role  as  much  as  possible,  but  you would have to go into the field with us.”</p>
-<p id="calibre_link-32" class="calibre17">“Cool,”  she  said  with  a  grin.  “Sounds  more  fun  than  juvenile detention.”</p>
-<p class="calibre17">Sara would’ve asked more about the upcoming mission, but she was distracted when the limo turned down a familiar street. It was >her  neighborhood  and  just  the  sight  of  it  made  her  wince. Everything here was the opposite of boarding schools and castles. There  were  chain-link  fences  with  razor  wire,  iron  bars  on windows,  and  graffiti  covering  the  wall  of  an  abandoned warehouse.</p>
-<p class="calibre17">“Why are we here?” she asked.</p>
-<p class="calibre17">“We’re about to cross an ocean,” he answered. “I thought you might like to stop by home before we left .”</p>
-<p class="calibre17">“This isn’t my <i class="calibre8">home</i>,” she corrected. “It’s a <i class="calibre8">house</i> where I lived. There’s a huge difference.”</p>
-<p class="calibre17">“Duly noted,” he said. “But either way, you won’t be returning.</p>
-<p class="calibre1">If there’s anything of sentimental value in there, now’s the time.”</p>
-<p class="calibre17">“There’s  a  shoebox  with  some  things  that  are  special  to  me,” she said. “But I can’t get it.”</p>
-<p class="calibre17">“Why not?” he asked.</p>
-<p class="calibre17">“The  Clarks  are  home,”  she  said.  “Considering  I  just  tried  to have them arrested, I doubt they’ll hand it over.”</p>
-<p class="calibre17">“Then let’s not tell them,” he replied.</p>
-<p class="calibre17">“You want me to break in?”</p>
-<p class="calibre17">“In  the  spy  trade  we  call  it  a  ‘black  bag  job,’ ”  he  said.  “We’ll make this your first alpha test.”</p>
-<p class="calibre17">This brought a smile to Sydney’s face. “I like it.”</p>
-<p class="calibre17">“What’s an alpha test?”</p>
-<p class="calibre17">“Every mission has a team leader, called an <i class="calibre8">alpha</i>, who comes up  with  the  plan  and  runs  the  operation,”  he  explained.  “To prepare for that, we run alpha tests as practice.”</p>
-<p id="calibre_link-33" class="calibre17">“Except, I haven’t had any training,” Sara replied. “I don’t know how to plan a mission.”</p>
-<p class="calibre17">“Don’t  sell  yourself  short,”  Sydney  said  firmly.  “You  already have the intel.”</p>
-<p class="calibre17">Sara gave her a confused look.</p>
-<p class="calibre17">“The  intelligence,”  Sydney  explained.  “You  know  the  inner workings  of  the  house.  All  you  have  to  do  is  break  down  the variables  and  devise  a  scheme.  For  example,  who’s  inside  right now?”</p>
-<p class="calibre17">Sara checked her watch. “It should just be the Clarks,” she said. “The kids are all either at day care or after-school programs for another forty-five minutes.”</p>
-<p class="calibre17">“Excellent,  so  we  only  have  two  people  to  deal  with,”  said Mother. “Where’s the shoebox?”</p>
-<p class="calibre17">“On the top shelf of my bedroom closet … which is on the third floor.”</p>
-<p class="calibre17">“That’s not ideal,” said Mother.</p>
-<p class="calibre17">“And the only way to get there is to go through the living room, where  I’m  sure  Leonard  is  sitting  in  his  recliner  watching television and drinking a beer.”</p>
-<p class="calibre17">“Also less than ideal,” he said. “But it’s still clear-cut. You just need some sort of bait that will get them out of the way.”</p>
-<p class="calibre17">“That’s called the nugget,” said Sydney.</p>
-<p class="calibre17">“The nugget?” Sara asked.</p>
-<p class="calibre17">“Something to distract them,” answered Sydney. “To lure them from the living room.”</p>
-<p class="calibre17">“What do they find … <i class="calibre8">irresistible</i>?” asked Mother.</p>
-<p class="calibre17">“Beer  …  pizza&nbsp; …”  Sara  continued  thinking  as  she  studied  the house.  For  her  it  was  filled  with  memories  of  sadness  and disappointment. She looked up at the roof where she and Gabriel had  been  locked  out  for  an  entire  night.  And  that’s  when  the brainstorm hit. “… and money!” she said. “They love money.”</p>
-<p class="calibre17">“I don’t think we have enough cash for a bribe,” said Mother.</p>
-<p class="calibre17">“That’s okay,” Sara replied. “Just the idea of money should be enough to get them. Can you pass yourself off as an FBI agent?” “I’d need a wardrobe change,” Mother said. He  opened  his  briefcase  and  pulled  out  a  black  tie,  which  he swapped with the stylish patterned one he was wearing. Then he took out his pocket square and put on a pair of dark sunglasses.</p>
-<p class="calibre17">“Wardrobe change complete,” he said. “What’s the plan?”</p>
+                <p class="calibre1"><span class="calibre16">Rather than a prisoner transport</span> bus, Sara left the
+                    courthouse in a limousine with two people who claimed to be spies. Surprisingly, she had no doubt
+                    that that’s exactly what they were. She just wasn’t sure how she fit into their plans.</p>
+                <p class="calibre17">“Let me get this straight,” she said as they took Atlantic Avenue deeper into
+                    Brooklyn. “You two are a team?”</p>
+                <p class="calibre17">“Part of one,” answered Sydney.</p>
+                <p class="calibre17">“And you came here to see if I was a good fit for that team?”</p>
+                <p class="calibre17">“That’s right,” said Mother.</p>
+                <p class="calibre17">“Am I?”</p>
+                <p class="calibre17">“So far, it’s quite promising,” he said, “but we can’t be certain until we conduct
+                    some more tests.”</p>
+                <p class="calibre17">“What do you mean, <i class="calibre8">more</i> tests?” she said. “I haven’t taken
+                    any.”</p>
+                <p class="calibre17">“Actually, you’ve taken two so far,” he answered. “First when I asked you to hack
+                    into the juvenile justice portal and make me your attorney. That’s performance under pressure. An
+                    essential skill.” He turned to Sydney. “She did it in under two minutes.”</p>
+                <p class="calibre17">“Impressive,” said Sydney.</p>
+                <p class="calibre17">“The second was trusting me in the courtroom,” he continued. “That demonstrated
+                    your ability to adapt to rapidly changing situations. Also essential.”</p>
+                <p class="calibre17">“I wish I could’ve been there to see it,” said Sydney.</p>
+                <p class="calibre17">“It’s too bad,” joked Mother. “I was sensational.”</p>
+                <p id="calibre_link-28" class="calibre17">Sydney rolled her eyes and shared a look with Sara. “By the
+                    way, I did some shopping earlier.” Sydney handed her two department store bags. “I tried to guess
+                    your sizes and what you might like.”</p>
+                <p class="calibre17">Sara looked in the bags. “You bought me clothes?”</p>
+                <p class="calibre17">“Just to hold you over until we can get you a proper wardrobe,” she replied.</p>
+                <p class="calibre17">“Although, most days you’ll wear your school uniform,” added Mother.</p>
+                <p class="calibre17">Sara gave him a curious look. “My school doesn’t have a uniform.”</p>
+                <p class="calibre17">“About that. You’re going to be enrolled in a new school called Kinloch Abbey.”</p>
+                <p class="calibre17">“Sounds about as fake as Crunchem Hall,” she said. “Let me guess. It’s from <i
+                        class="calibre8">James and the Giant Peach</i>.”</p>
+                <p class="calibre17">“No, this one’s not in a book,” Mother said. “It’s in Scotland.” Sara waited for
+                    him to laugh, but he didn’t. She waited some more, but there was still no laugh.</p>
+                <p class="calibre17">“You’re serious?”</p>
+                <p class="calibre17">“It’s a bit posh,” said Sydney. “After all, part of it’s in a castle. But once you
+                    get over that, you’ll like it.”</p>
+                <p class="calibre17">“We’re going to Scotland?!”</p>
+                <p class="calibre17">Instead of answering, Mother leaned toward the driver and asked, “Can you please
+                    turn left and take us to house number 197?”</p>
+                <p class="calibre17">“We’re pressed for time,” Sydney reminded him. “If we miss this flight, we’ll lose
+                    an entire day.”</p>
+                <p class="calibre17">“I know, I know,” he reassured her. “It’s just a quick detour for context. Besides,
+                    I really want to see it.”</p>
+                <p class="calibre17">“I’m sorry,” Sara interrupted, “but can we get back to the whole Scotland thing?”
                 </p>
-                        
+                <p id="calibre_link-29" class="calibre17">“Shortly,” Mother assured her as the limo parked in front of a
+                    three-story redbrick town house. “First, tell me what you know about Winston Churchill.”</p>
+                <p class="calibre17">“Absolutely nothing,” she said blankly. “The name sounds … kind of familiar, but
+                    that’s it.”</p>
+                <p class="calibre17">“Jaw-dropping,” he said disapprovingly. “Kinloch will take care of that in a tick.
+                    But, for now, just know that as prime minister during World War Two, Churchill saved Britain and
+                    quite possibly the world from annihilation. He’s a personal hero of mine and did more for the
+                    British Secret Intelligence Service than anyone else.”</p>
+                <p class="calibre17">“Okay,” she said. “So why are you telling me this?”</p>
+                <p class="calibre17">“Because his mother was born in this house.” He gestured out the window. “Think
+                    about that. The mother of the man who saved Britain wasn’t from London or Oxford or some grand
+                    estate out in Surrey. She was from Brooklyn, just like you. So it follows that we’d come full circle
+                    back here to find you. Brooklyn’s imprinted on our DNA.” He turned his attention back to the driver.
+                    “Okay,we can move along now.”</p>
+                <p class="calibre17">The limo started again.</p>
+                <p class="calibre17">“That’s interesting and all,” said Sara. “But it really doesn’t answer my question.
+                    Are you seriously taking me to Scotland? Because I don’t even have a passport.”</p>
+                <p class="calibre17">He popped open his briefcase and handed her two British passports, each with her
+                    picture and a phony name. “Pick the one you like better.”</p>
+                <p class="calibre17">“Of course,” she replied, shaking her head. “You have all the passports you want.
+                    How’d you get this picture of me?”</p>
+                <p class="calibre17">“That bit about us being spies?” he said. “We’re exceptionally good at getting
+                    things. As to your first question, yes, we’re taking you to Scotland. Whether you stay there or not,
+                    however, will be entirely up to you.”</p>
+                <p id="calibre_link-30" class="calibre17">“How do you mean?” she asked.</p>
+                <p class="calibre17">“Soon you’ll start classes at Kinloch. It’s one of the top boarding schools in the
+                    UK. You’ll get a first-rate education. And if you’re happy there, you can continue until you
+                    graduate and leave for university. That’s option one.”</p>
+                <p class="calibre17">“And if I don’t like it?” she asked.</p>
+                <p class="calibre17">“Option two,” he answered. “If, at the end of the school year, you decide Kinloch’s
+                    not right for you or that you miss living in the States too much, we’ll find you a proper home back
+                    here in America. It won’t be like the ones you’ve been stuck in before. We’ll get you a good family.
+                    I’ll see to that. Although, we might want to avoid metropolitan New York because of the whole
+                    business about them believing that you’re in detention somewhere.”</p>
+                <p class="calibre17">“Good point,” she said. “But what does any of that have to do with spies and MI6?”
+                </p>
+                <p class="calibre17">“Not a thing.” He leaned in conspiratorially and added, “Option three is the one
+                    that involves the Secret Intelligence Service.”</p>
+                <p class="calibre17">She looked at both of them before saying, “Then option three is the one I want to
+                    hear about.”</p>
+                <p class="calibre17">“You attend Kinloch not as a boarder but as a day student,” said Sydney. “And you
+                    live at the farm with Monty, me, and the rest of the team.” “Monty?” asked Sara. “Who’s that?”</p>
+                <p class="calibre17">“Dr. Alexandra Montgomery,” said Mother. “She’s a biophysicist-slash-cryptologist
+                    who loves to bake. Think of her as part Marie Curie and part Mary Poppins.”</p>
+                <p class="calibre17">“She’s brilliant,” said Sydney. “You’re going to love her.”</p>
+                <p class="calibre17">“And the rest of the team?” asked Sara.</p>
+                <p class="calibre17">“Kids like you and me who Mother’s found around the globe,” said Sydney. “They’re
+                    amazing.” She rethought this for a moment. “I mean, the boys totally drive me bonkers and I usually
+                    want to strangle them, but other than that they’re amazing.”</p>
+                <p class="calibre17">“How many are there?”</p>
+                <p class="calibre17">“Two boys and another girl,” she said. “Paris, Rio, and Kat. When you join the
+                    team, you have to create an entirely new identity. It’s hard to keep track of all the aliases and
+                    fake names, so we just call each other by where we’re from. That way we still have a small
+                    connection to our past.”</p>
+                <p class="calibre17">“There’s a city called Kat?” asked Sara.</p>
+                <p class="calibre17">“Kathmandu,” answered Mother. “It’s in Nepal but that’s rather a mouthful, so we
+                    just go with Kat.”</p>
+                <p class="calibre17">“That means I’d be Brooklyn,” Sara said, liking the sound of it.</p>
+                <p class="calibre17">“<i class="calibre8">If</i> you decide to join,” stressed Mother.</p>
+                <p class="calibre17">“What does <i class="calibre8">joining</i> even mean?” she asked.</p>
+                <p class="calibre17">“It means that in addition to your studies at Kinloch,” he said, “you’ll receive
+                    instruction in espionage, counterintelligence, self-defense, code-breaking, and other assorted
+                    goodies.”</p>
+                <p class="calibre17">“My favorite assorted goody is explosives,” said Sydney. “I like making things go
+                    boom.”</p>
+                <p class="calibre17">“So we’re talking spy school?”</p>
+                <p class="calibre17">“Yes,” said Mother. “But not just school. We go on real missions. We face genuine
+                    danger.”</p>
+                <p class="calibre17">“And you said that there’s a mission coming up that you want me to go on,” Sara
+                    replied.</p>
+                <p class="calibre17">Mother sighed. “Normally, you receive extensive training before you go into the
+                    field, but we’re in a pinch at the moment. There’s an operation in three weeks, and we find
+                    ourselves one person down.”</p>
+                <p class="calibre17">“And if that person’s me?”</p>
+                <p class="calibre17">“Then I would limit your role as much as possible, but you would have to go into
+                    the field with us.”</p>
+                <p id="calibre_link-32" class="calibre17">“Cool,” she said with a grin. “Sounds more fun than juvenile
+                    detention.”</p>
+                <p class="calibre17">Sara would’ve asked more about the upcoming mission, but she was distracted when
+                    the limo turned down a familiar street. It was >her neighborhood and just the sight of it made her
+                    wince. Everything here was the opposite of boarding schools and castles. There were chain-link
+                    fences with razor wire, iron bars on windows, and graffiti covering the wall of an abandoned
+                    warehouse.</p>
+                <p class="calibre17">“Why are we here?” she asked.</p>
+                <p class="calibre17">“We’re about to cross an ocean,” he answered. “I thought you might like to stop by
+                    home before we left .”</p>
+                <p class="calibre17">“This isn’t my <i class="calibre8">home</i>,” she corrected. “It’s a <i
+                        class="calibre8">house</i> where I lived. There’s a huge difference.”</p>
+                <p class="calibre17">“Duly noted,” he said. “But either way, you won’t be returning.</p>
+                <p class="calibre1">If there’s anything of sentimental value in there, now’s the time.”</p>
+                <p class="calibre17">“There’s a shoebox with some things that are special to me,” she said. “But I can’t
+                    get it.”</p>
+                <p class="calibre17">“Why not?” he asked.</p>
+                <p class="calibre17">“The Clarks are home,” she said. “Considering I just tried to have them arrested, I
+                    doubt they’ll hand it over.”</p>
+                <p class="calibre17">“Then let’s not tell them,” he replied.</p>
+                <p class="calibre17">“You want me to break in?”</p>
+                <p class="calibre17">“In the spy trade we call it a ‘black bag job,’ ” he said. “We’ll make this your
+                    first alpha test.”</p>
+                <p class="calibre17">This brought a smile to Sydney’s face. “I like it.”</p>
+                <p class="calibre17">“What’s an alpha test?”</p>
+                <p class="calibre17">“Every mission has a team leader, called an <i class="calibre8">alpha</i>, who
+                    comes up with the plan and runs the operation,” he explained. “To prepare for that, we run alpha
+                    tests as practice.”</p>
+                <p id="calibre_link-33" class="calibre17">“Except, I haven’t had any training,” Sara replied. “I don’t
+                    know how to plan a mission.”</p>
+                <p class="calibre17">“Don’t sell yourself short,” Sydney said firmly. “You already have the intel.”</p>
+                <p class="calibre17">Sara gave her a confused look.</p>
+                <p class="calibre17">“The intelligence,” Sydney explained. “You know the inner workings of the house.
+                    All you have to do is break down the variables and devise a scheme. For example, who’s inside right
+                    now?”</p>
+                <p class="calibre17">Sara checked her watch. “It should just be the Clarks,” she said. “The kids are all
+                    either at day care or after-school programs for another forty-five minutes.”</p>
+                <p class="calibre17">“Excellent, so we only have two people to deal with,” said Mother. “Where’s the
+                    shoebox?”</p>
+                <p class="calibre17">“On the top shelf of my bedroom closet … which is on the third floor.”</p>
+                <p class="calibre17">“That’s not ideal,” said Mother.</p>
+                <p class="calibre17">“And the only way to get there is to go through the living room, where I’m sure
+                    Leonard is sitting in his recliner watching television and drinking a beer.”</p>
+                <p class="calibre17">“Also less than ideal,” he said. “But it’s still clear-cut. You just need some sort
+                    of bait that will get them out of the way.”</p>
+                <p class="calibre17">“That’s called the nugget,” said Sydney.</p>
+                <p class="calibre17">“The nugget?” Sara asked.</p>
+                <p class="calibre17">“Something to distract them,” answered Sydney. “To lure them from the living room.”
+                </p>
+                <p class="calibre17">“What do they find … <i class="calibre8">irresistible</i>?” asked Mother.</p>
+                <p class="calibre17">“Beer … pizza&nbsp; …” Sara continued thinking as she studied the house. For her it
+                    was filled with memories of sadness and disappointment. She looked up at the roof where she and
+                    Gabriel had been locked out for an entire night. And that’s when the brainstorm hit. “… and money!”
+                    she said. “They love money.”</p>
+                <p class="calibre17">“I don’t think we have enough cash for a bribe,” said Mother.</p>
+                <p class="calibre17">“That’s okay,” Sara replied. “Just the idea of money should be enough to get them.
+                    Can you pass yourself off as an FBI agent?” “I’d need a wardrobe change,” Mother said. He opened his
+                    briefcase and pulled out a black tie, which he swapped with the stylish patterned one he was
+                    wearing. Then he took out his pocket square and put on a pair of dark sunglasses.</p>
+                <p class="calibre17">“Wardrobe change complete,” he said. “What’s the plan?”</p>
+                </p>
+
             </article>
 
         </main>

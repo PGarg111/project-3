@@ -14,8 +14,33 @@
 
     <body class="reader-page dark-mode">
         <header class="reader-header">
-            <a class="back" href="test.html">← Library</a>
+            <a class="back" href="practice.html">← Library</a>
             <h1 class="book-title">City Spies</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+
+                <audio id="bg-music"
+                    src="Flying_ Relaxing Sleep Music for Meditation, Stress Relief & Relaxation by Peder B. Helland [1ZYbU82GVz4].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
 
             <div class="reader-controls">
                 <button class="control" onclick="toggleTheme()">🌓</button>
@@ -179,10 +204,13 @@
                     already worked out a deal with the prosecutor.”</p>
                 <p class="calibre17">“Two and a half years in juvie and I’m banned from using a computer.”</p>
                 <p class="calibre17">He shook his head. “I can do better than that even without a law degree.”</p>
-                <p class="calibre17">For reasons she didn’t fully understand, Sara believed him. Maybe it was wishful thinking. Maybe it was desperation. Either way, she trusted her gut and started typing.</p>
+                <p class="calibre17">For reasons she didn’t fully understand, Sara believed him. Maybe it was wishful
+                    thinking. Maybe it was desperation. Either way, she trusted her gut and started typing.</p>
                 <p class="calibre17">“Excellent,” he said. “You probably won’t regret this.”</p>
-                <p class="calibre17"><i class="calibre8">“Probably?”</i> She raised an eyebrow.“Shouldn’t you be trying to build up my confidence?”</p>
-                <p class="calibre17">“Only fools and liars speak with certainty about things beyond their control,” he replied. “But I’m optimistic, so I’d rate your chances around … eighty-seven percent.”</p>
+                <p class="calibre17"><i class="calibre8">“Probably?”</i> She raised an eyebrow.“Shouldn’t you be trying
+                    to build up my confidence?”</p>
+                <p class="calibre17">“Only fools and liars speak with certainty about things beyond their control,” he
+                    replied. “But I’m optimistic, so I’d rate your chances around … eighty-seven percent.”</p>
                 <p class="calibre17">Sara smiled and continued typing. “What kind of computer is this?”</p>
                 <p class="calibre17">“Bespoke,” he answered.</p>
                 <p class="calibre17">“I thought I knew all the computer companies, but I’ve never</p>
@@ -192,63 +220,118 @@
                 <p class="calibre17">“Someone made this for you?”</p>
                 <p id="calibre_link-10" class="calibre17">He nodded.</p>
                 <p class="calibre17">“Well, whoever ‘bespoke’ it really knew what they were doing.”</p>
-                <p class="calibre17">“Wait until you see the massive one,” he said. “You’re going to love it. That is, if we’re not both behind bars by the end of the day.”</p>
-                <p class="calibre17">Sara knew computers well, but she’d never seen one like this. It was fast and powerful, and she quickly shredded through the firewall that was supposed to protect the juvenile justice portal.</p>
-                <p class="calibre17">“They didn’t even fix the backdoor I used the other day,” she said in disbelief.</p>
+                <p class="calibre17">“Wait until you see the massive one,” he said. “You’re going to love it. That is,
+                    if we’re not both behind bars by the end of the day.”</p>
+                <p class="calibre17">Sara knew computers well, but she’d never seen one like this. It was fast and
+                    powerful, and she quickly shredded through the firewall that was supposed to protect the juvenile
+                    justice portal.</p>
+                <p class="calibre17">“They didn’t even fix the backdoor I used the other day,” she said in disbelief.
+                </p>
                 <p class="calibre17">“Large institutions move slowly,” he said. “Hopefully large attorneys do too.”</p>
-                <p class="calibre17">It took her less than two minutes to reach the database for attorney assignments. She happily deleted the entry for Randall Stubbs and asked, “What’s your name?”</p>
-                <p class="calibre17">“Excellent question,” he said as he pulled three passports out of his briefcase. “Which sounds best?”</p>
-                <p class="calibre17">He read from the first one. “Croydon St. Vincent Marlborough the Third.” He gave a sour face. “Seems a bit excessive, don’t you think?”</p>
+                <p class="calibre17">It took her less than two minutes to reach the database for attorney assignments.
+                    She happily deleted the entry for Randall Stubbs and asked, “What’s your name?”</p>
+                <p class="calibre17">“Excellent question,” he said as he pulled three passports out of his briefcase.
+                    “Which sounds best?”</p>
+                <p class="calibre17">He read from the first one. “Croydon St. Vincent Marlborough the Third.” He gave a
+                    sour face. “Seems a bit excessive, don’t you think?”</p>
                 <p class="calibre17">She nodded. “Yes.”</p>
-                <p class="calibre17">“We’ll pass on that.” He read from the next. “Nigel Honeybuns.” This one made him snicker. “Honeybuns? I quite like that.” He tucked it into a pocket in his briefcase. “I think I’ll save that one for another time.”</p>
+                <p class="calibre17">“We’ll pass on that.” He read from the next. “Nigel Honeybuns.” This one made him
+                    snicker. “Honeybuns? I quite like that.” He tucked it into a pocket in his briefcase. “I think I’ll
+                    save that one for another time.”</p>
                 <p class="calibre17">“We’re kind of in a hurry,” she reminded him.</p>
-                <p class="calibre17">“Right, right, here we go,” he said, reading from the last one.   “Gerald Anderson. That sounds like a proper barrister. Dull. Boring. Imminently forgettable. Which is exactly what we want. That’s my name, Gerald Anderson.”</p>
-                <p id="calibre_link-11" class="calibre17">He handed her the passport so she could check the spelling as she typed it into the database.</p>
+                <p class="calibre17">“Right, right, here we go,” he said, reading from the last one. “Gerald Anderson.
+                    That sounds like a proper barrister. Dull. Boring. Imminently forgettable. Which is exactly what we
+                    want. That’s my name, Gerald Anderson.”</p>
+                <p id="calibre_link-11" class="calibre17">He handed her the passport so she could check the spelling as
+                    she typed it into the database.</p>
                 <p class="calibre17">“I just click ‘update,’ ” she said as she finished, “and we’re all set.”</p>
-                <p class="calibre17">He flashed a nervous smile and paused to listen. “No alarms.” He opened the door and leaned out into the hallway. “No one rushing in to arrest us. Very nice work, Sara.”</p>
+                <p class="calibre17">He flashed a nervous smile and paused to listen. “No alarms.” He opened the door
+                    and leaned out into the hallway. “No one rushing in to arrest us. Very nice work, Sara.”</p>
                 <p class="calibre17">“Except now I have an attorney who’s never gone to law school.”</p>
-                <p class="calibre17">“I’ve watched a ton of courtroom dramas on the telly,” he said. “I can handle an appearance before a judge.”</p>
+                <p class="calibre17">“I’ve watched a ton of courtroom dramas on the telly,” he said. “I can handle an
+                    appearance before a judge.”</p>
                 <p class="calibre17">“Don’t you mean ‘<i class="calibre8">probably</i>’?” she replied.</p>
-                <p class="calibre17">He smiled at this. “Right … <i class="calibre8">probably</i>. First, though, I’ll need details about the hack.”</p>
+                <p class="calibre17">He smiled at this. “Right … <i class="calibre8">probably</i>. First, though, I’ll
+                    need details about the hack.”</p>
                 <p class="calibre17">“I’m sure they’re all in there,” she said, pointing at the file.</p>
                 <p class="calibre17">“This only tells me what you did,” he replied. “I want to know the reason.”</p>
-                <p class="calibre17">“The lawyer, you know, the one who actually went to law school, said it didn’t matter why I did it.”</p>
-                <p class="calibre17">“It may not matter to him. It might not even matter to the judge. But it matters very much to me.”</p>
-                <p class="calibre17">She thought about her answer for a moment, trying to come up with the most straightforward way to tell it. She didn’t want to get upset. She hated showing emotions in front of anyone. “My most recent foster parents …”</p>
+                <p class="calibre17">“The lawyer, you know, the one who actually went to law school, said it didn’t
+                    matter why I did it.”</p>
+                <p class="calibre17">“It may not matter to him. It might not even matter to the judge. But it matters
+                    very much to me.”</p>
+                <p class="calibre17">She thought about her answer for a moment, trying to come up with the most
+                    straightforward way to tell it. She didn’t want to get upset. She hated showing emotions in front of
+                    anyone. “My most recent foster parents …”</p>
                 <p class="calibre17">“Leonard and Deborah Clark?”</p>
-                <p class="calibre17">“Yeah, them,” she said with a sneer. “They like to take in more kids than they have room for because the state pays them by the kid. More kids mean more money, whether they spend it on us or not. No one really checks that. We were crammed into bedrooms that were too small. Rather than give everyone a meal, they put food in the middle of the table, so it looked like there was more than there was. They called it ‘family style,’ which is a joke because they treated us like anything but a family</p>
-                <p class="calibre17">“A new kid named Gabriel came about a month ago. He was scared. Sad. Lonely. Everything you’d expect from a five-year-old. He liked me because we were the only Hispanic kids in the house.”</p>
+                <p class="calibre17">“Yeah, them,” she said with a sneer. “They like to take in more kids than they have
+                    room for because the state pays them by the kid. More kids mean more money, whether they spend it on
+                    us or not. No one really checks that. We were crammed into bedrooms that were too small. Rather than
+                    give everyone a meal, they put food in the middle of the table, so it looked like there was more
+                    than there was. They called it ‘family style,’ which is a joke because they treated us like anything
+                    but a family</p>
+                <p class="calibre17">“A new kid named Gabriel came about a month ago. He was scared. Sad. Lonely.
+                    Everything you’d expect from a five-year-old. He liked me because we were the only Hispanic kids in
+                    the house.”</p>
                 <p class="calibre17">“You spoke Spanish to him?”</p>
-                <p class="calibre17">“Sometimes,” she said. “Until they made us stop. Mr. Clark told me, ‘You’re in America now, so speaking English is something you’re going to have to get used to.’ ”</p>
+                <p class="calibre17">“Sometimes,” she said. “Until they made us stop. Mr. Clark told me, ‘You’re in
+                    America now, so speaking English is something you’re going to have to get used to.’ ”</p>
                 <p class="calibre17">The lawyer shook his head. “And what did you say to that?”</p>
-                <p class="calibre17">“I pointed out that Puerto Rico was already part of America, that I’d spent almost my entire life in Brooklyn, and that if <i>he</i></p> really wanted to speak English well, he shouldn’t end sentences with prepositions.”</p>
+                <p class="calibre17">“I pointed out that Puerto Rico was already part of America, that I’d spent almost
+                    my entire life in Brooklyn, and that if <i>he</i></p> really wanted to speak English well, he
+                shouldn’t end sentences with prepositions.”</p>
                 <p class="calibre17">The man laughed. “Cheeky.”</p>
-                <p class="calibre17">“I’m not exactly sure what ‘cheeky’ means, but his cheeks turned red, so I guess so,” she replied.</p>
+                <p class="calibre17">“I’m not exactly sure what ‘cheeky’ means, but his cheeks turned red, so I guess
+                    so,” she replied.</p>
                 <p class="calibre17">“Did you get in trouble?” he asked.</p>
-                <p class="calibre17">She nodded, the humor of the moment gone. “I could handle his punishment, though. It was Gabriel who couldn’t.”</p>
+                <p class="calibre17">She nodded, the humor of the moment gone. “I could handle his punishment, though.
+                    It was Gabriel who couldn’t.”</p>
                 <p class="calibre17">“Why was Gabriel punished?”</p>
-                <p class="calibre17">She paused and saw him studying her expression. He wanted to watch her eyes as she spoke.</p>
-                <p class="calibre17">“One night he wet his bed,” she answered, “and to punish him, they locked him in the hall closet. I could hear him crying. They didn’t care. They would’ve let him cry all night. So, I got up and let him out.”</p>
+                <p class="calibre17">She paused and saw him studying her expression. He wanted to watch her eyes as she
+                    spoke.</p>
+                <p class="calibre17">“One night he wet his bed,” she answered, “and to punish him, they locked him in
+                    the hall closet. I could hear him crying. They didn’t care. They would’ve let him cry all night. So,
+                    I got up and let him out.”</p>
                 <p class="calibre17">“And then what happened?” he asked.</p>
                 <p class="calibre17">“Then they locked me in the closet with him. Told me I had to</p>
-                <p class="calibre1">learn my place. So, I picked the lock from the inside and let us both out.” She was on the verge of tears, so she stopped for a moment.</p>
+                <p class="calibre1">learn my place. So, I picked the lock from the inside and let us both out.” She was
+                    on the verge of tears, so she stopped for a moment.</p>
                 <p class="calibre17">“And then?” he prodded.</p>
-                <p class="calibre17">“They locked us outside on the roof. They le us there all night. It was cold. It was terrifying. The next morning, I went to school, got a pass to the computer lab, and started working. First I hacked the juvenile justice database to see how many kids had been sent to the Clarks. Then I hacked their bank accounts to show how much money they were taking in and where they were actually spending it.”</p>
-                <p class="calibre17">“You’re not being charged with hacking the bank,” he said, flipping through some pages.</p>
-                <p class="calibre17">She grinned. “Yeah, they dropped their complaint. I’m pretty sure they don’t want the world to find out that a twelve-year-old girl beat their security system.”</p>
-                <p class="calibre17">“Nice,” he said. “I might be able to use that later. What’d you do with this information once you’d gotten it?”</p>
-                <p class="calibre17">“I sent everything to my social worker,” she said. “And you know how stupid I am? When I saw the police coming up to the house, I thought they were going to arrest the two of them. For about forty-five seconds I was happy.”</p>
+                <p class="calibre17">“They locked us outside on the roof. They le us there all night. It was cold. It
+                    was terrifying. The next morning, I went to school, got a pass to the computer lab, and started
+                    working. First I hacked the juvenile justice database to see how many kids had been sent to the
+                    Clarks. Then I hacked their bank accounts to show how much money they were taking in and where they
+                    were actually spending it.”</p>
+                <p class="calibre17">“You’re not being charged with hacking the bank,” he said, flipping through some
+                    pages.</p>
+                <p class="calibre17">She grinned. “Yeah, they dropped their complaint. I’m pretty sure they don’t want
+                    the world to find out that a twelve-year-old girl beat their security system.”</p>
+                <p class="calibre17">“Nice,” he said. “I might be able to use that later. What’d you do with this
+                    information once you’d gotten it?”</p>
+                <p class="calibre17">“I sent everything to my social worker,” she said. “And you know how stupid I am?
+                    When I saw the police coming up to the house, I thought they were going to arrest the two of them.
+                    For about forty-five seconds I was happy.”</p>
                 <p class="calibre17">“But they arrested you instead?”</p>
                 <p class="calibre17">She nodded.</p>
-                <p class="calibre17">“The Clarks even had the other kids line up on the porch so they would see me being led out of the house in handcuffs.” She closed her eyes tight, determined not to let a single tear fall. “They said, ‘This is what happens to criminals.’ ”</p>
-                <p class="calibre17">He’d actually heard the story the night before, through a listening device. But he liked hearing stories twice. He wanted to see if they changed. That was always a good indicator of how truthful they were. Besides, seeing her face as she recalled it told him everything he needed to know.</p>
-                <p class="calibre17">“That’s a good reason,” he said. “I can work with that. I can make this a lot better.”</p>
+                <p class="calibre17">“The Clarks even had the other kids line up on the porch so they would see me being
+                    led out of the house in handcuffs.” She closed her eyes tight, determined not to let a single tear
+                    fall. “They said, ‘This is what happens to criminals.’ ”</p>
+                <p class="calibre17">He’d actually heard the story the night before, through a listening device. But he
+                    liked hearing stories twice. He wanted to see if they changed. That was always a good indicator of
+                    how truthful they were. Besides, seeing her face as she recalled it told him everything he needed to
+                    know.</p>
+                <p class="calibre17">“That’s a good reason,” he said. “I can work with that. I can make this a lot
+                    better.”</p>
                 <p class="calibre17">“Don’t you mean ‘<i class="calibre8">probably</i>’?” she asked.</p>
-                <p class="calibre17">He smiled warmly. “No, I’m certain I can. But I’ll need you to do something difficult. Something the reports in this file say you’re completely incapable of.”</p>
+                <p class="calibre17">He smiled warmly. “No, I’m certain I can. But I’ll need you to do something
+                    difficult. Something the reports in this file say you’re completely incapable of.”</p>
                 <p class="calibre17">“What’s that?” she asked.</p>
-                <p class="calibre17">“I need you to trust me,” he said. “No matter what I say or do, I need you to trust me.”</p>
+                <p class="calibre17">“I need you to trust me,” he said. “No matter what I say or do, I need you to trust
+                    me.”</p>
                 <p class="calibre17">“How can I trust you?” she asked. “I don’t even know your name.”</p>
-                <p class="calibre17">“Sure you do. It’s Nigel Honeybuns. It’s Gerald Anderson. Sometimes it’s even Croydon St. Vincent Marlborough the Third. It all depends on the situation,” he said with a shrug. “But my friends and colleagues, and I do hope that’s a group you’ll soon consider yourself to be a part of, they all call me Mother.”</p>
+                <p class="calibre17">“Sure you do. It’s Nigel Honeybuns. It’s Gerald Anderson. Sometimes it’s even
+                    Croydon St. Vincent Marlborough the Third. It all depends on the situation,” he said with a shrug.
+                    “But my friends and colleagues, and I do hope that’s a group you’ll soon consider yourself to be a
+                    part of, they all call me Mother.”</p>
                 <p class="calibre17">For the first time since she’d been arrested, Sara laughed.</p>
                 <p class="calibre17">“Mother? That’s an unusual name for a man.”</p>
                 <p class="calibre17">“True,” he said, smiling at her. “But I’m an unusual man, wouldn’t you say?”</p>
