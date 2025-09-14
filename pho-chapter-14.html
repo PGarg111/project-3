@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Pho Love Story</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="romance.html">← Library</a>
+            <h1 class="book-title">A Pho Love Story</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+                <audio id="bg-music"
+                    src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <a href="pho-love.html">Chapter 1</a>
+            <a href="pho-chapter-2.html">Chapter 2</a>
+            <a href="pho-chapter-3.html">Chapter 3</a>
+            <a href="pho-chapter-4.html">Chapter 4</a>
+            <a href="pho-chapter-5.html">Chapter 5</a>
+            <a href="pho-chapter-6.html">Chapter 6</a>
+            <a href="pho-chapter-7.html">Chapter 7</a>
+            <a href="pho-chapter-8.html">Chapter 8</a>
+            <a href="pho-chapter-9.html">Chapter 9</a>
+            <a href="pho-chapter-10.html">Chapter 10</a>
+            <a href="pho-chapter-11.html">Chapter 11</a>
+            <a href="pho-chapter-12.html">Chapter 12</a>
+            <a href="pho-chapter-13.html">Chapter 13</a>
+            <a href="pho-chapter-14.html"><strong>Chpter 14</strong></a>
+            <a href="pho-chapter-15.html">Chapter 15</a>
+            <a href="pho-chapter-16.html">Chapter 16</a>
+            <a href="pho-chapter-17.html">Chapter 17</a>
+            <a href="pho-chapter-18.html">Chapter 18</a>
+            <a href="pho-chapter-19.html">Chapter 19</a>
+            <a href="pho-chapter-20.html">Chapter 20</a>
+            <a href="pho-chapter-21.html">Chapter 21</a>
+            <a href="pho-chapter-22.html">Chapter 22</a>
+            <a href="pho-chapter-23.html">Chapter 23</a>
+            <a href="pho-chapter-24.html">Chapter 24</a>
+            <a href="pho-chapter-25.html">Chapter 25</a>
+            <a href="pho-chapter-26.html">Chapter 26</a>
+            <a href="pho-chapter-27.html">Chapter 27</a>
+            <a href="pho-chapter-28.html">Chapter 28</a>
+            <a href="pho-chapter-29.html">Chapter 29</a>
+            <a href="pho-chapter-30.html">Chapter 30</a>
+            <a href="pho-chapter-31.html">Chapter 31</a>
+            <a href="pho-chapter-32.html">Chapter 32</a>
+            <a href="pho-chapter-33.html">Chapter 33</a>
+            <a href="pho-chapter-34.html">Chapter 34</a>
+            <a href="pho-chapter-35.html">Chapter 35</a>
+            <a href="pho-chapter-36.html">Chapter 36</a>
+            <a href="pho-chapter-37.html">Chapter 37</a>
+            <a href="pho-chapter-38.html">Chapter 38</a>
+            <a href="pho-chapter-39.html">Chapter 39</a>
+            <a href="pho-chapter-40.html">Chapter 40</a>
+            <a href="pho-chapter-41.html">Chapter 41</a>
+            <a href="pho-chapter-42.html">Chapter 42</a>
+            <a href="pho-chapter-43.html">Chapter 43</a>
+            <a href="pho-chapter-44.html">Chapter 44</a>
+            <a href="pho-chapter-45.html">Chapter 45</a>
+            <a href="pho-chapter-46.html">Chapter 46</a>
+            <a href="pho-chapter-47.html">Chapter 47</a>
+            <a href="pho-chapter-48.html">Chapter 48</a>
+            <a href="pho-chapter-49.html">Chapter 49</a>
+            <a href="pho-chapter-50.html">Chapter 50</a>
+        </nav>
+
+        <main class="book">
+            <article id="ch14" class="chapter">
+                <h3>Chapter 14</h3>
+                <h2>Linh</h2>
+                <p>
+                <p class="calibre1">Once outside, the silence is comforting and warm, like a good bowl of wonton soup on
+                    a rainy day. I feel Bảo’s heat beside me, my hand a whisper away from his. During the summer, with
+                    tourists flooding in, this part of the neighborhood gets packed with squatting old Vietnamese women,
+                    dressed in countryside out ts. It’s not as heavy as Bolsa Avenue tra c, especially when the night
+                    market’s up, but it’s still a tourist trap. You’re likely to get bullied into buying jackfruit in
+                    Styrofoam trays, rambutan or longan, or&mdash;if the woman’s a <i class="calibre5">really good</i>
+                    seller&mdash;durian. Sometimes I wonder if they ever sell all of their items, and when that doesn’t
+                    happen, where they go.</p>
+                <p class="calibre12">The sight of Bảo passing under a lamplight stops me. It’s as if he’s just stepped
+                    into a Caravaggio painting. The light throws o shadows, darkening half of his body. The lines of his
+                    face seem sharper.</p>
+                <p class="calibre12">“What?” Bảo brushes his hand through his hair. “Do I have something on my face?”
+                </p>
+                <p class="calibre12">“Nothing. The lighting. It was just perfect for a second.”</p>
+                <p class="calibre12">“You notice things like that?”</p>
+                <p class="calibre12">I shrug, embarrassed that I was caught staring this time.</p>
+                <p class="calibre12">Bảo hops on a nearby cinder block wall, walking down the length before jumping
+                    down, back at my side again. “Remember that bowl of phở? How bad it was? It’s probably from&mdash;”
+                </p>
+                <p class="calibre12">“Phở Bác Hồ. My parents hated that place.”</p>
+                <p class="calibre12">“Same.” At least our parents seem to agree on one thing&mdash;a universal distaste
+                    for anything that refers to Hồ Chí Minh in name. Reminds them too much of the war. The owners made
+                    some poor excuse when they opened&mdash;saying they were referring to an elderly relative. But you
+                    have to be so ignorant to open something like that here. It closed not long after me and Bảo met.
+                </p>
+                <p id="calibre_link-86" class="calibre12">“But I never got to see you draw Spider-Man, did I?”</p>
+                <p class="calibre12">“Because of our parents.”</p>
+                <p class="calibre12">Something passes in his eyes that makes me shiver. “Did you ever think about what
+                    it would have been like if our restaurants weren’t competing against each other?”</p>
+                <p class="calibre12">It’s a loaded question to wrap up our time together, but I answer as honestly as I
+                    can.</p>
+                <p class="calibre12">“I think I thought about the idea of you, if that makes sense. But this is different. I finally get a chance to know you&mdash;and you seem nice.”</p>
+                <p class="calibre12">“Don’t worry, the nice-guy act disappears once we meet for the fourth time.”</p>
+                <p class="calibre12">“Great. I was really sensing asshole vibes back there.”</p>
+                <p class="calibre12">It feels like an hour before we finally get to Ward Street, where our paths diverge.
+                    This is what I’ll remember: his bashful wave and the shadows swallowing him up as he heads home.</p>
+                <p class="calibre12">When I’m inside the house, only Ba is up. Back problems, most likely. I can smell
+                    the Bengay emanating from him again. He sits in the dark living room, TV on, but with the cable o .
+                    The static from the screen lights up his sleeping face, a hypnotizing pattern.</p>
+                <p class="calibre12">“Oh, <i class="calibre5">con về rồi</i>?” he asks groggily, stating the obvious.
+                    “How was studying?”</p>
+                <p class="calibre12">“<i class="calibre5">Dạ</i>. It went well.” The lie leaves me a bit too easily,
+                    though I feel the weight of it in my stomach. But it has to be done. I take o my shoes, then make my
+                    way to my bedroom. “The test will be easy. Now go to sleep.”</p>
+                <p class="calibre12">“Ah.” I’ll give him two more hours before he drags himself to bed and wakes up
+                    early to start his routine again.</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">My mom’s knock wakes me up the next morning. My mouth’s parched, and the light
+                    almost hurts my eyes. I remember that I didn’t drink any water after drinking boba. Is it possible
+                    to be hungover from too much boba?</p>
+                <p id="calibre_link-87" class="calibre12">I hear Mẹ lightly pad across my room. Her shampoo&mdash;Head
+                    &amp; Shoulders, which she shares with Ba&mdash;tickles my nose. The bed sags just a bit when she
+                    sits by me, patting my side. This was how she’d wake me and Evie up before heading o to a long day
+                    at the restaurant.</p>
+                <p class="calibre12">“<i class="calibre5">Con, dậy đi. Chín giờ rồi</i>,” she whispers, her voice as
+                    smooth as the glide of a brushstroke across a well-primed canvas.</p>
+                <p class="calibre12">I twist my head to the right and check the actual time: eight o’clock, instead of
+                    an hour later like she just said.</p>
+                <p class="calibre12">“Five more minutes.”</p>
+                <p class="calibre12">“Mẹ just made <i class="calibre5">bánh patê sô</i>. Just hot out of the oven. It’s
+                    only good when it’s eaten hot.”</p>
+                <p class="calibre12">I breathe in hints of her promise. Buttery pu pastry. Tender, flavorful chicken at
+                    the center. And then my ultimate favorite: earthy Vietnamese co ee just waiting to be paired o with
+                    sweetened condensed milk.</p>
+                <p class="calibre12"><i class="calibre5">Okay, I’m up.</i></p>
+                <p class="calibre12">Mẹ knows she has me. I hear a smile in her voice. “See you soon.”</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">Once in the kitchen, I see that it’s not just pastry or co ee that she’s made. She
+                    must be experimenting with recipes. Several pots are cooking on the stove, and on the outside patio,
+                    there are two larger pots, which tells me whatever she’s cooking there might stink up the house.
+                    Various herbs are soaking in tubs of water. At last ve bottles and jars of <i class="calibre5">gia
+                        vị</i> are opened on the kitchen table. Ever-methodical in the restaurant kitchen, she’s the
+                    complete opposite in our own kitchen.</p>
+                <p class="calibre12">Still, I love mornings like this.</p>
+                <p class="calibre12">The pastry is waiting just for me. I sink my teeth into it, fakes falling into my
+                    lap. Mẹ has me taste the co ee and milk level, then pours ice over it. As Mẹ busies herself around
+                    the kitchen, I FaceTime Evie, who complains that while other parents have sent their kids care
+                    packages, Mẹ and Ba haven’t.</p>
+                <p class="calibre12">“Care package, what is that?” Mẹ asks&mdash;or shouts, as the blender breaks down
+                    some spices. Evie quickly explains the concept, to which Mẹ says that Vietnamese food, the good
+                    kind, can’t ever be mailed.</p>
+                <p id="calibre_link-88" class="calibre12">Meanwhile my hands are getting tired holding the phone so they
+                    can see each other.</p>
+                <p class="calibre12">“What about <i class="calibre5">bánh tai heo</i>? I’m craving it.” My sister loves
+                    eating pig ears. Not real pig ears, but sugary biscuits that are shaped like them.</p>
+                <p class="calibre12">“Okay, if you want, I will make them.”</p>
+                <p class="calibre12">“Don’t do it if you’re too busy.” She points out that Mẹ shouldn’t be cooking on
+                    her day o . “Weekends are for fun. For people to do a hobby or something.”</p>
+                <p class="calibre12">“Yeah, like gardening,” I say.</p>
+                <p class="calibre12">“No way. Every time Mẹ tries to grow something, she kills it.”</p>
+                <p class="calibre12">“Something is wrong with our soil,” Mẹ protests lightly as she grabs something from
+                    the drawer.</p>
+                <p class="calibre12">Evie and I exchange knowing looks. Makes me feel like she’s not hours away. In our
+                    small backyard, there’s a graveyard of plants Mẹ tried to grow: tomatoes, cucumbers, peppers. The
+                    only thing that has survived are herbs, though it’s only a small selection.</p>
+                <p class="calibre12">“Sure, Mẹ. Sure.”</p>
+                <p class="calibre12">Evie says she’s going on a run next and would text later. Once she’s gone, Mẹ asks
+                    me worriedly, “Does she sound happy? Does she look thinner to you? Maybe she doesn’t have enough to
+                    eat.”</p>
+                <p class="calibre12">When we moved Evie into the dorms, we had more food than anything else for her.
+                    Luckily her roommate is Filipino, so she and her parents merely congratulated my parents on their
+                    preparedness. Then Ba told them to stop by our restaurant if they were ever in the area. That was
+                    when Evie decided it was time to say goodbye.</p>
+                <p class="calibre12">“Mẹ, she’s ne. She seems really happy. Don’t worry.”</p>
+                <p class="calibre12"><i class="calibre5">“Mà Mẹ là Mẹ. Mẹ phải lo.”</i></p>
+                <p class="calibre12">I get up from the table, finished with breakfast. I hug my mom from behind. “Yeah,
+                    but Evie’s got this. She can take care of herself. You know how she is.” At that, Mẹ only sighs
+                    deeply, and my body mimics the movement.</p>
+                <p class="calibre12">“Do you miss her?” she asks me.</p>
+                <p class="calibre12">“Sometimes.” And that’s the truth of it. I thought it’d be much weirder to go home
+                    to a half-empty bedroom. But over the past few weeks, I’ve gotten used to it. I think of my aunt and
+                    the packages she sends Mẹ. I look at her longingly staring out the window over the sink, the light
+                    showing that Mẹ seems to have a few more gray hairs than I remember. “Do you miss Dì Vàng?”</p>
+                <p id="calibre_link-89" class="calibre12">“Sometimes,” she says quietly. She doesn’t elaborate, and I’m
+                    wondering if she’s going into one of her moods.</p>
+                <p class="calibre12">I let go and ask if I can help with anything.</p>
+                <p class="calibre12">“No, there’s too much to do. I should do it myself. Why don’t you do your homework
+                    and if you have finished, go to your <i class="calibre5">hobby</i>,” Mẹ says, trying to mimic the way
+                    Evie says it, but she ends up sounding nasally.</p>
+                <p class="calibre12">I bite my tongue, feeling like that’s how my parents will always see painting for
+                    me.</p>
+                <p class="calibre12">It’s just a suggestion, she probably thinks nothing of it, but the easy dismissal
+                    of my hobby makes the taste of <i class="calibre5">patê sô</i> linger uncomfortably on my tongue.
+                </p>
+                <p class="calibre12">“You really should nd something else to do, Mẹ. You work too much.”</p>
+                <p class="calibre12">“And work is good. Work makes money.” As she opens the blender to peer at its
+                    contents, she says, “I haven’t had a hobby since I was a teenager. Your age.”</p>
+                <p class="calibre12">“What did you like to do?”</p>
+                <p class="calibre12">A wistful look passes through her eyes. “Travel. When I wasn’t at school or helping
+                    out around the house, I’d go around Nha Trang to places I’d never been. I would travel to Saigon and
+                    Đà Lạt. Oh, Đà Lạt was so beautiful! So romantic!” She laughs. “And when we escaped, my rst wish was
+                    that we’d land somewhere in Europe.”</p>
+                <p class="calibre12">“Have you traveled since?”</p>
+                <p class="calibre12">“No, no. Where was the money? <i class="calibre5">Đời sống đã rất là khó.</i> I had
+                    to work in factories, the nail salon, wherever I could get work. School wasn’t a priority since we
+                    needed money. Traveling was a foolish idea. An impossible idea.” She shakes her head.</p>
+                <p class="calibre12">“That is why I’m happy to see Evie nd her way. She will live a life that’s not <i
+                        class="calibre5">khó</i>. Unlike I had. Unlike your aunt.” Her tone shifts to one of
+                    disapproval. “And soon enough you will have a good life too.”</p>
+                <p class="calibre12"><i class="calibre5">A good life.</i> A good life only comes if you have
+                    security&mdash;that’s what my mom’s basically saying. Anything beyond that is just a pipe dream.</p>
+                </p>
+            </article>
+
+        </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <footer class="reader-footer">
+            <div class="footer-left">
+                <a href="pho-chapter-13.html">Previous Chapter</a>
+            </div>
+            <div class="footer-center">
+                <small>End of book — <a href="index.html">Back to library</a></small>
+            </div>
+            <div class="footer-right">
+                <a href="pho-chapter-15.html">Next Chapter</a>
+            </div>
+        </footer>
+
+    </body>
+</body>
+
+</html>

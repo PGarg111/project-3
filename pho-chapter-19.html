@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Pho Love Story</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="romance.html">← Library</a>
+            <h1 class="book-title">A Pho Love Story</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+                <audio id="bg-music"
+                    src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <a href="pho-love.html">Chapter 1</a>
+            <a href="pho-chapter-2.html">Chapter 2</a>
+            <a href="pho-chapter-3.html">Chapter 3</a>
+            <a href="pho-chapter-4.html">Chapter 4</a>
+            <a href="pho-chapter-5.html">Chapter 5</a>
+            <a href="pho-chapter-6.html">Chapter 6</a>
+            <a href="pho-chapter-7.html">Chapter 7</a>
+            <a href="pho-chapter-8.html">Chapter 8</a>
+            <a href="pho-chapter-9.html">Chapter 9</a>
+            <a href="pho-chapter-10.html">Chapter 10</a>
+            <a href="pho-chapter-11.html">Chapter 11</a>
+            <a href="pho-chapter-12.html">Chapter 12</a>
+            <a href="pho-chapter-13.html">Chapter 13</a>
+            <a href="pho-chapter-14.html">Chapter 14</a>
+            <a href="pho-chapter-15.html">Chapter 15</a>
+            <a href="pho-chapter-16.html">Chapter 16</a>
+            <a href="pho-chapter-17.html">Chapter 17</a>
+            <a href="pho-chapter-18.html">Chapter 18</a>
+            <a href="pho-chapter-19.html"><strong>Chapter 19</strong></a>
+            <a href="pho-chapter-20.html">Chapter 20</a>
+            <a href="pho-chapter-21.html">Chapter 21</a>
+            <a href="pho-chapter-22.html">Chapter 22</a>
+            <a href="pho-chapter-23.html">Chapter 23</a>
+            <a href="pho-chapter-24.html">Chapter 24</a>
+            <a href="pho-chapter-25.html">Chapter 25</a>
+            <a href="pho-chapter-26.html">Chapter 26</a>
+            <a href="pho-chapter-27.html">Chapter 27</a>
+            <a href="pho-chapter-28.html">Chapter 28</a>
+            <a href="pho-chapter-29.html">Chapter 29</a>
+            <a href="pho-chapter-30.html">Chapter 30</a>
+            <a href="pho-chapter-31.html">Chapter 31</a>
+            <a href="pho-chapter-32.html">Chapter 32</a>
+            <a href="pho-chapter-33.html">Chapter 33</a>
+            <a href="pho-chapter-34.html">Chapter 34</a>
+            <a href="pho-chapter-35.html">Chapter 35</a>
+            <a href="pho-chapter-36.html">Chapter 36</a>
+            <a href="pho-chapter-37.html">Chapter 37</a>
+            <a href="pho-chapter-38.html">Chapter 38</a>
+            <a href="pho-chapter-39.html">Chapter 39</a>
+            <a href="pho-chapter-40.html">Chapter 40</a>
+            <a href="pho-chapter-41.html">Chapter 41</a>
+            <a href="pho-chapter-42.html">Chapter 42</a>
+            <a href="pho-chapter-43.html">Chapter 43</a>
+            <a href="pho-chapter-44.html">Chapter 44</a>
+            <a href="pho-chapter-45.html">Chapter 45</a>
+            <a href="pho-chapter-46.html">Chapter 46</a>
+            <a href="pho-chapter-47.html">Chapter 47</a>
+            <a href="pho-chapter-48.html">Chapter 48</a>
+            <a href="pho-chapter-49.html">Chapter 49</a>
+            <a href="pho-chapter-50.html">Chapter 50</a>
+        </nav>
+
+        <main class="book">
+            <article id="ch6" class="chapter">
+                <h3>Chapter 19</h3>
+                <h2>Bao</h2>
+                <p>
+                <p class="calibre1">Slowly, I’m getting used to being on the newspaper, being a part of a team. After
+                    the success of my rst review, Ali’s not so on top of me anymore. In her eyes, I’ve stepped up; she’s
+                    still delegating proofreading tasks to me, but she’s giving me multiple articles&mdash;more than
+                    anyone else on the editing team.</p>
+                <p class="calibre12">My classmates are coming by to talk about their edits, having revised what they
+                    wrote and asking me to look them over. One side of me wonders if they ask me because Ali can be a
+                    little intense&mdash;“passionate” was Linh’s word&mdash;but I like to think that they truly want my
+                    help. Even if my classmates are using me to avoid Ali, it feels good to be approached like this. To
+                    have them trust me with their work.</p>
+                <p class="calibre12">Each writer looks at language so differently. Ali focuses on the message in
+                    writing&mdash;is the point getting across? Where can the writer be clearer in their intention? Me, I
+                    like the writer’s style. One person can say something that’s been said before but in a way that’s
+                    completely different; their unique experiences and personality infuse their words, their sentences.
+                </p>
+                <p class="calibre12">I’m working with Ernie’s article summarizing the National Honor Society’s induction
+                    of new members. Ernie shrinks under attention in person, so whether he knows it or not, he uses a
+                    lot of passive voice in his writing. Things are done to the subject; the subject isn’t taking
+                    action. The budget cut to the arts was cut <i class="calibre5">by</i> the budget committee&mdash;not
+                    the budget committee cut the budget for the arts program. Compared to Ali’s writing, which gets
+                    straight to the point, Ernie lacks confidence.</p>
+                <p class="calibre12">“I couldn’t get into astronomy; that’s the only reason why I’m here,” he says
+                    glumly, reading my edits.</p>
+                <p id="calibre_link-126" class="calibre12">“I didn’t want to take this class either,” I say, trying to
+                    cheer him up.</p>
+                <p class="calibre12">“Yeah, but you’re good at it. And Ali doesn’t go after you.” As if she were right
+                    behind us, Ernie glances over his shoulder.</p>
+                <p class="calibre12">Ali’s sandwiched between two designers huddling around her. They’re going over
+                    proofs for the next issue. I might not understand their process, though I don’t have to. It’s hers,
+                    it’s theirs, something only they can understand.</p>
+                <p class="calibre12">Ernie’s eyebrows scrunch together like he’s reading a di erent language. I know
+                    where he’s coming from.</p>
+                <p class="calibre12">“Journalism might not be for everyone, but you’re not bad at all. Maybe you just
+                    need to nd something you like writing about,” I finally say, channeling Linh. “What are you interested
+                    in?”</p>
+                <p class="calibre12">“I dunno. I like skateboarding. Reading comics.”</p>
+                <p class="calibre12">“Anything else?”</p>
+                <p class="calibre12">“I guess I watch a lot of Netflix. TV stuff.”</p>
+                <p class="calibre12">I remember Ali trying to recruit Việt as a writer. This might be perfect. “Would
+                    you want to write about a show? You can ask Ali if you can do it. She’s looking for a reviewer.”</p>
+                <p class="calibre12">“Really?” he asks hesitantly. “Do you think she’ll let me?”</p>
+                <p class="calibre12">Looks like I’m not the only person who’s intimidated by her. I laugh. “I’ll talk to
+                    her.”</p>
+                <p class="calibre12">Later, as the dismissal bell rings and students y out of the classroom, I stop by
+                    Ali as she’s scrolling through her phone, answering texts. “Oh, hey, Bảo. Did you work through
+                    Ernie’s article? Thought it needed to be tightened but otherwise it’s good to print.”</p>
+                <p class="calibre12">“Yeah, everything worked out. I heard Ernie’s into TV shows. Watches a lot of Net
+                    ix. Maybe he should try the entertainment section.”</p>
+                <p class="calibre12">“Really? He never told me that.”</p>
+                <p class="calibre12">“He didn’t know we had an open spot.”</p>
+                <p class="calibre12">Ali nods, calculating something in her head. “Sure. Why not?” The alarm clock on
+                    her phone goes o . “Shit, I’m gonna be late.”</p>
+                <p class="calibre12">“Where are you going?”</p>
+                <p class="calibre12">“Part-time gig at a local newspaper.”</p>
+                <p class="calibre12">“You work at a school newspaper <i class="calibre5">and</i> a real newspaper too?”
+                </p>
+                <p id="calibre_link-127" class="calibre12">“Of course, what else would I do with my time?” she says
+                    simply. I pretend not to look so shocked but, rst she doesn’t use study hall in favor of heading the
+                    newspaper here. And now I learned that she also works part-time. She must really love the newspaper.
+                </p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">Imagine my surprise when one of Việt’s friends sits down in front of me at lunch.
+                    It’s miserable and raining outside so most people are in the cafeteria. Việt hasn’t even sat yet,
+                    but Steve, the banana-eating captain, takes a seat across from me. He’s grown out his brown hair,
+                    tied it into a little ponytail&mdash;to be ironic? In all our time together, we haven’t really held
+                    a conversation.</p>
+                <p class="calibre12">“Hey, you busy?”</p>
+                <p class="calibre12">“Uh, no.”</p>
+                <p class="calibre12">“I wanted to see if you can do something for me.”</p>
+                <p class="calibre12">“You’re asking <i class="calibre5">me</i>?”</p>
+                <p class="calibre12">“Yeah, Việt said you’re on the newspaper or something. Said you edit shit.”</p>
+                <p class="calibre12">“Uh, yeah, I edit shit.”</p>
+                <p class="calibre12">He digs into his backpack that almost looks Army-issued. Removes his brown-bag
+                    lunch. Used tissues. A paperback and dog-eared Carnegie’s <i class="calibre5">How to Win Friends and
+                        Influence People.</i></p>
+                <p class="calibre12">My eyebrows go up.</p>
+                <p class="calibre12">Steve clears his throat. “My mom wanted me to read it,” he mumbles.</p>
+                <p class="calibre12">Fascinating. “Right. Uh, you needed my help on what, exactly?”</p>
+                <p class="calibre12">Finally, he yanks out a crumpled, lined piece of paper with his chicken scratch all
+                    over it. He smooths it out against the table’s edge, like you would with dollar bills at a vending
+                    machine. “I’m working on my personal statement for some college applications, and I have an essay,
+                    but I can’t really make the rst paragraph stick. My sisters read it and liked the essay in general,
+                    but they say the introduction makes me sound like a fth grader.”</p>
+                <p class="calibre12">“Ouch.”</p>
+                <p class="calibre12">“I know.” He grimaces. “But I think they’re right. I know we always have to open
+                    something with a strong statement, but I can’t come up with anything. Can you help?”</p>
+                <p id="calibre_link-128" class="calibre12">If Ali were in my seat, she’d have a few more words to say to
+                    Steve, probably things worse than his own sisters. But me, I try to be more sympathetic.</p>
+                <p class="calibre12">I feel for my red pen in my backpack and blow out some air. “Okay, what are you
+                    trying to say here, exactly?”</p>
+                <p class="calibre12">His essay is about his love of running. How it’s not just a physical thing, but a
+                    mental thing for him. When he’s stressed out or upset about something, he puts on his shoes and just
+                    runs, no destination in mind. As I switch between listening to him talk and reading his words, I’m
+                    starting to understand what his sisters said about the introduction. It doesn’t even sound like him.
+                    It sounds mechanical, forced.</p>
+                <p class="calibre12">“Start with a feeling,” I tell Steve finally, circling his paragraph. “I like what
+                    you said about letting your mind take you on a trip and how you like being surprised by where the
+                    run’s taking you.” Kind of like how Linh talks about painting. “So why not open with that?”</p>
+                <p class="calibre12">“Yeah, but shouldn’t I write some sort of thesis statement, too?”</p>
+                <p class="calibre12">“In a way, yeah. But to call it a thesis statement makes it sound like a school
+                    paper. You’re writing a personal statement, a personal essay, about something personal to you:
+                    running.”</p>
+                <p class="calibre12">Steve nods, looking down at his pages.</p>
+                <p class="calibre12">I add, “So be honest and open with that. Make the readers feel what you feel when
+                    you run.”</p>
+                <p class="calibre12">Steve doesn’t say anything immediately. I re-cap my pen just so that I can have
+                    something to do. Maybe I’m not even helping. Maybe I’ve made him more confused.</p>
+                <p class="calibre12">Việt finally arrives, saying something about waiting for more Sloppy Joes. By then,
+                    Steve’s nodding to himself, reading my edits. When he looks up, he’s a bit more reenergized.
+                    “Thanks, man.” He st-bumps me before sneaking away to the library to type up his new introduction.
+                </p>
+                <p class="calibre12">“So, did you help him?” Việt asks through a mouthful of ground beef.</p>
+                <p class="calibre12">“I think so. Why’d you tell him I was good at editing?”</p>
+                <p class="calibre12">He shrugs. “Because you are.”</p>
+                <p class="calibre12">“How would you know?”</p>
+                <p id="calibre_link-129" class="calibre12">“Ali.”</p>
+                <p class="calibre12">“You’ve been talking to Ali?”</p>
+                <p class="calibre12">“Yeah, she’s cool. She keeps trying to recruit me for the entertainment section,
+                    and I keep telling her no.”</p>
+                <p class="calibre12">Việt: My best friend with nerves of steel.</p>
+                <p class="calibre12">“Well, I think we might have someone for that section now and I just told her.
+                    Maybe she’ll leave you alone.”</p>
+                <p class="calibre12">“It’s all good. She doesn’t really bother me.”</p>
+                <p class="calibre12">A sense of unease settles inside me. They’re talking to each other, which means
+                    they must <i class="calibre5">like</i> being around each other, which means… “What else do you talk
+                    about?”</p>
+                <p class="calibre12">The saying “Waiting for the other shoe to drop” has never felt more pertinent as I
+                    lean forward, expecting Việt’s admission of feelings for Linh’s best friend.</p>
+                <p class="calibre12">“We talk about when you and Linh are getting together.”</p>
+                <p class="calibre12">That shoe, from who knows where, never falls.</p>
+                <p class="calibre12"><i class="calibre5">“What?”</i></p>
+                <p class="calibre12">Việt grins. “Yup. Ali’s saying after the fourth review. I’m saying way before
+                    that.”</p>
+                <p class="calibre12">“<i class="calibre5">Why</i> are you even making bets?”</p>
+                <p class="calibre12">“Something to pass the time.”</p>
+                <p class="calibre12">“Who do you think is gonna win?”</p>
+                <p class="calibre12">“I am, which is why I’m telling you now that this all needs to happen after the
+                    second restaurant review. So hurry up.”</p>
+                <p class="calibre12">Việt’s more invested than I thought he’d be and&mdash;Ali.</p>
+                <p class="calibre12"><i class="calibre5">Oh God. Has she said anything to Linh?</i></p>
+                <p class="calibre12">Before I can even ask these important questions, a plethora of bright colors blocks
+                    my eld of vision. I look up to see pin-straight bangs against a prominent forehead.</p>
+                <p class="calibre12">Kelly Tran, president of VSA, the club I’ve ditched way too many times.</p>
+                <p class="calibre12">“Bảo. It’s been a while.”</p>
+                <p class="calibre12">“Uh-huh.” This cold reception is expected, given how I skipped duty on a Saturday
+                    because <i class="calibre5">it was a Saturday.</i></p>
+                <p class="calibre12">Việt quickly excuses himself from the table.</p>
+                <p id="calibre_link-130" class="calibre12">He also skipped along with me.</p>
+                <p class="calibre12">“You know, I’ve been meaning to nd you. I’m feeling like you’re not taking your
+                    membership seriously. If you continue to miss more meetings, I’m afraid you can’t be in the club
+                    anymore.” There’s a threat to her voice, but it’s entirely ineffective since I wasn’t even aware I
+                    was still a member.</p>
+                <p class="calibre12">Movement behind Kelly’s head brings my focus to Linh, and my heart leaps. An
+                    excuse! An escape.</p>
+                <p class="calibre12">“Oh, hey, Linh. Great, you finally came. I know we have to go to that thing.”</p>
+                <p class="calibre12">“Thing?” Linh asks, an eyebrow quirked. Then with a familiar smile, she says, “Hey,
+                    Kelly.”</p>
+                <p class="calibre12">I say, “That thing, yeah.”</p>
+                <p class="calibre12">“Oh.” A pause. A side glance at Kelly. “<i class="calibre5">Oh</i>. Yeah, totally.
+                    Let’s go.”</p>
+                <p class="calibre12">Kelly’s looking between us, probably wondering how we even know each other. “Wait,
+                    since you’re both here: How about you join our table at the Thuận Phát next weekend? We’re raising
+                    money for the club.”</p>
+                <p class="calibre12"><i class="calibre5">Damn it</i>.</p>
+                <p class="calibre12">“Um,” Linh says, hesitating only a little. “Sure, I think I can do it.”</p>
+                <p class="calibre12">“Awesome!” Kelly does a French exit, relieving me of her colors. “Thanks, Linh.
+                    Thanks, Bảo!”</p>
+                <p class="calibre12">“I guess I’ll be there, too,” I say grudgingly.</p>
+                <p class="calibre12">“Sorry, I didn’t think <i class="calibre5">you’d</i> be roped in,” Linh says
+                    sympathetically.</p>
+                <p class="calibre12">“Yeah. Well, you’re too nice. You could have said no to Kelly.”</p>
+                <p class="calibre12">“I like her. We had some classes together and she was always nice. And this club is
+                    her baby, so of course I want to help.” She bumps shoulders with me. We’d started walking together
+                    without thinking. “C’mon, I’ll be there. It’ll be fun.”</p>
+                <p class="calibre12">“You’re forgetting one thing. This is public. Way public. My mom, her
+                    friends&mdash;hell, everyone who owns a business near us&mdash;shop there. Weren’t we trying to
+                    avoid being seen together?”</p>
+                <p class="calibre12">“Now you’re just trying to get out of volunteering.”</p>
+                <p class="calibre12">Yes and no.</p>
+                <p class="calibre12">Well, mostly yes.</p>
+                <p class="calibre12">“Wear a disguise,” she says somewhat cheekily. “We’ll gure something out.”</p>
+                <p id="calibre_link-131" class="calibre4"><img src="images/000007.jpg" alt="" class="calibre14" /></p>
+                <p class="calibre1">Baseball cap and sunglasses. That’ll be my disguise for today.</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre12">“Who are you? Are you trying to be a gangster?” Mẹ asks immediately when I come
+                    down from my room in the morning.</p>
+                <p class="calibre12">“No, I’m protecting myself from the sun.”</p>
+                <p class="calibre12">“Well, you don’t look like yourself.”</p>
+                <p class="calibre12"><i class="calibre5">Perfect</i>.</p>
+                <p class="calibre12">My mom had been happy to hear me mention an e ort to volunteer. Maybe it’s
+                    something to share with her gossip circle. <i class="calibre5">Bảo is such a good person. He thinks
+                        of other people</i>. Ha.</p>
+                <p class="calibre12">While clearing the dishes at breakfast, she o ers to drive me. Well, have Ba drive
+                    me as she rides along. That would meet two of her goals for the weekend: (1) force her son to do
+                    something and (2) get some grocery shopping done. Mẹ doesn’t go to Thuận Phát too often, maybe every
+                    month or so. I guess she hasn’t been there in a few weeks.</p>
+                <p class="calibre12">I immediately object, imagining her seeing Linh at the table outside Thuận Phát.
+                    She’d <i class="calibre5">flip</i> the table, most likely.</p>
+                <p class="calibre12">“I’ll take the bus. Don’t want to bother you&mdash;”</p>
+                <p class="calibre12">“No, it’s ne&mdash;”</p>
+                <p class="calibre12">“Really. Anyway, there isn’t anything on sale today. I checked.” I grasp for an
+                    excuse. “But Saigon City Marketplace has sales.” I mention the one that’s a bit closer, and I must
+                    have said the magic words, which land on Ba as he sets down <i class="calibre5">Người Việt</i> at
+                    the table. What’s the point of going when nothing is on sale?</p>
+                <p class="calibre12">“<i class="calibre5">Thôi, để nó đi đi</i>,” he says. <i class="calibre5">“Mình sẽ
+                        đi</i> Saigon City.<i class="calibre5">”</i></p>
+                <p class="calibre12">My mom relents. “Mẹ <i class="calibre5">did</i> want to go to Saigon City to see
+                    what herbs are on sale… Maybe I will go today.”</p>
+                <p class="calibre12">“Great.”</p>
+                <p class="calibre12">“Don’t come back too late. Or eat anything for lunch. I’m making something.”</p>
+                <p class="calibre12">“Got it.”</p>
+                <p class="calibre12">I get on bus sixty-six and it drops me o at McFadden. I walk a few minutes to the
+                    supermarket. The parking lot is already packed like sardines, Camrys and Highlanders cruising to nd
+                    the rst open spot. Mothers marching like they’re on a mission, their kids dragging their feet. Older
+                    shoppers walk with the help of their adult daughter or son and others rely on their canes and
+                    walkers.</p>
+                <p id="calibre_link-132" class="calibre12">I see the sign rst: <span class="calibre13">HELP VSA</span>,
+                    made with enough glitter to stop tra c. Kelly’s doing, most likely. Linh sits at the table, glancing
+                    around. She’s dressed in a simple white tee and jeans, sunglasses on top. I slide into the empty
+                    seat next to her.</p>
+                <p class="calibre12">“Ta-da.”</p>
+                <p class="calibre12">“Bảo?” She laughs and taps on the bill of my ball cap. “Nice disguise.”</p>
+                <p class="calibre12">“Thank you. I think it was your suggestion.”</p>
+                <p class="calibre12">Linh scrutinizes me. “I guess it’ll work. I almost didn’t recognize you.”</p>
+                <p class="calibre12">“That good, huh?”</p>
+                <p class="calibre12">“Usually your giveaway is your hair. So yeah.”</p>
+                <p class="calibre12">“How’s it going so far? Kelly putting you to work?”</p>
+                <p class="calibre12">Together we watch Kelly, who has stopped a disheveled-looking man who must have
+                    been forced to do a last-minute grocery run by his wife. He attempts to escape, to no avail.</p>
+                <p class="calibre12">“More like she’s doing it herself. Which I think is why not a lot of people want to
+                    do this.”</p>
+                <p class="calibre12">“Can I tell you a secret?” I lean in, beckoning her, and she follows with a smile
+                    playing on her lips. “I’m glad you’re here. Because I wouldn’t want to be alone with her; she
+                    despises me.”</p>
+                <p class="calibre12">Her laugh catches the other volunteers’ attention.</p>
+                <p class="calibre12">“Why are you laughing? It’s true.”</p>
+                <p class="calibre12">“First it’s Ali who hates you. Then it’s Kelly. Now what did you do to her?”</p>
+                <p class="calibre12">“I skipped volunteering.”</p>
+                <p class="calibre12">“Okay… ?”</p>
+                <p class="calibre12">“Three times.”</p>
+                <p class="calibre12">“Bảo! No wonder she loathes you.”</p>
+                <p class="calibre12">“Sorry, that was all back when I wasn’t as motivated.”</p>
+                <p class="calibre12">“What’s motivating you now?”</p>
+                <p class="calibre12">A couple of shoppers have come by, inquiring about our table, and Linh greets them
+                    automatically, putting on a smile like she did this all the time. Her energy is palpable and
+                    contagious.</p>
+                <p id="calibre_link-133" class="calibre12">“No one in particular,” I answer her question, more to myself
+                    than to her.</p>
+                <p class="calibre12">Meanwhile, Kelly passes down another pile of flyers to replenish our stack. She sips
+                    a boba from Boba Corner 2. “What’s with the ball cap?”</p>
+                <p class="calibre12">“Bad haircut.”</p>
+                <p class="calibre12">Time passes slowly, but it’s not so bad with Linh next to me. We pass commentary
+                    about Kelly’s determined e orts to solicit money while we hand out flyers about VSA’s upcoming events.
+                    I spot faint paint marks on the back of her hand, which weren’t there yesterday. She must have t in
+                    some painting time this morning.</p>
+                <p class="calibre12">“Were you painting?”</p>
+                <p class="calibre12">“Oh, yeah,” she says, sheepish again. “Trying to, at least. I need to submit
+                    something to the Gold Key competition. I’m realizing that the deadline is getting closer and
+                    closer.”</p>
+                <p class="calibre12">“What are you going to do?”</p>
+                <p class="calibre12">“I’m working on a few things about memory. Good memories. The kind that last a
+                    while and show up unexpectedly.”</p>
+                <p class="calibre12">“Like?”</p>
+                <p class="calibre12">“A restaurant scene. Just me and my parents as we were closing up in the rst year.
+                    It was a tough year, that rst year. People were hard on them.” Linh looks over at me and I know what
+                    she’s thinking. My mom. The General and the others, the snide remarks they made at the restaurant
+                    and also freely in public&mdash;</p>
+                <p class="calibre12">“I’m sorry.”</p>
+                <p class="calibre12">Linh shakes her head. “Anyway, my sister and I never really saw our parents because
+                    they were always working. But that night, we finished and it’d gone well, and I remember seeing my
+                    parents standing by the front windows, just chatting, saying goodbye to some customers. A totally
+                    normal scene.”</p>
+                <p class="calibre12">I’m there with her, can feel the window’s smooth glass against my hand and its
+                    warmth after facing the sun for the whole day. Linh’s tone changes into something like reverence and
+                    she lifts her hand, gesturing as if she were smearing paint all over a canvas. “But the sky behind
+                    them was swathes of blush red and purple and yellow. It took my breath away. It was really
+                    beautiful. So I’m working on a small canvas for that.”</p>
+                <p id="calibre_link-134" class="calibre12">“That sounds nice.”</p>
+                <p class="calibre12">“Yeah, it was.” She looks over at me. “How about you? Still okay with mediocrity?”
+                    she says teasingly, leaning forward. A piece of her hair has caught itself on the neck of her
+                    T-shirt and I feel like I want to move it away.</p>
+                <p class="calibre12">“Hey, I’ve advanced a little.” I copy Linh, moving closer even though there’s no
+                    reason to. “Someone asked for my help the other day. One of Việt’s friends needed help. So I
+                    helped.”</p>
+                <p class="calibre12">“Did it go well?”</p>
+                <p class="calibre12">“Yeah. It doesn’t happen often&mdash;someone asking me for help. Especially with
+                    writing. So I was kind of surprised.”</p>
+                <p class="calibre12">“I’m not.” She looks deep in thought. “There are people out there who don’t have
+                    the energy to help people get better. They just accept the other person’s</p>
+                <p class="calibre4">aws, and sure, there’s less con ict to deal with, but it’s almost like living out a
+                </p>
+                <p class="calibre1">lie. <i class="calibre5">Then</i> there are people who aren’t afraid to point out
+                    something’s wrong&mdash; even something as little as a typo. In the end, you’re making <i
+                        class="calibre5">something</i> better, and that’s more than other people are willing to do.”</p>
+                <p class="calibre12">I clear my throat, trying to quell my emotions fighting against one another. “That’s
+                    about the nicest thing anyone’s ever said to me. Isn’t that sad?”</p>
+                <p class="calibre12">“Sad and true for all kids with demanding Asian parents.” Warmth spreads through
+                    me. Other curious shoppers have come to the table, but, not for the rst time, I see only Linh in
+                    front of me. Beaming. I have to blink a few times to remember where I am.</p>
+                </p>
+            </article>
+
+        </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <footer class="reader-footer">
+            <div class="footer-left">
+                <a href="pho-chapter-18.html">Previous Chapter</a>
+            </div>
+            <div class="footer-center">
+                <small>End of book — <a href="index.html">Back to library</a></small>
+            </div>
+            <div class="footer-right">
+                <a href="pho-chapter-20.html">Next Chapter</a>
+            </div>
+        </footer>
+
+    </body>
+</body>
+
+</html>

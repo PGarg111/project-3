@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Pho Love Story</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="romance.html">← Library</a>
+            <h1 class="book-title">A Pho Love Story</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+                <audio id="bg-music"
+                    src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <a href="pho-love.html">Chapter 1</a>
+            <a href="pho-chapter-2.html">Chapter 2</a>
+            <a href="pho-chapter-3.html">Chapter 3</a>
+            <a href="pho-chapter-4.html">Chapter 4</a>
+            <a href="pho-chapter-5.html">Chapter 5</a>
+            <a href="pho-chapter-6.html">Chapter 6</a>
+            <a href="pho-chapter-7.html">Chapter 7</a>
+            <a href="pho-chapter-8.html">Chapter 8</a>
+            <a href="pho-chapter-9.html">Chapter 9</a>
+            <a href="pho-chapter-10.html">Chapter 10</a>
+            <a href="pho-chapter-11.html">Chapter 11</a>
+            <a href="pho-chapter-12.html">Chapter 12</a>
+            <a href="pho-chapter-13.html">Chapter 13</a>
+            <a href="pho-chapter-14.html">Chapter 14</a>
+            <a href="pho-chapter-15.html">Chapter 15</a>
+            <a href="pho-chapter-16.html">Chapter 16</a>
+            <a href="pho-chapter-17.html">Chapter 17</a>
+            <a href="pho-chapter-18.html">Chapter 18</a>
+            <a href="pho-chapter-19.html">Chapter 19</a>
+            <a href="pho-chapter-20.html">Chapter 20</a>
+            <a href="pho-chapter-21.html">Chapter 21</a>
+            <a href="pho-chapter-22.html">Chapter 22</a>
+            <a href="pho-chapter-23.html">Chapter 23</a>
+            <a href="pho-chapter-24.html"><strong>Chapter 24</strong></a>
+            <a href="pho-chapter-25.html">Chapter 25</a>
+            <a href="pho-chapter-26.html">Chapter 26</a>
+            <a href="pho-chapter-27.html">Chapter 27</a>
+            <a href="pho-chapter-28.html">Chapter 28</a>
+            <a href="pho-chapter-29.html">Chapter 29</a>
+            <a href="pho-chapter-30.html">Chapter 30</a>
+            <a href="pho-chapter-31.html">Chapter 31</a>
+            <a href="pho-chapter-32.html">Chapter 32</a>
+            <a href="pho-chapter-33.html">Chapter 33</a>
+            <a href="pho-chapter-34.html">Chapter 34</a>
+            <a href="pho-chapter-35.html">Chapter 35</a>
+            <a href="pho-chapter-36.html">Chapter 36</a>
+            <a href="pho-chapter-37.html">Chapter 37</a>
+            <a href="pho-chapter-38.html">Chapter 38</a>
+            <a href="pho-chapter-39.html">Chapter 39</a>
+            <a href="pho-chapter-40.html">Chapter 40</a>
+            <a href="pho-chapter-41.html">Chapter 41</a>
+            <a href="pho-chapter-42.html">Chapter 42</a>
+            <a href="pho-chapter-43.html">Chapter 43</a>
+            <a href="pho-chapter-44.html">Chapter 44</a>
+            <a href="pho-chapter-45.html">Chapter 45</a>
+            <a href="pho-chapter-46.html">Chapter 46</a>
+            <a href="pho-chapter-47.html">Chapter 47</a>
+            <a href="pho-chapter-48.html">Chapter 48</a>
+            <a href="pho-chapter-49.html">Chapter 49</a>
+            <a href="pho-chapter-50.html">Chapter 50</a>
+        </nav>
+
+        <main class="book">
+            <article id="ch6" class="chapter">
+                <h3>Chapter 24</h3>
+                <h2>Linh</h2>
+                <p>
+                <p class="calibre1">Two years. Two years that Chef Lê went without speaking to his mom, despite having
+                    the bravery that I lack to follow what he wanted. He’s made a career of it, yet it took a while for
+                    his mother to come back, and that was only by his father’s doing.</p>
+                <p class="calibre12">I’m sitting at my desk, finessing my sketch of Chef Lê, who’s now grinning back at
+                    me. I’ll need to redraw it so that it’s publishable. Other pieces of paper are scattered across my
+                    desk, some homework sheets and different drafts of the Scholastic Art Award application. The essay
+                    still needs filling out, but everything’s turning into hieroglyphics and my eyes must be red after me
+                    rubbing at them so much. I’ve been struggling to put words to paper, and now I think I’ve highly
+                    underestimated what Ali and Bảo do seemingly so easily.</p>
+                <p class="calibre12">My thoughts turn ugly, too many colors mixed together. <i class="calibre5">Would it
+                        even matter if I ended up getting this award? Would it do anything? Would it change much?</i> I
+                    guess this is what it means to tear your hair out.</p>
+                <p class="calibre12">I wouldn’t know how to stand it&mdash;me and my mom not talking, for whatever
+                    reason. I’ve only done this with Evie; growing up we’ve had a few arguments that all seem childish
+                    now, but back then we’d go days without talking. Instead of trading nasty words, we’d ght by turning
+                    the bedroom lights on and o at inopportune times, seizing control of the washer and dryer even when
+                    a load wasn’t finished, and completely ignoring the car-sharing schedule. The longest silence between
+                    us had lasted a week, broken only when Ba had done something ridiculous at the restaurant, and me
+                    and Evie accidentally met eyes, sti ing our laughs.</p>
+                <p class="calibre12">But a laugh wouldn’t solve how much I’d already lied to my parents.</p>
+                <p id="calibre_link-157" class="calibre12">And then there’s Bảo and that moment outside the supermarket.
+                    His questions while we were at Chơi Ơi.</p>
+                <p class="calibre12">If I were anyone other than Linh Mai, someone <i class="calibre5">not</i> from a
+                    family who despises his, I’d be excited. There’d be no hesitation.</p>
+                <p class="calibre12">But I can’t be. Hence why I practically ran away when Bảo broached the topic just
+                    as we were leaving.</p>
+                <p class="calibre12"><i class="calibre5">What am I even doing anymore?</i></p>
+                <p class="calibre12">My phone buzzes in my pocket.</p>
+                <p class="calibre12">“Bảo?”</p>
+                <p class="calibre12">“Hey, Linh.”</p>
+                <p class="calibre12">He never calls me this late. We’ve only texted so far. The deep pitch of his voice
+                    through the phone sounds more intimate.</p>
+                <p class="calibre12">“Is everything okay?” I hold my breath. Not the question I want to ask, because
+                    obviously, something happened between us. Something I hope he doesn’t bring up again, because I
+                    can’t deal with it right now.</p>
+                <p class="calibre12">“I wanted to let you know: I’m going to be a writer.”</p>
+                <p class="calibre12">“What?”</p>
+                <p class="calibre12">“Yeah, I’ve figured it out. It’s what I want to do. And I wanted you to know because
+                    you’re the one responsible for it.”</p>
+                <p class="calibre12">I lean back in my chair. In the mirror I look at when applying makeup in the
+                    morning, I’m smiling. “Bảo, I did nothing. It’s all you.”</p>
+                <p class="calibre12">“Lies.” He pauses. “I told my mom, too. I can’t tell how excited she is, but she’s
+                    not complaining about it, at least.”</p>
+                <p class="calibre12">“So your mom’s accepting?”</p>
+                <p class="calibre12">“She offered the basement to me in case I can’t nd work after college, so I guess
+                    so.”</p>
+                <p class="calibre12">“Lucky you.” I try but I can’t keep the bitterness from my tone. Immediately, I
+                    feel horrible. “I’m sorry. Imagine me saying that but without the vitriol.” He only laughs, clearly
+                    in a good mood. “No, seriously. This is great. I’m not surprised. So whatever I did to influence you,
+                    I guess I’ll take it.”</p>
+                <p class="calibre12">“Ever since we met, you haven’t said I can’t do it. You’ve just accepted that I was
+                    starting to write, and I think you’re the rst person in my life to do that.”</p>
+                <p class="calibre12">I turn in my swivel chair, smiling against the mouthpiece.</p>
+                <p id="calibre_link-158" class="calibre12">“What are you doing now?”</p>
+                <p class="calibre12">I hear Bảo typing away on the other side, and I’m sure he’ll hear my eraser
+                    squeaking against the desk as I write another grammatically incorrect sentence.</p>
+                <p class="calibre12">“It’s taking me ages to write my statement for the Gold Key application. <i
+                        class="calibre5">How</i> do you write?”</p>
+                <p class="calibre12">He snickers. “That’s like me asking how you paint.”</p>
+                <p class="calibre12">“Seriously, if there’s a secret, tell me. My Gold Key statement still needs to be
+                    written.”</p>
+                <p class="calibre12">“Be honest.”</p>
+                <p class="calibre12">Is it a comment, in a not-so-subtle way, on what I haven’t been honest about?
+                    Annoyance spikes within me. “Bảo&mdash;”</p>
+                <p class="calibre12">“What I mean is, you spend so much time worrying about your parents, how to tell
+                    them about the real you, that this is your chance to have a conversation only with the one reading
+                    your essay. You don’t have to worry about your parents. Or anyone else.” <i class="calibre5">Like
+                        you?</i> I ask silently. “Think about what you want. What you want to make and add to the
+                    world.” He stops suddenly. “Wow, I sound like Ali, don’t I? All of this motivational talk.”</p>
+                <p class="calibre12">I smile, hearing genuine awe in his voice. Ali was my number-one fan before I knew
+                    I needed one.</p>
+                <p class="calibre12">“She’d be honored to hear you say that. You know she likes you now.” I don’t tell
+                    him that if Ali had an issue with him, it wouldn’t be so subtle.</p>
+                <p class="calibre12">“Sure. Deep down.”</p>
+                <p class="calibre12">“Exactly.”</p>
+                <p class="calibre12">“Deep, deep, <i class="calibre5">deep</i> down.”</p>
+                <p class="calibre12">I roll my eyes.</p>
+                <p class="calibre12">“Don’t roll your eyes.” I hear his smile.</p>
+                <p class="calibre12">“I’m not!”</p>
+                <p class="calibre12">“You are. It’s not too hard to imagine you right now.”</p>
+                <p class="calibre12">“Oh? And what are you imagining?”</p>
+                <p class="calibre12">Bảo exhales into the phone. I wait. My pencil hangs loose from my fingers as I rest
+                    my elbows on the desk. Outside it’s completely dark, save for the streetlamps that’ve dimmed to save
+                    energy; they’ll return to full force in a few minutes. Somewhere a dog growls and barks, and on the
+                    opposite side, a smaller dog chirps back. Talking to each other with a fence&mdash;maybe
+                    many&mdash;in between them.</p>
+                <p id="calibre_link-159" class="calibre12">“You’re at your desk. You have your hair in a ponytail.
+                    You’re leaning all the way forward in your chair because you’re deep into your work. That’s how you
+                    always are, especially when painting.” I exhale a shaky breath. <i class="calibre5">This guy.</i>
+                    “Whenever you’re thinking you rub your thumb on that bump on your middle</p>
+                <p class="calibre4">finger, where your pencil’s usually resting. The desk lamp is giving you a warm</p>
+                <p class="calibre1">glow; it’s the type of light you like&mdash;not too bright, not too dim.” Then he
+                    lets out a half laugh. “Am I right?”</p>
+                <p class="calibre12">I hear the creak of his chair as he leans back. Probably looking smug.</p>
+                <p class="calibre12">“You’re wrong.”</p>
+                <p class="calibre12">“Am I?”</p>
+                <p class="calibre12">“My hair’s down, not in a ponytail.”</p>
+                <p class="calibre12">“Sorry for the gross assumption.” He lets out a deep sigh. “Sorry, I’m taking up
+                    your time. You want me to go?”</p>
+                <p class="calibre12">I keep drawing. “No, it’s ne. You can stay.” It’s comforting just to have him on
+                    the line, made even better by knowing he’s not pressing me.</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">By the time my mom comes in without knocking, Bảo’s o the phone, but not before I
+                    texted him my sketch of Chef Lê. I cover it up with some loose chemistry notes. Her wet hair is
+                    wrapped in a towel and she’s already applied her Crabtree &amp; Evelyn body lotion, which signals
+                    she’s about to turn in. Her eyes sweep the room&mdash;the dim lighting, various half-finished
+                    homework sheets scattered on my bed, and the rainbow of papers across my writing desk. I shift to
+                    the left to hide my Gold Key essay drafts out of sight.</p>
+                <p class="calibre12">“We’re doing another Phở Day.”</p>
+                <p class="calibre12">“When was this decided?”</p>
+                <p class="calibre12">“A week ago.”</p>
+                <p class="calibre12">“But why?”</p>
+                <p class="calibre12">Mẹ removes her towel and rubs out the water in her hair. “<i
+                        class="calibre5">That</i> restaurant is having a <i class="calibre5">Bánh Xèo</i> Day, so your
+                    father decided we should have our own. So we will need you in a couple of weeks.”</p>
+                <p id="calibre_link-160" class="calibre12">I’ve already cut my time for art in half and am no closer to
+                    finishing my pieces for the Gold Keys. And now this. “Mẹ, I can’t. I have so much to do.”</p>
+                <p class="calibre12">My mom glances down at the papers across my desk. “You have a lot of homework?”</p>
+                <p class="calibre12">“Yeah, but it’s more homework than usual.”</p>
+                <p class="calibre12">“But you have always managed to do your homework on time. You shouldn’t
+                    worry&mdash;”</p>
+                <p class="calibre12">“Just because I’ve managed before doesn’t mean I can’t be stressed out.” I’d cut
+                    her o without realizing it, a harsh tone ringing in my ears. I bite my lower lip.</p>
+                <p class="calibre12">Perhaps she’s really tired or just disappointed; she doesn’t press me. “We can talk
+                    more tomorrow, but <i class="calibre5">con phải ngủ đi</i>.” Mẹ runs her hand through my hair,
+                    telling me to sleep. She runs a hand on my shoulder before leaving the room.</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">The drive over to the restaurant is silent. My mom must have said something to my
+                    dad about my reaction last night, because he’s not saying much either. A Vietnamese song plays low
+                    in the background, a crooning one that my mom likes to play in the house at nighttime, something
+                    like a lullaby. The sun is just peeking out over the arched roofs of restaurants and stores, as if
+                    wary of the people below it.</p>
+                <p class="calibre12">Ba yawns. I yawn back. He switches on the blinker, and we turn onto the street. We
+                    pass Bảo’s restaurant and it’s dark inside, but any minute now, his parents will turn the <span
+                        class="calibre13">OPEN</span> plaque around, and Bảo will be there, too. I think he mentioned
+                    having to work on Sunday.</p>
+                <p class="calibre12"><i class="calibre5">“Sao mà thấy con mặt bực mình vậy?”</i> Ba asks, his voice
+                    still gru with sleep.</p>
+                <p class="calibre12">“I’m not angry,” I mutter, which, of course, gives me away. “I’m just stressed.”
+                </p>
+                <p class="calibre12">“Schoolwork?” Ba asks.</p>
+                <p class="calibre12">I nod.</p>
+                <p id="calibre_link-161" class="calibre12">“Why is it stressful now? Last year was more stressful.”
+                    Which is true, in a way. I was busy worrying about SATs and didn’t have much time to work on my
+                    paintings then, either, but now… everything is happening at once.</p>
+                <p class="calibre12">I de ect. “Why do we never have enough people at work?”</p>
+                <p class="calibre12">“Lisa quit. It was unexpected.”</p>
+                <p class="calibre12">“Then hire people who won’t quit.”</p>
+                <p class="calibre12">I meet Ba’s furious eyes in the rearview mirror. “<i class="calibre5">Con này</i>,”
+                    he starts to say. Mẹ shushes him, probably knowing his anger will not help here. But the tightness
+                    of her posture shows that this argument isn’t finished.</p>
+                <p class="calibre12">Mẹ takes the back entrance while I help Ba lift the security grilles up front,
+                    walking in once the front door unlocks. The fans begin to turn, working against the heat. But
+                    instead of telling me to grab an apron like usual, or delegating tasks to me, like refilling the
+                    napkins or getting ice from the freezer or unwrapping the bins of herbs we’ll need for the day, my
+                    mom nods for me to join her in the kitchen. Ba goes his own way to check last night’s sales and the
+                    timesheets.</p>
+                <p class="calibre12">The two of us are in the kitchen, our steps echoing o the walls. I take a stool.
+                </p>
+                <p class="calibre12">She dons kitchen gloves and pulls out her wooden cutting board, starts slicing
+                    onions. Next to her is a vinegar bath that the cooks made, so Mẹ just needs to complete the pickling
+                    process. She dips her finger into the vinegar bath, then adds a spoonful of sugar before dumping in
+                    the onions. I watch her stir it, then taste it, before she pushes the bowl toward me. My turn to try
+                    it.</p>
+                <p class="calibre12"><i class="calibre5">“Vừa không?”</i></p>
+                <p class="calibre12">I ignore her question, staring resolutely at the tabletop. Heaving a sigh, my mom
+                    leans forward, resting her elbows on the prep table. Her hair has already loosened from its bun. I
+                    see bags under her eyes. The guilt that’s become all too familiar nowadays ares up. But I still hate
+                    the idea that I’m expected to be the replacement when someone else isn’t available. And the last
+                    special would have failed if it weren’t for Bảo’s help&mdash;which will not happen again.</p>
+                <p class="calibre12">So I look away. I hear my mom’s lips part, then close. Maybe I’ve made her angry
+                    too. Aside from three or four blowups&mdash;including the time when she stumbled across me and Evie
+                    drawing pictures with crayons on our old apartment walls&mdash;she’s been decidedly calmer than Ba.
+                </p>
+                <p id="calibre_link-162" class="calibre12">Instead, her voice takes on its usual soft quality, with an
+                    indiscernible tinge. “Con, I know this isn’t how you want to spend your time. And Mẹ and Ba hate
+                    having to ask you to work.</p>
+                <p class="calibre12">“But you don’t know how hard it was to start up this restaurant. It wasn’t about
+                    inheriting customers, finding new customers. It was inheriting a whole neighborhood of people who
+                    didn’t want us.” Mẹ’s voice cracks. Anguish, that’s the note I’d heard. “You don’t know how that
+                    feels.”</p>
+                <p class="calibre12">“You never told me,” I retort, though my intent to sound annoyed is weak. I’ve
+                    never heard Mẹ sound this way. It tugs the same part of my heart storing all the hugs and kisses and
+                    laughs she’s given me through so many sacrifices.</p>
+                <p class="calibre12">“Because you shouldn’t have to know those things. We wanted to protect you.” A
+                    spike of anger rushes through me. I’d hate to say it was in response to Bảo’s parents, because that
+                    would mean I was angry with him, too. Still, it’s clear that the cold welcoming had hurt my parents,
+                    made them feel less than welcome.</p>
+                <p class="calibre12">Mẹ shakes her head like she’s denying the memories brought up. “The gossip was
+                    horrible, not just from that restaurant. Everywhere. But if I addressed it, people would add
+                    something else to the mix and there’d be no ending to it. So I ignored it. I put my everything into
+                    the food here, to make it speak for itself. Then your dad made friends and we made loyal customers.”
+                    She gestures to the restaurant. “Phở Day made me so happy because it worked out. And now we’re doing
+                    well. But it is always a game here. It’s always a game to win, to maintain that we belong here.”</p>
+                <p class="calibre12">I wonder if Mẹ means not just this community but in America in general.</p>
+                <p class="calibre12">I keep my head down. “Will the gossip ever stop? Will we always need to ght
+                    B&mdash;” I catch myself before saying “Bảo’s parents.” “&mdash;the Nguyễns’ restaurant?”</p>
+                <p class="calibre12">Thankfully, Mẹ doesn’t seem to notice. “Gossip and rumors never stop. They always
+                    come back in different forms.” The knowingness in her voice&mdash;and the palpable feeling that
+                    there’s something more she’s holding back&mdash;triggers me to glance at her.</p>
+                <p class="calibre12">“Like when?”</p>
+                <p class="calibre12">It takes a few beats for Mẹ to make her decision. When she sits down across from
+                    me, I lean forward on my stool. “When I was eleven. Back in Vietnam,” my mom starts, “Dì Vàng was
+                    ready to marry a neighbor who grew up with her. They were always together, and when our families
+                    realized what would happen, we began to set up our meetings to talk about expectations and the
+                    future for the two of them. The man was smart, nice, and always put the family rst.”</p>
+                <p id="calibre_link-163" class="calibre12">“Was he an artist too?” I try to picture my aunt with a
+                    boyfriend or a husband, but I only see her as I do now: her blurry face enlarged on the computer
+                    when we’d speak, her loud, assured voice when she talks about art. That’s her true love; I can’t
+                    imagine someone else in her life.</p>
+                <p class="calibre12">“Of course not,” Mẹ answers quickly. “One of the reasons why your grandparents
+                    liked the man, before they passed, was because he was a logical person. He was going to inherit the
+                    family business, too. They knew that he would be able to support her when she couldn’t do that
+                    herself with her art.” I hold back from protesting. She said that as if it were a fact. As if my
+                    aunt weren’t doing well for herself now.</p>
+                <p class="calibre12">“One day, though, he left, apologizing to everyone through a letter. But oh, the
+                    gossip! His family and the whole neighborhood were blaming Dì Vàng, as if she had done something,
+                    when it was actually him who’d run away from his promises. His responsibilities.”</p>
+                <p class="calibre12">“What happened then?” I ask. “With the guy and with your sister?”</p>
+                <p class="calibre12">“I learned that he died.” That can mean many things: during a battle, during one of
+                    the bombings, or during the escape, the same route that my family miraculously survived. “It is
+                    horrible, yes. All of it. He was, at the end of the day, good, and he would have made a good match
+                    for my sister.” I sit back, cupping my tea for warmth, feeling as if a part of me has turned inside
+                    out. Her art. That’s why her art always feels so sad. In each artwork she produces, she leaves that
+                    melancholic imprint behind.</p>
+                <p class="calibre12">“Why I haven’t heard of this before?”</p>
+                <p class="calibre12">Mẹ sighs as she pushes back her hair. “There was no reason for it to come up. And
+                    it is something of the past&mdash;what good will it do to bring it up? Your aunt certainly doesn’t
+                    mention it. We are in the present now&mdash;we look to the future.” She takes an apron o the hook
+                    and o ers me my apron. “We ignore all gossip and do our best.</p>
+                <p class="calibre12">“Con, I know you are busy. But you did such a good job last time. You can do it
+                    again. And you will survive your schoolwork. Because you are my daughter.”</p>
+                <p id="calibre_link-164" class="calibre12">I take the apron from Mẹ. She smiles, and it’s so grateful
+                    and so understanding that I muster up a smile, the weight on my shoulders even more insistent.</p>
+                </p>
+            </article>
+
+        </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <footer class="reader-footer">
+            <div class="footer-left">
+                <a href="pho-chapter-23.html">Previous Chapter</a>
+            </div>
+            <div class="footer-center">
+                <small>End of book — <a href="index.html">Back to library</a></small>
+            </div>
+            <div class="footer-right">
+                <a href="pho-chapter-25.html">Next Chapter</a>
+            </div>
+        </footer>
+
+    </body>
+</body>
+
+</html>

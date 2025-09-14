@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>A Pho Love Story</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="romance.html">← Library</a>
+            <h1 class="book-title">A Pho Love Story</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+                <audio id="bg-music"
+                    src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <a href="pho-love.html">Chapter 1</a>
+            <a href="pho-chapter-2.html">Chapter 2</a>
+            <a href="pho-chapter-3.html">Chapter 3</a>
+            <a href="pho-chapter-4.html">Chapter 4</a>
+            <a href="pho-chapter-5.html">Chapter 5</a>
+            <a href="pho-chapter-6.html">Chapter 6</a>
+            <a href="pho-chapter-7.html">Chapter 7</a>
+            <a href="pho-chapter-8.html">Chapter 8</a>
+            <a href="pho-chapter-9.html">Chapter 9</a>
+            <a href="pho-chapter-10.html">Chapter 10</a>
+            <a href="pho-chapter-11.html">Chapter 11</a>
+            <a href="pho-chapter-12.html">Chapter 12</a>
+            <a href="pho-chapter-13.html">Chapter 13</a>
+            <a href="pho-chapter-14.html">Chapter 14</a>
+            <a href="pho-chapter-15.html">Chapter 15</a>
+            <a href="pho-chapter-16.html">Chapter 16</a>
+            <a href="pho-chapter-17.html">Chapter 17</a>
+            <a href="pho-chapter-18.html">Chapter 18</a>
+            <a href="pho-chapter-19.html">Chapter 19</a>
+            <a href="pho-chapter-20.html">Chapter 20</a>
+            <a href="pho-chapter-21.html">Chapter 21</a>
+            <a href="pho-chapter-22.html">Chapter 22</a>
+            <a href="pho-chapter-23.html"><strong>Chapter 23</strong></a>
+            <a href="pho-chapter-24.html">Chapter 24</a>
+            <a href="pho-chapter-25.html">Chapter 25</a>
+            <a href="pho-chapter-26.html">Chapter 26</a>
+            <a href="pho-chapter-27.html">Chapter 27</a>
+            <a href="pho-chapter-28.html">Chapter 28</a>
+            <a href="pho-chapter-29.html">Chapter 29</a>
+            <a href="pho-chapter-30.html">Chapter 30</a>
+            <a href="pho-chapter-31.html">Chapter 31</a>
+            <a href="pho-chapter-32.html">Chapter 32</a>
+            <a href="pho-chapter-33.html">Chapter 33</a>
+            <a href="pho-chapter-34.html">Chapter 34</a>
+            <a href="pho-chapter-35.html">Chapter 35</a>
+            <a href="pho-chapter-36.html">Chapter 36</a>
+            <a href="pho-chapter-37.html">Chapter 37</a>
+            <a href="pho-chapter-38.html">Chapter 38</a>
+            <a href="pho-chapter-39.html">Chapter 39</a>
+            <a href="pho-chapter-40.html">Chapter 40</a>
+            <a href="pho-chapter-41.html">Chapter 41</a>
+            <a href="pho-chapter-42.html">Chapter 42</a>
+            <a href="pho-chapter-43.html">Chapter 43</a>
+            <a href="pho-chapter-44.html">Chapter 44</a>
+            <a href="pho-chapter-45.html">Chapter 45</a>
+            <a href="pho-chapter-46.html">Chapter 46</a>
+            <a href="pho-chapter-47.html">Chapter 47</a>
+            <a href="pho-chapter-48.html">Chapter 48</a>
+            <a href="pho-chapter-49.html">Chapter 49</a>
+            <a href="pho-chapter-50.html">Chapter 50</a>
+        </nav>
+
+        <main class="book">
+            <article id="ch6" class="chapter">
+                <h3>Chapter 23</h3>
+                <h2>Bao</h2>
+                <p>
+                <p class="calibre1">Chơi Ơi is the opposite of a traditional Việt restaurant. The restaurant name itself
+                    parodies <i class="calibre5">“trời ơi,”</i> an expression my mom likes to use when she’s annoyed at
+                    me or at my dad. But the name turns the exclamation into something more playful&mdash;literally,
+                    “Play!”</p>
+                <p class="calibre12">Inside, the restaurant, located just at the edge of Fountain Valley, has a
+                    high-vaulted ceiling and deep red walls brightened by lanterns. Columns are decorated with
+                    eye-catching nighttime cityscapes of what looks like Vietnamese cities, rendered from photos.</p>
+                <p class="calibre12">Linh had arrived a few minutes before me and was inspecting one of the photos. Of
+                    course.</p>
+                <p class="calibre12">“See something interesting?”</p>
+                <p class="calibre12">Linh jumps, then brushes back her hair sheepishly. The movement brings my attention
+                    to her hand, the one that I held.</p>
+                <p class="calibre12">“Didn’t think you’d make it,” I say, watching her closely.</p>
+                <p class="calibre12">We’d almost had to reschedule again, though, because things at work were getting
+                    busy for me and Linh. Lisa, the girl who’d seemed too nervous to work at a restaurant, had called
+                    out sick, so Linh had to pick up a shift. I also know the deadline for the Gold Keys was drawing
+                    closer and closer. In my texts to her, I wasn’t sure what to do or say to help&mdash;lethologica:
+                    the inability to nd the right words&mdash;but being here seems to bring back some spark in her eyes.
+                </p>
+                <p class="calibre12">She knows how I feel now. Ball’s in her court.</p>
+                <p class="calibre12">“Figured you needed me,” she answers simply. “Unless you already have another
+                    artist friend lined up.”</p>
+                <p id="calibre_link-146" class="calibre12">As the host shows us to our seats, I’m hoping her emphasis on
+                    “friend” isn’t purposeful.</p>
+                <p class="calibre12">I focus on the restaurant instead. According to the existing interviews I’d read
+                    online, the owner and executive chef Brian Lê had trained in Paris, then Italy, but as much as he
+                    loved European cuisine, he always considered Vietnamese his</p>
+                <p class="calibre4">rst love&mdash;thanks to his father, who’s a retired chef. So he came back to the
+                </p>
+                <p class="calibre1">States and opened up his restaurant, which has been reviewed by the <i
+                        class="calibre5">New York Times</i> and the <i class="calibre5">Los Angeles Times</i>, which
+                    praise his specialty: his <i class="calibre5">bún bò Huế</i>. Not for the rst time, I wonder how Ali
+                    managed to be so persuasive that someone with this much notoriety and posh training had agreed to
+                    invite two high school students to taste his food.</p>
+                <p class="calibre12">But the moment Chef Lê bounds out of the kitchen into the dining room, it all makes
+                    sense. Maybe in his late thirties, he wears a worn ball cap backward and his chef’s jacket is opened
+                    to reveal a T-shirt that says, <span class="calibre13">ALLOW ME TO EXPLAIN</span> <span
+                        class="calibre13">THROUGH INTERPRETIVE DANCE</span>. And his wide grin&mdash;kind of like a kid
+                    who was told he could have as much candy as he wanted&mdash;coaxes a smile from us.</p>
+                <p class="calibre12">“What’s good, little ones?” He gathers each of us into a bear hug. “Glad you’re
+                    here. Brian Lê. Or Chef Lê.” <i class="calibre5">Now</i> he shakes our hands.</p>
+                <p class="calibre12">“My mom’s maiden name is Lê,” I say.</p>
+                <p class="calibre12">“Maybe we were related way back when, who knows.” He winks.</p>
+                <p class="calibre12">I like him. “Thanks for letting us stop by. Just tell us where we should sit. We
+                    won’t be in anyone’s way.”</p>
+                <p class="calibre12">“Sit?”</p>
+                <p class="calibre12">“Um yeah, we’re here to review your menu,” Linh says.</p>
+                <p class="calibre12">“Don’t you want a tour, too?”</p>
+                <p class="calibre12">We didn’t get a chance to walk around at any other restaurant. Do reviewers usually
+                    get this kind of access?</p>
+                <p class="calibre12">“Come on, let’s take you guys to the back where all the magic happens.” Without
+                    waiting for us, he turns and we stand helpless for a few beats until we follow him into his
+                    labyrinthine kitchen. It’s like Mẹ’s kitchen, only cleaner and probably more organized. And probably
+                    sta ed with more people who are less apt to mess up.</p>
+                <p class="calibre12">So, not like our kitchen.</p>
+                <p id="calibre_link-147" class="calibre12">The cooks give us a quick look before focusing back on their
+                    dishes. One cook sprinkles chopped raw green onions over a platter of freshly cooked <i
+                        class="calibre5">cá chiên</i>, the snapper still sizzling from its quick fry in a sauté pan.
+                    Another guy uses a ladle the size of my hand to transfer bubbling broth into graphite-colored bowls.
+                    Even the cooked rice, which someone’s spooning into bowls, looks better than usual, gleaming under
+                    the restaurant’s expensive lights. I’m glad my parents aren’t here to see this.</p>
+                <p class="calibre12">Another chef yells, “Behind!” before passing us with a large pot smelling of
+                    pineapples&mdash;<i class="calibre5">canh chua</i>, most likely. Meanwhile, Chef Lê points to di
+                    erent cooks and their specialties. Picks up ingredients that he insists are totally “high-grade.”
+                    Narrowly crashes into his employees as they busily rush around, though it’s all done in odd
+                    synchronicity like they’re used to his chaotic energy.</p>
+                <p class="calibre12">Chef Lê stops before one large pot in particular. With a flourish, he lifts the lid
+                    and beckons us to lean in. “Smell that shit and tell me no one will want to eat it.” Seeing his
+                    expectant look, we do as we’re told.</p>
+                <p class="calibre12">“That smells&mdash;”</p>
+                <p class="calibre12">“&mdash;delicious.”</p>
+                <p class="calibre12">Linh and I lock eyes before releasing immediately.</p>
+                <p class="calibre12"><i class="calibre5">Bún bò</i>. An earthy, fatty broth, a powerful punch of citrus
+                    from lemongrass. It’s familiar. It’s home in one punch. Chef Lê shoots us a smile, likes seeing us
+                    con rm how good it smells and <i class="calibre5">looks</i> without us wasting words. Maybe he’s a
+                    bit smug about it.</p>
+                <p class="calibre12">“This is just a preview, of course. Wait until you taste everything.”</p>
+                <p class="calibre12">Somehow I wonder if he mistook us for someone else. Linh thinks the same, saying as
+                    much to him.</p>
+                <p class="calibre12">“Nope, I know who you are: Badass high school students.” He points to us with both
+                    index fingers. Me and Linh share another glance, nearly bursting out laughing. What a weird guy. “I
+                    was your age once upon a time. When I was in Paris and in Rome, I made things that cost even more
+                    than I could a ord. I hated that. And sometimes the food wasn’t even good. If I can make any Việt
+                    kid your age happy and wanna come to this restaurant, then I guess I did my job.” He directs us back
+                    to where we came in. “Now that you got the tour, let’s get you back and you can taste all the magic
+                    that happens here. You and your girlfriend will love this.”</p>
+                <p id="calibre_link-148" class="calibre12">“She’s not&mdash;well&mdash;” I know I’m stammering.</p>
+                <p class="calibre12">“What if he’s <i class="calibre5">my</i> boyfriend and <i class="calibre5">he</i>’s
+                    just tagging along?” Linh says.</p>
+                <p class="calibre12">Chef Lê smiles again. “Oh, touché. She’s got some spice!”</p>
+                <p class="calibre12">“We’re partners,” I quickly clarify, saying anything so that Chef Lê doesn’t get
+                    the wrong idea and keep going with the joke, making things even more uncomfortable between me and
+                    Linh.</p>
+                <p class="calibre12">Back at the table in the center of the room&mdash;“Newly renovated! So you can
+                    experience everything,” Chef Lê says&mdash;Linh and I sit across from each other, absorbing the furry
+                    around us.</p>
+                <p class="calibre12">“Settle down and food’s going to come out in a sec.”</p>
+                <p class="calibre12">I turn to Linh. “Did we even order?”</p>
+                <p class="calibre12">“Nope, but I don’t think we’re going to have a bad meal here,” Linh says.</p>
+                <p class="calibre12">A line of servers brings out the appetizers and immediately our table goes from
+                    empty to crowded. A good thing, since it makes me less aware of how I’m sitting, holding myself. How
+                    far away my hands are from hers and how weird it’d be if I reached for her again.</p>
+                <p class="calibre12">Turns out Linh and I have nothing to say to each other. For good reason.</p>
+                <p class="calibre12">The reason being we’re more preoccupied with the food that may or may not be better
+                    than my mom’s.</p>
+                <p class="calibre12">“If my parents were here…,” Linh begins to say into her bowl of <i
+                        class="calibre5">bún bò Huế</i>.</p>
+                <p class="calibre12">“They’d steal this recipe. Mine would do the same.”</p>
+                <p class="calibre12">“Sorry, this recipe is legit sealed,” says Chef Lê, who’d come back ve minutes ago
+                    to check in on us but sat down as if he was part of the party. I guess this isn’t unusual for him
+                    because the servers set up a plate for him right away. “My dad would chase me out of California if
+                    it somehow leaked.”</p>
+                <p class="calibre12">I grin as I write down his quote. I’m already ve pages in with my notes&mdash; most
+                    of the pages filled with details from the kitchen and atmosphere instead of the actual food. Linh has
+                    started some sketches of the appetizers and entrees. “Is your dad the cook in the family?”</p>
+                <p class="calibre12">“Yeah, Poppa Lê had a small place in Santa Monica about half the size of this
+                    place. I basically grew up there.”</p>
+                <p id="calibre_link-149" class="calibre12">“Our families have restaurants, too,” Linh offers.</p>
+                <p class="calibre12">“No surprise&mdash;you two have healthy appetites,” Chef Lê teases us.</p>
+                <p class="calibre12">“Where did the idea of opening up a restaurant come from?” I ask.</p>
+                <p class="calibre12">“Probably from my dad. Loved what he did with the place. He just wanted to make
+                    customers happy.” Chef Lê laughs, now with a faraway glint in his eyes. “I was always tagging around
+                    at his place and he’d yell at me because there was legit no space. My mom, though, she completely
+                    disagreed with me going into a culinary career. Even culinary school! It wasn’t exactly… stable, you
+                    know.”</p>
+                <p class="calibre12">Linh shifts in her seat, catching the message. Seems like a theme with Việt
+                    mothers.</p>
+                <p class="calibre12">“So when I told her I wanted to open a restaurant, she went o on me. I know she was
+                    worried then, but we said some stu to each other. Lot of angry words.”</p>
+                <p class="calibre12">“What happened after?” Linh asks quietly.</p>
+                <p class="calibre12">“My mom didn’t talk to me for two years. But it’s not like we weren’t a part of
+                    each other’s lives. They lived just a few minutes away from me. I’d talk to my dad, who always
+                    updated me on my mom and what she was doing. <i class="calibre5">Always</i>. I mean, I knew what
+                    she’d bought for groceries because he’d tell me! It was the same thing for me. I bet my mom knew
+                    what I was up to each week.”</p>
+                <p class="calibre12">Chef Lê points at the entrance as if someone would make an appearance. “Then, the
+                    day after I got that <i class="calibre5">Los Angeles Times</i> review was the day my mom appeared at
+                    the door. My dad had dropped her o ! He was tired of the fighting and called us the two most stubborn
+                    people he’d ever met.” He lets out a loud laugh. “And we made up, just like that. After that she was
+                    always showing up here, playing host but also correcting my chefs’ mistakes, correcting <i
+                        class="calibre5">my</i> recipes.”</p>
+                <p class="calibre12">“Two years,” Linh whispers in dismay.</p>
+                <p class="calibre12">Chef Lê nods knowingly. “We lost some time. I think about that all the time now
+                    that she’s gone.” He pauses. “It’s been six and a half months.”</p>
+                <p class="calibre12">That last bit shocks me&mdash;I didn’t come across that in any of the
+                    articles&mdash;and I put down my pencil. “I’m sorry,” I say, hearing Linh o er the same condolences.
+                    The sentence sounds so canned; something I’m not used to saying. I don’t know anyone who’s actually
+                    lost a parent. I’ve heard about it, but the concept seems so far away. So impossible.</p>
+                <p id="calibre_link-150" class="calibre12">“Do you think about her a lot?” I ask.</p>
+                <p class="calibre12">“Legit the other day. I was creating a recipe, something that I had as a little kid
+                    and only my mom could make it. I just wished I’d asked when she was alive. And then I just had a
+                    kid, too, so I’m wondering how to tell him about my mom. There’s still so much history that I don’t
+                    know. My dad casually mentioned the other day that he’d lost a sister when he was six and she was
+                    two. Seven siblings I knew about, but not his sister.…” Chef Lê trails o , looking back at the
+                    kitchen. “History, man. There’s a lot hidden.” Then he perks up, remembering where he is. “Anyway,
+                    I’m still glad we came back into each other’s lives. We had a good time together.”</p>
+                <p class="calibre12">A server comes by with a message for Chef Lê from the kitchen. He needs to go back,
+                    so he does, leaving me and Linh to ourselves again. A busboy stops by with his bin to clear the
+                    plates and we hand them over, too accustomed to doing it ourselves.</p>
+                <p class="calibre12">“He’s nice,” I tell Linh as she packs up her things.</p>
+                <p class="calibre12">“One of a kind.” She turns her notebook upside down, showing me her quick sketch of
+                    him, ball cap and T-shirt captured perfectly. Much like my notes, her focus is Chef Lê and his
+                    dynamic personality. “There’s a lot to unpack.”</p>
+                <p class="calibre12">“Right, his mom.”</p>
+                <p class="calibre12">“And going two years because she didn’t like what he was doing. That’s hard to even
+                    imagine.” She sighs loudly, shoving her colored pencils into her messenger bag. “That’s another
+                    reason I don’t ever see myself telling my mom the truth.”</p>
+                <p class="calibre12">Now that we don’t have any food to distract us, or Chef Lê to dominate the
+                    conversation, or anything else between us, the elephant in the room comes back, the reason for how
+                    hesitant we seem to be acting toward each other.</p>
+                <p class="calibre12">“Hey,” I say as gently as possible. “Can we talk?”</p>
+                <p class="calibre12">“We are.” All of her emotions have shut o .</p>
+                <p class="calibre12">“Linh, I mean about the other day.”</p>
+                <p class="calibre12">“I don’t think I can stay longer,” she says in apology. Her expression is twisted,
+                    like it’s physically hurting her being here. “Can we talk another time?”</p>
+                <p class="calibre12">“I know what you’re thinking.”</p>
+                <p class="calibre12">“Believe me, you don’t know half of it, Bảo,” she says firmly.</p>
+                <p id="calibre_link-151" class="calibre12">“Well, you can tell me, then. Because I’m here. I’m all ears.
+                    Even if you don’t want&mdash;” <i class="calibre5">Us.</i> My thoughts pause. What if I’d misread
+                    everything up until now? What if I thought she liked me because I liked her too much and Linh was
+                    being too nice to say something? Like how she was nice to Kelly even though she didn’t have time to
+                    volunteer? Like now, how she’s avoiding it so that she doesn’t reject me outright?</p>
+                <p class="calibre12">She’s barely looking at me. Maybe I’m closer to the truth than I thought I’d be.
+                </p>
+                <p class="calibre12">“I can be here as a friend,” I finally say. “Really, no hard feelings.”</p>
+                <p class="calibre12">“Thank you,” she says with such relief that it hurts. “I’m sorry.” There is a
+                    painful pause as Linh pretends to check the table to make sure she hasn’t forgotten her belongings.
+                    I squeeze the back of my chair, fighting the urge to just say something&mdash;anything to make her
+                    look at me. Before I can think of anything, Linh says a quiet goodbye and leaves.</p>
+                <p class="calibre12">I exhale. <i class="calibre5">So that’s it. She doesn’t feel what I feel.</i></p>
+                <p class="calibre12">I head to the front, thanking a Black woman with the name tag Sa ron&mdash; which I
+                    had to look at twice; it was too perfect for someone in the business. The way she stands tall
+                    reminds me of my mom when she’s red up and of Linh when she’s excited about light or some obscure
+                    painting that I wouldn’t know about unless she told me. I feel like I should x my hair and anything
+                    else on my body that’s out of place.</p>
+                <p class="calibre12">“Brian made the best food for you tonight. Usually it’s not this good,” she jokes,
+                    her French accent apparent.</p>
+                <p class="calibre12">“Hey, do you want to keep your job?” Chef Lê says, emerging from behind a divider,
+                    wiping his hands on a hand towel.</p>
+                <p class="calibre12">“That’s not for you to decide,” she retorts, “since I own half the place.”</p>
+                <p class="calibre12">This doesn’t faze him and now he merely sports a smile. “Mr. Nguyễn, meet my
+                    partner and wife.”</p>
+                <p class="calibre12">“Partner but his boss,” she playfully chastises him. “Oh, and also his wife.”</p>
+                <p class="calibre12">“Yeah, yeah. Anyway, Sa , this boy here, he’s going to be big one day. I can feel
+                    it. He’s like Anthony Bourdain, rest in peace.”</p>
+                <p class="calibre12">I blink at his unexpected compliment. This is what it means when someone gushes, I
+                    guess. “Thanks.”</p>
+                <p id="calibre_link-152" class="calibre12">“You made me think, you know. Not a lot of people know how to
+                    do that,” Chef Lê says, looking serious.</p>
+                <p class="calibre12">I brush the back of my neck. “I was just asking questions.”</p>
+                <p class="calibre12">“That’s the best type of interview. You gave me room to just talk.” He claps me on
+                    the shoulder, and I sway from the weight of it. “Come back anytime. You and Linh. I saw some of what
+                    she’s sketching. She seems great, too.”</p>
+                <p class="calibre12">“She is.”</p>
+                <p class="calibre12">“But she’s <i class="calibre5">really</i> not your girlfriend?” He makes a show of
+                    looking over his shoulder. “Or, I’m sorry, you’re not really her boyfriend?”</p>
+                <p class="calibre12">“No, she isn’t.”</p>
+                <p class="calibre12">“Yooo,” he says with a slow-forming smirk, “you like her, don’t you?”</p>
+                <p class="calibre12">Sa ron elbows him. “Bry! Stop teasing him.”</p>
+                <p class="calibre12">“It’s complicated.”</p>
+                <p class="calibre12">Chef Lê just laughs. “Good luck, man.”</p>
+                <p class="calibre4">&nbsp;</p>
+                <p class="calibre1">“Con!” My mom calls for me the moment I step into the house. <i
+                        class="calibre5">“Biểu đây.”</i></p>
+                <p class="calibre12">I’m home on time, so that’s not why she’s calling for me. <i class="calibre5">Shit,
+                        did I leave the toilet seat up again?</i> I take the steps slowly, trying to figure out what I
+                    must have done wrong. Running through me, though, something I can’t ignore, is an urge to sit down
+                    and just <i class="calibre5">write</i>. Because Chef Lê is more interesting than I thought he’d be.
+                    Because I’d rather get lost in writing than think about the failed attempt to talk to Linh about us…
+                    about her rejection.</p>
+                <p class="calibre12">Mẹ, just showered, stands in front of the bathroom sink. She leans toward the
+                    mirror&mdash;her mirror counterpart looks at me. A Vietnamese ballad spills out from her bedroom. Ba
+                    must be at the restaurant still.</p>
+                <p class="calibre12">“Here,” she says, and hands the tweezers over. “I need you to pull out a white
+                    hair.”</p>
+                <p class="calibre12">My mom likes to complain that she has so many because of me. I guess I probably
+                    shouldn’t tell her it’s because she’s just old.</p>
+                <p class="calibre12">Sighing, I take the tweezers from her, agreeing to a task that I’ve been subjugated
+                    to since I was old enough to hold these things and also since my mom spotted her rst one back when I
+                    was in sixth grade. I’m not the only one, though. Việt’s had to do this too.</p>
+                <p id="calibre_link-153" class="calibre12">“Where?”</p>
+                <p class="calibre12"><i class="calibre5">“Nè.”</i> She holds it up and I squint. Got one. “Did you finish
+                    your project?”</p>
+                <p class="calibre12">“Yep.”</p>
+                <p class="calibre12">“Good.” I feel her gaze through the mirror. “You are out a lot these days.” I
+                    accidentally pull out a black hair. “Ah, <i class="calibre5">mày làm gì vậy</i>?”</p>
+                <p class="calibre12">“Sorry.” I do it more gently. “The newspaper keeps me busy.”</p>
+                <p class="calibre12">“Con still writing reviews.”</p>
+                <p class="calibre12">“I am, yeah.” I’m not sure why but Chef Lê comes into mind again, about his early
+                    struggles with his mom. Two years. I wonder if me and my mom can ever stop talking for that long.
+                    And who would instigate it? “There’s this guy I met on my assignment. Brian Lê.”</p>
+                <p class="calibre12">“Vietnamese. What does he do?” she asks almost immediately.</p>
+                <p class="calibre12">“He’s the executive chef and owner. He’s pretty young.”</p>
+                <p class="calibre12">“It is hard,” she answers sagely. “But impressive for his age.”</p>
+                <p class="calibre12">“He was talking about his parents and the things he wanted to ask them.”</p>
+                <p class="calibre12">“Oh?”</p>
+                <p class="calibre12">“His mother died in the past few months.”</p>
+                <p class="calibre12">Mẹ clicks her tongue. <i class="calibre5">“Tội quá.”</i> Poor guy.</p>
+                <p class="calibre12">“Yeah, and he mentioned not knowing everything he could have known about her while
+                    she was alive.” I thread my fingers through her hair, rechecking my work. “Why don’t you talk about
+                    Vietnam more?”</p>
+                <p class="calibre12">“I do! I talk about it all the time.” She looks at me directly through the mirror.
+                </p>
+                <p class="calibre12">“Yeah, I know, but more specific things. I know where you lived, what my
+                    grandparents did. That you escaped at night. But that’s more like an overview. Why don’t you tell me
+                    the smaller things?”</p>
+                <p class="calibre12">“Because you don’t ask. But the things I do tell you, you always say, ‘Oh, I don’t
+                    want to hear it, I don’t have time, Mẹ, I heard you say this already.’” She mimics what she thinks I
+                    sound like.</p>
+                <p class="calibre12">“My voice can’t go that high,” I say grudgingly. I <i class="calibre5">have</i>
+                    said those things, though.</p>
+                <p id="calibre_link-154" class="calibre12">“I am your mother, so I don’t have to tell you anything most
+                    of the time. Some matters are too adult for you,” Mẹ starts to say in a familiar <i
+                        class="calibre5">There’s no use arguing</i> voice.</p>
+                <p class="calibre12">“Okay.”</p>
+                <p class="calibre12">“But, if you do want to know more, Mẹ will try to answer you. But my memory isn’t
+                    so good anymore and things are just from so long ago. Mẹ wonder if the past should stay in the
+                    past.”</p>
+                <p class="calibre12">“Maybe, but maybe not.” Silence eases in as I concentrate on her hair.</p>
+                <p class="calibre12">“All of this writing business is making you different.” Our eyes meet in the mirror
+                    again. She tilts her head, regarding me like she would with a recipe that was missing one crucial
+                    ingredient.</p>
+                <p class="calibre12">“Good different?”</p>
+                <p class="calibre12">“Maybe. You seem less weak.”</p>
+                <p class="calibre12">I refrain from rolling my eyes. “Thanks.”</p>
+                <p class="calibre12">“What is making con write?”</p>
+                <p class="calibre12">I don’t expect that kind of question from Mẹ, so I wonder if it’s a mistranslation.
+                    “Like, why am I writing?”</p>
+                <p class="calibre12">“Yes.”</p>
+                <p class="calibre12">“I don’t know. I’ll get a good grade, I guess.” Even my answer, said out loud,
+                    doesn’t sit right in my head. I couldn’t care less about the actual journalism class and getting
+                    good grades and all that. But I have to admit, I feel more and more solid when I have a pen in hand.
+                    When there’s an article that needs xing and it’s up to me to make everything sound right. I did that
+                    for Steve and Ernie. I did it for myself.</p>
+                <p class="calibre12">Linh had said I’d nd something to be passionate about. What if she’s right?</p>
+                <p class="calibre12">“Who is right?”</p>
+                <p class="calibre12">Oops, I’d said that last line out loud. My mom gazes expectantly at me.</p>
+                <p class="calibre12">“Mẹ,” I begin. “Weren’t you saying earlier in the year that you wanted me to</p>
+                <p class="calibre15">nd something? Be more motivated?”</p>
+                <p class="calibre12">“Con want to be a writer?”</p>
+                <p class="calibre12">In my mind’s eye, far into the future, I’m seeing myself in a newsroom, a big one.
+                    In some big city. I see nights working under desk lamps. Ink staining my shirt cu s, eyes tight and
+                    bleary from unrest. I see words owing from my</p>
+                <p id="calibre_link-155" class="calibre15">fingertips.</p>
+                <p class="calibre12">“I’m thinking about it.”</p>
+                <p class="calibre12">“Writing is hard. Con might not nd a job.” Mẹ, always blunt.</p>
+                <p class="calibre12">“I know.”</p>
+                <p class="calibre12">“You might need to live in our basement.”</p>
+                <p class="calibre12">“What&mdash;I won’t.”</p>
+                <p class="calibre12">“You can if you will need to.”</p>
+                <p class="calibre12">“It’s all cement.”</p>
+                <p class="calibre12">“We will work on renovating it. Just for you.”</p>
+                <p class="calibre12">“So much confidence,” I mutter.</p>
+                <p class="calibre12">Mẹ pats my hand, holding the tweezers. “Mẹ saying the basement is yours if you need
+                    it. You can stay as long as you want.”</p>
+                <p class="calibre12">I imagine thirty- ve-year-old me, journalist, writer, or whatever, living in the
+                    dungeons of our basement. Maybe some people would be okay staying with family, but I don’t think
+                    that’s for me. As I look back at my mom, I see her contented smile, and the corners of my mouth tilt
+                    up. All that nagging she’s done over the years finally paid o , she’s likely thinking. And now she can
+                    worry less, have less gray hairs.</p>
+                <p class="calibre12">I wince at the idea of her satisfaction swiftly turning to anger once she realizes
+                    who’s been a part of this change inside me. Linh’s apologetic face appears suddenly. <i
+                        class="calibre5">I’m sorry.</i></p>
+                <p class="calibre12">I say nothing more and continue to scout for the rest of Mẹ’s rebellious hair
+                    strands.</p>
+                </p>
+            </article>
+
+        </main>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <footer class="reader-footer">
+            <div class="footer-left">
+                <a href="pho-chapter-22.html">Previous Chapter</a>
+            </div>
+            <div class="footer-center">
+                <small>End of book — <a href="index.html">Back to library</a></small>
+            </div>
+            <div class="footer-right">
+                <a href="pho-chapter-24.html">Next Chapter</a>
+            </div>
+        </footer>
+
+    </body>
+</body>
+
+</html>
