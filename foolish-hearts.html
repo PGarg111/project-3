@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foolish Hearts</title>
+    <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+
+</head>
+
+<body class="book-page">
+
+    <body class="reader-page dark-mode">
+        <header class="reader-header">
+            <a class="back" href="practice.html">← Library</a>
+            <h1 class="book-title">Foolish Hearts</h1>
+            <div>
+                <button id="play-btn">Play Music</button>
+                <button id="pause-btn">Pause Music</button>
+
+                <audio id="bg-music"
+                    src="30 Minutes of Beautiful Romantic Music_ Guitar Music, Violin Music, Cello Music, Piano Music ★74 [wqHHRcuJ3OU].mp3"
+                    loop style="display: none;">
+                </audio>
+
+                <script>
+                    const music = document.getElementById('bg-music');
+                    const playBtn = document.getElementById('play-btn');
+                    const pauseBtn = document.getElementById('pause-btn');
+
+                    music.volume = 0.5;
+
+                    playBtn.addEventListener('click', () => {
+                        music.play();
+                    });
+
+                    pauseBtn.addEventListener('click', () => {
+                        music.pause();
+                    });
+                </script>
+            </div>
+
+            <div class="reader-controls">
+                <button class="control" onclick="toggleTheme()">🌓</button>
+
+            </div>
+            <div class="reader-controls">
+                <button onclick="resizeText(-2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
+                <button onclick="resizeText(2)"
+                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            </div>
+
+        </header>
+
+        <nav class="toc">
+            <strong>Contents</strong>
+            <button onclick="showChapter('chapter-1')">Chapter 1</button>
+            <button onclick="showChapter('chapter-2')">Chapter 2</button>
+            <button onclick="showChapter('chapter-3')">Chapter 3</button>
+            <button onclick="showChapter('chapter-4')">Chapter 4</button>
+            <button onclick="showChapter('chapter-5')">Chapter 5</button>
+            <button onclick="showChapter('chapter-6')">Chapter 6</button>
+            <button onclick="showChapter('chapter-7')">Chapter 7</button>
+            <button onclick="showChapter('chapter-8')">Chapter 8</button>
+            <button onclick="showChapter('chapter-9')">Chapter 9</button>
+            <button onclick="showChapter('chapter-10')">Chapter 10</button>
+            <button onclick="showChapter('chapter-11')">Chapter 11</button>
+            <button onclick="showChapter('chapter-12')">Chapter 12</button>
+            <button onclick="showChapter('chapter-13')">Chapter 13</button>
+            <button onclick="showChapter('chapter-14')">Chapter 14</button>
+            <button onclick="showChapter('chapter-15')">Chapter 15</button>
+            <button onclick="showChapter('chapter-16')">Chapter 16</button>
+            <button onclick="showChapter('chapter-17')">Chapter 17</button>
+            <button onclick="showChapter('chapter-18')">Chapter 18</button>
+            <button onclick="showChapter('chapter-19')">Chapter 19</button>
+            <button onclick="showChapter('chapter-20')">Chapter 20</button>
+            <button onclick="showChapter('chapter-21')">Chapter 21</button>
+            <button onclick="showChapter('chapter-22')">Chapter 22</button>
+            <button onclick="showChapter('chapter-23')">Chapter 23</button>
+            <button onclick="showChapter('chapter-24')">Chapter 24</button>
+            <button onclick="showChapter('chapter-25')">Chapter 25</button>
+            <button onclick="showChapter('chapter-26')">Chapter 26</button>
+            <button onclick="showChapter('chapter-27')">Chapter 27</button>
+            <button onclick="showChapter('chapter-28')">Chapter 28</button>
+            <button onclick="showChapter('chapter-29')">Chapter 29</button>
+            <button onclick="showChapter('chapter-30')">Chapter 30</button>
+            <button onclick="showChapter('chapter-31')">Chapter 31</button>
+            <button onclick="showChapter('chapter-32')">Chapter 32</button>
+            <button onclick="showChapter('chapter-33')">Chapter 33</button>
+            <button onclick="showChapter('chapter-34')">Chapter 34</button>
+            <button onclick="showChapter('chapter-35')">Chapter 35</button>
+            <button onclick="showChapter('chapter-36')">Chapter 36</button>
+            <button onclick="showChapter('chapter-37')">Chapter 37</button>
+            <button onclick="showChapter('acknowledgements')">Acknowledgements</button>
+            <button onclick="showChapter('about-author')">About the Author</button>
+        </nav>
+
+        <main class="book">
+            <section id="chapter-1" class="chapter">
+                <article>
+                    <h2>one</h2>
+                    <p class="calibre1">It’s at Amber Brunati’s annual Pink Party that everything begins to unravel.</p>
+                    <p class="calibre15">The invitation&mdash;on thick pink paper, naturally, with gold and turquoise
+                        swirls&mdash;had declared it to be <i class="calibre13">the last great luncheon of the
+                            summer.</i> As if my summer had been packed to bursting with a whole host of other themed
+                        luncheons instead of babysitting jobs and shifts at Pinky’s Sub Shop. It also implied that there
+                        had been a number of mediocre luncheons this summer, as this was meant to be the last of the <i
+                            class="calibre13">great</i> ones.</p>
+                    <p class="calibre15">I stare around Amber’s backyard at clustered tables covered in pink gingham
+                        cloths and at the girls around said tables. We’re all wearing pink except for Iris Huang, who
+                        had the nerve to arrive in lavender (Amber’s angry whispers carried clear across the lawn), and
+                        Kaitlyn Winthrop, who is technically wearing magenta. This seems to incense Amber even more,
+                        because while we all know that Iris’s dress is a big official <i class="calibre13">eff you</i>
+                        to the entire Pink Party construct, Kaitlyn doesn’t seem to realize that she’s committed a faux
+                        pas.</p>
+                    <p class="calibre15">“Someone get that girl a color wheel,” Amber hisses angrily to Madison Lutz,
+                        sitting to my left. “Someone get her a fucking Pantone booklet because magenta is not pink. We
+                        all know magenta is not pink, right?” She looks to me. “Right?”</p>
+                    <p class="calibre15">“Abso-tootin-lutely!” I declare loudly, because I am a moron.</p>
+                    <p class="calibre15">It’s quiet for a split second, and then a laugh escapes from Madison.</p>
+                    <p class="calibre15">Amber doesn’t laugh, but her lips twitch in amusement. “Yes. Good. Thank you,
+                        Claudia. Glad we’re all on the same page.”</p>
+                    <p class="calibre15">In truth, we are rarely all on the same page. More often than not, they’re all
+                        on one page, and I’m on a completely different one. It can’t be helped most of the time. Society
+                        itself puts us on different pages. They drive Range Rovers and have celebrity deejays at their
+                        sweet sixteens. I had to scrape and scrounge and toast subs, and remake the subs that I toasted
+                        badly, just to buy a car. A car that isn’t even 100 percent mine. My brother technically owns 40
+                        percent of it and somehow manages to drive it 80 percent of the time.</p>
+                    <p id="calibre_link-70" class="calibre15">But I don’t say any of this to Amber for fear she might
+                        fling a tray of cookies at me. Instead I watch as Madison pats Amber’s back. “You need to
+                        breathe, okay?” she says. “Eat a macaron. They have lavender in them, right? That’s supposed to
+                        be calming.”</p>
+                    <p class="calibre15">“Lavender just makes me think of Iris, which makes me enraged,” Amber says.</p>
+                    <p class="calibre15">We all look across the yard to where Iris is seated with Paige Breckner.
+                        Together, she and Paige hold the titles of class president three years running (Iris), most
+                        popular girl in our grade (Paige), and cutest couple in our school (collectively).</p>
+                    <p class="calibre15">Though “cutest” isn’t quite right. I don’t think anyone who knows her would use
+                        the word <i class="calibre13">cute</i> to describe anything relating to Iris Huang. Objectively,
+                        she has a roundness-of-face and smallness-of-stature that could traditionally be deemed cute.
+                        But she’s also ruthless and unforgiving and, some would say, ill-mannered and incredibly
+                        unpleasant. Somehow, this doesn’t seem to affect her political standing, but then again, that
+                        often seems to be the case in the real world as well.</p>
+                    <p class="calibre15">But Paige and Iris have been the longest-enduring couple on record during our
+                        time at the Prospect-Landower School for Girls, and so they are automatically termed “cutest,”
+                        because that’s shorter than “longest-enduring couple on record during our time at the
+                        Prospect-Landower School for Girls.”</p>
+                    <p class="calibre15">I saw them once&mdash;I mean I’ve seen them lots of times&mdash;but once, after
+                        school, I saw them sitting on the low wall outside the lit building, sharing a pair of earbuds
+                        and listening to something on one of their phones. Their heads were bent together, and then all
+                        of a sudden Paige started dancing in her spot, mouthing along the words to whatever song it was.
+                    </p>
+                    <p class="calibre15">Iris looked up at her, smiled, and then looked back at the phone. Paige started
+                        bopping harder, lip-synching more emphatically, pointing at Iris.</p>
+                    <p class="calibre15">Iris ducked her head, blushed, focused on the screen until Paige got to her
+                        feet, took Iris’s hands, and pulled her up, trying to get her to jump around. Iris looked
+                        flustered but … endeared, I guess. Fond in a way I had never seen her look.</p>
+                    <p class="calibre15">When Iris finally relented and joined in dancing, the earbud jerked right out
+                        of her ear. She scrambled for it, accidentally yanking the other out of Paige’s ear. They both
+                        ended up bent over laughing, leaning on each other for support.</p>
+                    <p class="calibre15">It was sweet&mdash;that’s why it stuck with me. A rare moment where Iris didn’t
+                        seem completely steely but instead kind of awkward and fumbly and smitten.</p>
+                    <p id="calibre_link-71" class="calibre15">So maybe “cutest” still means cutest, even where she’s
+                        involved.</p>
+                    <p class="calibre15">Right now, Paige is chatting with Sudha Prabhu, laughing behind one hand as
+                        Sudha gestures animatedly, while Iris looks for all the world like she’s waiting in an airport
+                        terminal and her flight has just been canceled. In a sea of pink, she is unrelentingly purple.
+                    </p>
+                    <p class="calibre15">At my table, Madison grins at Amber. “Deep breaths.”</p>
+                    <p class="calibre15">“I just want everything to be perfect,” Amber says, eyes wide and strangely
+                        earnest as she looks around the table at each of us. “Is it? Do you like the food? Are you
+                        having fun?”</p>
+                    <p class="calibre15">We all affirm the quality of the food and the fun we’re having. I nod
+                        emphatically as I hork down a petit four.</p>
+                    <p class="calibre15">“I know it’s silly,” Amber says, “but it’s just, you know. Senior year and all.
+                        Everything we do is sort of the last time we get to do it. So it should be perfect, right?”</p>
+                    <p class="calibre15">We double down on the reassurances, and finally Amber seems satisfied.</p>
+                    <p class="calibre15">“Okay. Okay, good.” She stands promptly, smooths down the front of her dress,
+                        takes a deep breath, and then heads off to the next table.</p>
+                    <p class="calibre15">I adjust my own dress as the other girls start talking about school. I borrowed
+                        it from Zoe, so although it fits the color scheme, it’s also a little too short and a little too
+                        tight. When I came downstairs in it, my mom said “Wowza,” and my dad, brow wrinkled, asked,
+                        “What kind of party is this again?”</p>
+                    <p class="calibre15">Truth be told, I’d risk Amber’s wrath and wear the wrong color if it meant Zoe
+                        could be here with me, wearing this dress instead. She is my best friend, and there’s only so
+                        much a text can convey. Some of this stuff you just have to witness to fully appreciate. And
+                        most of it, I’d probably have a lot more fun witnessing with her.</p>
+                    <p class="calibre15">But Zoe goes to Springdale High School, and I go to PLSG, and this isn’t really
+                        the kind of thing where you can bring a plus one. So I send her a quick text update and then
+                        listen in on Madison and Ainsley Stewart discussing some band they both watched on TV last
+                        night.</p>
+                    <p class="calibre15">The rest of the luncheon goes well, much to Amber’s relief. We eat fancy finger
+                        foods. We toast each other with fizzy pink punch. There are speeches filled with assurances that
+                        this is going to be the “best year ever” and a shit ton of light applause.</p>
+                    <p class="calibre15">Paige stands at one point and thanks Amber for hosting.</p>
+                    <p class="calibre15">If you’re giving a presentation in class, Paige is the person who smiles at you
+                        when you catch her eye and nods encouragingly, like she’s actually listening. We had gym
+                        together freshman year, and whenever she was captain, she insisted on everyone counting off
+                        instead of picking teams.</p>
+                    <p id="calibre_link-72" class="calibre15">When she finishes her toast, she turns to Iris with a
+                        smile. “Do you want to add something, babe?”</p>
+                    <p class="calibre15">They share a look&mdash;in the silence, Paige’s expression shifts from hopeful
+                        to imploring&mdash;until finally Iris pushes her chair back and stands, holding up her glass of
+                        punch. She clears her throat.</p>
+                    <p class="calibre15">“Careless tourism and destructive fishing practices are destroying our world’s
+                        coral reefs,” she says, and then takes a drink.</p>
+                    <p class="calibre15">I can’t tell if it’s a joke. Like, admittedly you probably shouldn’t joke about
+                        the destruction of our world’s coral reefs. A few people chuckle uncomfortably anyway.</p>
+                    <p class="calibre15">Iris sits abruptly. Paige is still standing, her glass raised.</p>
+                    <p class="calibre15">The look on her face is stricken, but somehow she manages to recover a smile.
+                        “Thank you again, Amber,” she says. “This is … a great way to end the summer.”</p>
+                    <p class="calibre15">And that’s the last of the speeches. Conversation resumes around our little
+                        tables, and I excuse myself after a bit. Amber’s mom points me in the direction of the bathroom,
+                        but once I get inside the house, I realize that her directions of “to the left and across from
+                        the music room” kind of hinge on knowing which room is the music room. Which I don’t.</p>
+                    <p class="calibre15">So I head to the left and open the first door I come upon, and to my
+                        disappointment, it isn’t a bathroom but a bedroom.</p>
+                    <p class="calibre15">I’m in luck though&mdash;there’s a bathroom en suite. I dash in and take care
+                        of business, and then I spend way too long sampling the products in pretty bottles on the
+                        bathroom counter.</p>
+                    <p class="calibre15">I’m admiring the scents that I’ve so expertly layered together (by squirting
+                        three random lotions on at the same time) when I hear sounds from the outer room: voices
+                        approaching and then the closing of the bedroom door. Sealing the voices inside.</p>
+                    <p class="calibre15">“&mdash;believe you would act like that.”</p>
+                    <p class="calibre15">“I didn’t want to make a speech. I thought that was obvious.”</p>
+                    <p class="calibre15">“<i class="calibre13">Coral reefs?</i> Seriously?”</p>
+                    <p class="calibre15">“Tell me we shouldn’t be more concerned about the state of the coral reefs.”
+                    </p>
+                    <p class="calibre15">Paige and Iris.</p>
+                    <p class="calibre15">I’d always thought they were a good pair. People don’t like Iris, generally,
+                        but they respect that she gets shit done. Conversely, everyone loves Paige. She’s friendly and
+                        kind, neutral good through and through. She softens Iris. And I guess Iris gives her an edge.
+                        What’s that saying&mdash;iron fist in a velvet glove? Iris is the former, and Paige is the
+                        latter.</p>
+                    <p class="calibre15">“I’m not saying it’s not true, I’m saying it’s not <i
+                            class="calibre13">relevant to the situation</i>. This isn’t a freaking Envirothon meeting!”
+                    </p>
+                    <p id="calibre_link-73" class="calibre15">“Please. You know I don’t like how those Envirothon kids
+                        conduct themselves.”</p>
+                    <p class="calibre15">“You couldn’t think of one nice thing. About Amber, or the summer, or school,
+                        or anything. One nice thing. You could’ve said the punch is good.”</p>
+                    <p class="calibre15">“The punch tastes like Windex.”</p>
+                    <p class="calibre15"><i class="calibre13">“Iris.”</i></p>
+                    <p class="calibre15">“What?”</p>
+                    <p class="calibre15">“At the very least, would it have been so hard to put on a pink dress?”</p>
+                    <p class="calibre15">“I’m not gonna do something just because someone tells me to.”</p>
+                    <p class="calibre15">“You do tons of things because someone tells you to! You wear shoes in
+                        restaurants! You obey seat belt laws!”</p>
+                    <p class="calibre15">“There’s a big difference between doing something to prevent myself from flying
+                        through a car windshield and doing something to satisfy a meaningless color scheme at a
+                        meaningless party that neither of us actually care about.”</p>
+                    <p class="calibre15">“<i class="calibre13">I</i> care about it,” Paige says, and something in her
+                        voice sounds frayed. “But that doesn’t matter to you. What I want. You never even ask me. You
+                        just assume. You always&mdash;<i class="calibre13">always</i>&mdash;just assume.”</p>
+                    <p class="calibre15">Silence follows. And in this silence, I realize several things&mdash;first,
+                        that this is not just a little spat about a speech or a dress code. And second, that my temporal
+                        window for stepping out of the bathroom and announcing my presence has entirely closed. I’m in
+                        it for the long haul. I have to wait them out.</p>
+                    <p class="calibre15">“I don’t want to do this,” Iris says finally.</p>
+                    <p class="calibre15">A pause. “Do you understand though? About the dress? And the party? Do you get
+                        that it’s important to me? And, like, how something that matters to me should be important to
+                        you, too?”</p>
+                    <p class="calibre15">“It’s stupid though,” Iris says. “This whole thing is stupid. If it was
+                        something that actually <i class="calibre13">mattered</i>, I would&mdash;” She cuts off, starts
+                        again. “You know I would…” She doesn’t finish.</p>
+                    <p class="calibre15">“You would what?” A beat. “What would you do?”</p>
+                    <p class="calibre15">“I don’t know.” Iris sounds sullen. “I would act like I cared more.”</p>
+                    <p class="calibre15">It’s quiet. Behind me, a bead of water drips from the faucet into the sink.</p>
+                    <p class="calibre15">And then there are footsteps in the outer room. I can’t tell which of them has
+                        moved toward the other. Or if they’ve moved away.</p>
+                    <p class="calibre15">When Paige speaks again, her voice is thick. “I love you, Iris,” she says. “But
+                        you’re the most selfish person I’ve ever met.”</p>
+                    <p class="calibre15">I press my ear to the door. I’m only human, after all, and this is possibly the
+                        best bit of drama I’ve unwittingly stumbled onto in the whole of my high school career.</p>
+                    <p id="calibre_link-74" class="calibre15">“What are you saying?”</p>
+                    <p class="calibre15">“I love you,” she says again, and I’m fairly certain she’s crying now. “But I
+                        want you to be different. I want, I wa&mdash;” Her voice hitches, like a sob. “I want you to be
+                        better than you are.”</p>
+                    <p class="calibre15">I dated a boy named Will Sorenson for almost a whole semester in tenth grade.
+                        January to April. We were going to go to his junior prom together that year, but he broke up
+                        with me just two weeks shy.</p>
+                    <p class="calibre15">We were in his basement, and he was playing an online role-playing game called
+                        Battle Quest. His character&mdash;a humanoid dragon named Alphoneus Centurion&mdash;was
+                        approaching a snow-covered vista with a monster in his sights when Will glanced over at me and
+                        said, “So I don’t know, I just think maybe we should break up, you know?”</p>
+                    <p class="calibre15">Like we had been having a conversation this whole time that I had somehow
+                        missed. I pressed him to explain as Alphoneus Centurion launched a series of attacks against the
+                        monster.</p>
+                    <p class="calibre15">“I just think that when you’re with someone, you should … <i
+                            class="calibre13">feel</i> something. Right?”</p>
+                    <p class="calibre15">“You don’t feel anything with me?”</p>
+                    <p class="calibre15">“I feel regular with you,” he said. “But I don’t feel … you know. Well, I mean,
+                        if you knew, then you’d understand, and you’d want me to feel that with someone else. And if you
+                        don’t know, then that means you don’t feel it either, and so we probably shouldn’t be together
+                        anyway.”</p>
+                    <p class="calibre15">Alphoneus raised his ax. The monster was a goner.</p>
+                    <p class="calibre15">Up until this moment, I thought that was the most crushing thing you could say
+                        to someone you’re dumping. That you feel <i class="calibre13">regular</i> with them. It sort of
+                        managed to negate every sweet thing that we ever had together. Like it was all fake. One-sided,
+                        on my part. I was elated the first time he held my hand. I thought I might float off the
+                        sidewalk. And now looking back, I see that everything that was massive to me, everything that
+                        was meaningful&mdash;to him it was just <i class="calibre13">regular</i>.</p>
+                    <p class="calibre15">But Paige Breckner just took the cake in the breakup department. <i
+                            class="calibre13">I want you to be better than you are.</i> If I were Iris, I would’ve
+                        disintegrated on the spot.</p>
+                    <p class="calibre15">Iris does no such thing. She just speaks, after a long pause, her voice in
+                        stark contrast to Paige’s. It’s calm. Crisp. No hint of tears.</p>
+                    <p class="calibre15">“Are you breaking up with me?” she says.</p>
+                    <p class="calibre15">Paige doesn’t reply.</p>
+                    <p class="calibre15">“Are you. Breaking up with me?” Iris repeats, razor sharp.</p>
+                    <p class="calibre15">“Yes,” Paige says.</p>
+                    <p class="calibre15">I realize I’m holding my breath. Waiting for&mdash;something. A reaction. A
+                        movement. A sound. Anything.</p>
+                    <p id="calibre_link-75" class="calibre15">And then a sound comes. A loud one in fact&mdash;the very
+                        clear and deliberate peal of a bell.</p>
+                    <p class="calibre15">For a split second, it doesn’t make any sense. Paige breaks up with Iris and
+                        Iris responds by whipping out a handbell?</p>
+                    <p class="calibre15">Then I realize. My phone.</p>
+                    <p class="calibre15">I fumble with my bag. Purses are interdimensional sometimes, I swear&mdash;
+                        particularly when you’re trying to get something out of one. I finally extricate the phone, but
+                        three more texts follow in the intervening time&mdash;three more pealing bells&mdash;that only
+                        serve to further sink me.</p>
+                    <p class="calibre15">The silence that follows is deafening.</p>
+                    <p class="calibre15">I look into my palm. I might as well see the texts that are my undoing.</p>
+                    <p class="calibre15"><i class="calibre13">I need an update</i>, Zoe’s first message reads.</p>
+                    <p class="calibre15"><i class="calibre13">Are you eating cahhhhviahhhr with Ahhhmber</i></p>
+                    <p class="calibre15"><i class="calibre13">And Mahhhhdison and Aaaaaainsley and Desk Lahhhmp</i></p>
+                    <p class="calibre15"><i class="calibre13">And all of your other fahhhhhbulous clahhhhssmates?</i>
+                    </p>
+                    <p class="calibre15">I almost laugh&mdash;it would be funny, normally, but now it’s so terrible it
+                        goes from terrible back into funny.</p>
+                    <p class="calibre15">Until there’s the sound of footsteps that are most definitely approaching and a
+                        firm knock on the door directly in front of my face. Then it goes right back into terrible.</p>
+                    <p class="calibre15">“Hello?” It’s Paige.</p>
+                    <p class="calibre15">I hold my breath. Maybe if I’m perfectly still, perfectly silent, they’ll think
+                        that they’d heard wrong.</p>
+                    <p class="calibre15">“We heard your phone,” Paige says.</p>
+                    <p class="calibre15">“How do you know it wasn’t your phone?” I reply. Because. I am. A moron.</p>
+                    <p class="calibre15">I squeeze my eyes shut. Take a deep breath. And then I open the door.</p>
+                    <p class="calibre15">It’s a Moment, between the three of us. There are just two hundred students at
+                        PLSG. Fifty girls a grade. And although I know Amber and Madison and Ainsley and Desk Lamp
+                        (there isn’t really a Desk Lamp, but Zoe likes to make fun of the names, how “everyone sounds
+                        like an item from a furniture catalog, seriously”) and all the others in a cursory manner, there
+                        aren’t many of them that I have had genuine Moments with.</p>
+                    <p class="calibre15">The thing about Moments is that just because a moment is one, doesn’t mean it’s
+                        a good one. They are not all Special, or Cherished, as picture frames and embellished scrapbook
+                        inserts would have you believe.</p>
+                    <p class="calibre15">This is more of the Painfully Awkward variety. Me, clutching my phone in the
+                        bathroom doorway, looking quite like my ear had just been pressed against the door&mdash;because
+                        my ear <i class="calibre13">had</i> just been pressed against the door. Paige, her face red,
+                        cheeks wet, eyes puffy. And Iris Huang, resplendent and terrifying in lavender YSL, looking at
+                        me with a quiet, smoldering, single-minded rage.</p>
+                    <p id="calibre_link-76" class="calibre15">Paige speaks first. “We didn’t know anyone was in here,”
+                        she says, and she’s clearly putting effort into sounding something close to normal, though she
+                        doesn’t bother to wipe the tears tracking down her cheeks.</p>
+                    <p class="calibre15">“I didn’t know anyone was out here. I didn’t hear anything,” I say, even though
+                        it’s a lie compounded by another lie.</p>
+                    <p class="calibre15">The silence is unbearable.</p>
+                    <p class="calibre15">So I do what I do best, or what I do worst, I suppose&mdash;my greatest
+                        strength is also my greatest weakness. I break it.</p>
+                    <p class="calibre15">“I had the faucet on,” I say. “Really loud. And I pee pretty loud. I’m
+                        surprised you guys didn’t hear me, it was like Niagara Falls in here. Just really … very loud in
+                        volume. A lot of … liquids … flowing in a … noisy fashion.”</p>
+                    <p class="calibre15">Paige blinks at me, clearly caught off guard, but Iris’s eyes only narrow, the
+                        rage intensifying.</p>
+                    <p class="calibre15">I have to get out of here.</p>
+                    <p class="calibre15">“I’ll just … leave you guys to it.… Not that I know what <i
+                            class="calibre13">it</i> is, not that I heard anything,” I say, and make to leave, but Paige
+                        moves to the door first.</p>
+                    <p class="calibre15">“No, I’m going,” she says, and then quickly walks out.</p>
+                    <p class="calibre15">Leaving me. And Iris. Alone.</p>
+                    <p class="calibre15">Iris crosses immediately to me and holds a finger up to my face. She forces me
+                        backward, back into the bathroom, where I stumble over the rug and catch myself on the fancy
+                        towel rack.</p>
+                    <p class="calibre15">“What did you hear?” she says.</p>
+                    <p class="calibre15">“Nothing. I heard nothing.”</p>
+                    <p class="calibre15">“You’re lying.”</p>
+                    <p class="calibre15">“I’m not.”</p>
+                    <p class="calibre15">“You are, you’re terrible at it. If you go back out there and tell
+                        everyone&mdash; if you tell them&mdash;” She falters. And I would hardly believe it unless I saw
+                        it myself, but Iris’s eyes swiftly fill with tears. Her lower lip quivers. It legitimately
+                        quivers.</p>
+                    <p class="calibre15">Her voice is thick when she speaks: “I will <i class="calibre13">ruin</i> you.”
+                    </p>
+                    <p class="calibre15">And then she turns and leaves.</p>
+
+                </article>
+                <button onclick="showChapter('chapter-2')">Next →</button>
+            </section>
+
+            <section id="chapter-2" class="chapter hidden">
+                <article>
+                    <h2>two</h2>
+                    <p class="calibre1">I go to work at Pinky’s on Sunday. The day after Iris declared that she would
+                        ruin me.</p>
+                    <p class="calibre15">When I rejoined the party yesterday, she was nowhere in sight. Paige had
+                        resumed her seat, but she was looking decidedly worse for wear and the rest of her table had
+                        clearly noticed. Sudha had one arm around her, their heads bent together in conversation, and
+                        Alicia Smith was kneeling at her side, holding up a pink patterned napkin so Paige could wipe
+                        her eyes.</p>
+                    <p class="calibre15">Word would travel fast. I didn’t need to tell anyone what I had heard.
+                        Furthermore, I didn’t <i class="calibre13">want</i> to tell anyone. First, because it was no
+                        one’s business, and second, because I didn’t want the wrath of Iris Huang to befall me and my
+                        family.</p>
+                    <p class="calibre15">I replay it in my mind as I pull a sub out of the toaster and deposit it on the
+                        counter in front of me (a little charred around the edges, but hopefully that would escape
+                        notice). No one had ever sworn my ruin before.</p>
+                    <p class="calibre15">I would just steer clear of them both at school. I’ve managed to fly under the
+                        radar pretty effectively these last three years. It won’t be hard to pull off a fourth.</p>
+                    <p class="calibre15"><i class="calibre13">Stealth mode,</i> I think as I cut and wrap up the
+                        sandwich in patterned Pinky’s paper.</p>
+                    <p class="calibre15">Pinky’s is “home of the nine-inch sub.” <i class="calibre13">Fifty percent more
+                            than a Subway sub!</i> the sign declares.</p>
+                    <p class="calibre15">“I don’t think that’s right,” I said to my manager Aaron on my first day.
+                        “Because Subway subs are twelve inches? So really it’s only seventy-five percent of a Subway
+                        sub?”</p>
+                    <p class="calibre15">“They mean the six-inch,” he replied.</p>
+                    <p class="calibre15">“So maybe they should say that?”</p>
+                    <p class="calibre15">“Home of the nine-inch sub<i class="calibre13">, fifty percent more than a
+                            six-inch Subway sub</i>,” Aaron contemplated, and then shook his head. “That’s too much
+                        numerical information. It’s too cerebral.”</p>
+                    <p id="calibre_link-77" class="calibre15">This was possibly the first time anyone had used the
+                        phrase “too cerebral” when describing Pinky’s advertising. Because someone somewhere in the
+                        Pinky’s marketing scheme had made the brilliant connection that sub sandwiches are vaguely
+                        phallic. And from that, all the penis-related Pinky sub campaigns were born.</p>
+                    <p class="calibre15">Like the commercial where you see the guy standing from the back, and then a
+                        woman in front of him, and she says, “Nine inches????” in this insane lusty voice, and then they
+                        pan to the side and show that he’s holding a Pinky sub right at groin height? It’s the worst. It
+                        is literally the worst. I’m a cog in the world’s dumbest corporate sandwich machine.</p>
+                    <p class="calibre15">But I needed a job. And Pinky’s was hiring. So here I am.</p>
+                    <p class="calibre15">Zoe comes over that evening when I get off work, and we ride our bikes to the
+                        Tropical Moose to get snow cones. The car is free&mdash;Alex is actually home for once&mdash;but
+                        I’m stiff from standing all day and I smell like Pinky’s. I want to ride, to feel the late
+                        summer air rushing through my hair, to pedal fast and feel the burn of it in my legs.</p>
+                    <p class="calibre15">I get a piña colada&ndash;flavored snow cone, Zoe gets a bubble gum one, and we
+                        manage to secure a table out front, the kind with the chairs that leave waffle patterns on the
+                        backs of your thighs.</p>
+                    <p class="calibre15">We’re settled in when two little kids pass by clutching blue cones. A woman
+                        follows close behind but veers toward our table as they pass.</p>
+                    <p class="calibre15">“You have beautiful hair,” she says to Zoe, who smiles and nods in reply, her
+                        mouth full of slush. She pulls a face at me when the woman has passed.</p>
+                    <p class="calibre15">Zoe does have beautiful hair. The rest of her is pretty magnificent as well
+                        &mdash;dark eyes with the longest lashes, flawless brown skin. One time a barista at Starbucks
+                        wrote <i class="calibre13">your smile is gorgeous</i> on Zoe’s coffee cup. I took a picture of
+                        her holding the cup, smiling wide, and we put it on Tumblr, and to date it has over fifty
+                        thousand notes.</p>
+                    <p class="calibre15">It makes sense to me, knowing Zoe as I do. Her outside matches her insides. I
+                        know goodness doesn’t manifest itself as beauty&mdash;she’s not pretty because she’s smart, or
+                        funny, or kind&mdash;but it’s fitting. She’s my favorite person, and if one of us had to grow up
+                        ridiculously beautiful, I’m glad it’s her. It just makes sense.</p>
+                    <p class="calibre15">“I have calc and lit with Kris,” Zoe says, continuing our previous
+                        conversation. “And AP Bio with Gabby, so that’s something. What’s your schedule like?”</p>
+                    <p class="calibre15">I shrug. “What it’s always like.”</p>
+                    <p class="calibre15">“Hey, how was the party? You never texted back.”</p>
+                    <p class="calibre15">Now there is no way Iris Huang could be privy to this conversation. Zoe doesn’t
+                        even go to our school&mdash;she’s at Springdale, the public school in our generic Chicago
+                        suburb. We live in one of the neighborhoods that’s fare-and-a-half to get to if you take a cab
+                        from the city. PLSG is twenty minutes from Springdale, and most of the richest girls live even
+                        farther out. So the likelihood of Iris popping up and hearing me tell Zoe that I witnessed the
+                        Breakup of the Century (or at least of the Year to Come) is pretty slim. And usually I tell Zoe
+                        everything. But. Something in me just … doesn’t want to risk it.</p>
+                    <p id="calibre_link-78" class="calibre15">So I just shrug again and say, “The food was good. There
+                        was a lot of talk of this year being <i class="calibre13">our year</i>.”</p>
+                    <p class="calibre15">“Who did all the other years belong to?”</p>
+                    <p class="calibre15">“Right? I asked Madison that. She looked at me like I was crazy.”</p>
+                    <p class="calibre15">“Too bad she can’t buy a sense of humor.”</p>
+                    <p class="calibre15">“I’d sell her mine.”</p>
+                    <p class="calibre15">“You could buy another car with the money.”</p>
+                    <p class="calibre15">“Do you think I’m funny enough for car money?”</p>
+                    <p class="calibre15">“For sure. You’re minimum pre-owned Toyota Corolla funny.”</p>
+                    <p class="calibre15">I grin.</p>
+                    <p class="calibre15">It’s quiet as we finish our snow cones, but not a bad kind of quiet. With some
+                        people I feel the need to fill the space, but with Zoe, it’s okay. It doesn’t have to be
+                        constant. We can listen to the hum of crickets, the buzz of the tree frogs.</p>
+                    <p class="calibre15">We ride back to my place when we’re finished. I ask Zoe if she wants to come
+                        in, but she shakes her head.</p>
+                    <p class="calibre15">“I should get back. It’s officially a school night.”</p>
+                    <p class="calibre15">“Ugh.”</p>
+                    <p class="calibre15">“It was good while it lasted.” Zoe smiles&mdash;her radiant Starbucks cup smile
+                        &mdash;and all at once I’m struck with something Amber said at the party&mdash;<i
+                            class="calibre13">senior year and all.</i> How everything we do is sort of the last time we
+                        get to do it. Tomorrow is the very last Back to School for us. Back to high school, anyway.
+                        Meaning that today&mdash;tonight, right now&mdash;is the end of the very last summer of the way
+                        things are. Next summer we might go off to college at different times. To different cities.
+                        Different time zones. I can’t imagine it.</p>
+                    <p class="calibre15">Or rather, I can. I just don’t want to.</p>
+                    <p class="calibre15">I don’t say any of that. “Text me tomorrow,” I say instead.</p>
+                    <p class="calibre15">“Will do.” Zoe gets back on her bike. “Night, Claude.”</p>
+                    <p class="calibre15">“Night.”</p>
+                    <p class="calibre15">I watch her pedal away.</p>
+                </article>
+                <button onclick="showChapter('chapter-1')">← Previous</button>
+                <button onclick="showChapter('chapter-3')">Next →</button>
+            </section>
+
+            <section id="chapter-3" class="chapter hidden">
+                <article>
+                    <h2>three</h2>
+                    <p class="calibre1">My mom makes me stand on the front steps before I leave for school the next
+                        morning so she can take a picture. The annual first day of school stoop photo. Frames hang in
+                        the kitchen for each of us&mdash;a big print scroll across the top declaring <i
+                            class="calibre13">My School Days</i> with twelve little spaces underneath for pictures.</p>
+                    <p class="calibre15">All of Alex’s spaces were filled as of last year, and Julia’s were finished
+                        long ago. Her frame doesn’t even match ours.</p>
+                    <p class="calibre15">Today is my last School Days picture. There is a 45 percent chance my mom will
+                        burst into tears before I leave the house. So I try to move the process along, shouldering my
+                        backpack, holding my lunch bag to my side, and raising one hand in a big thumbs-up. The
+                        traditional pose. The very last box to be filled.</p>
+                    <p class="calibre15">“I just can’t believe it,” Mom says, tapping her phone screen half a dozen
+                        times, and the odds raise: 56 percent chance of tears now.</p>
+                    <p class="calibre15">“We should get going,” I say, moving to step off the porch. “Where’s Dad?”</p>
+                    <p class="calibre15">“Wait wait wait, let’s get one of you and your brother.” She turns. “Alex, get
+                        over here.”</p>
+                    <p class="calibre15">He’s in the driveway, leaning against the car.</p>
+                    <p class="calibre15">“I’m good actually,” he says, not looking up from his phone.</p>
+                    <p class="calibre15">“One picture.”</p>
+                    <p class="calibre15">He sighs, types one more thing, and then shoves his phone in his pocket and
+                        joins me on the porch.</p>
+                    <p class="calibre15">“Closer together,” Mom instructs. “Alex, put your arm around your sister
+                        &mdash;it’s her last first day of school.”</p>
+                    <p class="calibre15">“Come on, Alex,” I say, picking up his arm and slinging it around my shoulders.
+                        I poke his side, and he smiles for a second before twisting away. I hope my mom got the shot,
+                        because that’s the only opportunity she’s going to get this morning.</p>
+                    <p class="calibre15">“No, one more with Daddy!” she says as my dad emerges from the front door,
+                        balancing a doughnut on top of a travel mug, but Alex is already heading back to the car.</p>
+                    <p id="calibre_link-79" class="calibre15">“Who called the paparazzi?” Dad says.</p>
+                    <p class="calibre15">“Excuse me, I am one photographer.”</p>
+                    <p class="calibre15">“Who called the paparazzo?” he amends, and then strikes a pose next to me.
+                        “Make sure to get my good side.” And then, “We should take a selfie,” he says when my mom lowers
+                        her phone again. “And send it to your sister!”</p>
+                    <p class="calibre15">Sending selfies to Julia is something we do at least once a week, if not more.
+                        Since moving to Indianapolis with her husband, Julia has gotten a surplus of Wallace family
+                        selfies. I’ve always wondered how she feels about them. If it comes off as “We wish you were
+                        here!” like my parents intended, or if it’s more like “We’re all here and you’re not!”</p>
+                    <p class="calibre15">We take one regardless. I think Alex will just sulk in the background, but he
+                        tosses up a peace sign at the last moment.</p>
+                    <p class="calibre15">“This has been great,” Alex says, “but some of us have jobs.”</p>
+                    <p class="calibre15">“And some of us have school,” I say.</p>
+                    <p class="calibre15">“And some of us have jobs at school!” Dad declares.</p>
+                    <p class="calibre15">I watch Alex drive away in my car. The main reason I wanted that car so badly
+                        was so that I could drive myself to school. But going in on it with Alex was the only way I
+                        could afford it. And Alex apparently needs the car more because his schedule is “flexible” and
+                        there’s no point in it “sitting around all day” in my school’s parking lot when he could be
+                        doing “like, stuff, I don’t know, just stuff.”</p>
+                    <p class="calibre15">So Alex gets the car during the day, and I drive in with my dad. It is not
+                        remotely fair. But Alex maintains that he’s way more experienced in the art of “not remotely
+                        fair,” so this is, in some ways, retribution.</p>
+                    <p class="calibre15">It isn’t my fault that Prospect-Landower is a girls’ school. It isn’t my fault
+                        that our dad works there. And it wasn’t my idea to go there in the first place. I wanted to go
+                        to Springdale with Zoe and all our friends.</p>
+                    <p class="calibre15">“This is an incredible opportunity,” my mom had said way back when, smoothing
+                        the hair off my face. “So many girls would be so happy for a chance to go to Prospect.”</p>
+                    <p class="calibre15">“Then one of them should go for me,” I had mumbled, pressing a tearstained
+                        cheek into Mom’s shoulder.</p>
+                    <p class="calibre15">It’s a privilege. I get that now. But it didn’t seem like one back then.</p>
+                    <p class="calibre15">My dad parks in the faculty lot, and we part ways at the lit building. PLSG
+                        isn’t one big building but multiple small ones, like a tiny college. Brick buildings with black
+                        shutters and white trim. It’s very picturesque. I guess playing up curb appeal is part of
+                        justifying the price tag.</p>
+                    <p class="calibre15">I haven’t checked like Zoe, messaging back and forth with friends to confirm
+                        who I have what class with. It doesn’t really matter much to me either way.</p>
+                    <p id="calibre_link-80" class="calibre15">But I wish I had planned ahead&mdash;consulted some of the
+                        girls beforehand. Because then I would’ve been prepared to walk into British lit and see Paige
+                        Breckner and Iris Huang, seated at opposite ends of the room. Paige is in the back, buffered by
+                        Sudha and Alicia, and Iris is at the front, alone.</p>
+                    <p class="calibre15"><i class="calibre13">This might not be good,</i> I think to myself, but there’s
+                        nothing to be done about it.</p>
+                    <p class="calibre7">* * *</p>
+                    <p class="calibre1">“Just please come with me, I don’t want to go by myself.”</p>
+                    <p class="calibre15">Caris Pearlman corners me after lit. A surprisingly uneventful class, actually.
+                        We went over the syllabus. We got a Chaucer excerpt to read for Wednesday. All in all, pretty
+                        anticlimactic compared to the scenarios I had imagined in my head.</p>
+                    <p class="calibre15">The halls are clearing out now, a steady stream of girls heading toward the
+                        dining hall.</p>
+                    <p class="calibre15">“I just need to give him something,” Caris says, looking at me earnestly.</p>
+                    <p class="calibre15">“But then maybe … I shouldn’t, you know, be there. In that case.”</p>
+                    <p class="calibre15">Her cheeks flush. “Not like&mdash;that’s why I want you to go with me. It seems
+                        so <i class="calibre13">illicit</i> otherwise.”</p>
+                    <p class="calibre15">I could see Caris Pearlman in Regency times, wearing an empire-waist gown, a
+                        long string of pearls around her neck, smiling behind a fan in some crowded London ballroom. She
+                        certainly fit the Regency romance sensibility. And I would know. My mom is an avid romance
+                        reader, and I snuck all kinds of books when I was younger&mdash;novels with women in satin
+                        dresses reclining on divans, or masked men in greatcoats on the cover, white shirts splayed open
+                        revealing bare chests. Always with titles like <i class="calibre13">The Duke and the Devil</i>
+                        or <i class="calibre13">Passion Is a British Rogue</i>.</p>
+                    <p class="calibre15">Though I suppose Caris is the Before in the Regency romance scenario. Before
+                        the encounters with the British rogue and all that, driving the heroine <i class="calibre13">mad
+                            with lust</i> and whatnot.</p>
+                    <p class="calibre15">Caris does not appear to be mad with lust in this moment. Instead, she is
+                        standing before me, clutching a cellophane-wrapped loaf of what she later informs me is zucchini
+                        bread, after I agree to accompany her, and we make our way to the Grove.</p>
+                    <p class="calibre15">The Grove is a small stretch of woods that separates PLSG and the neighboring
+                        boys’ school, Danforth Prep. It’s back behind PLSG’s library, and Danforth’s athletic fields
+                        abut it. There was talk a few years ago about bulldozing the Grove and merging the two campuses,
+                        but there was enough outcry to stop that from happening. A lot of stuff about “maintaining the
+                        storied traditions of two treasured institutions.” Thus these treasured institutions remain
+                        separate.</p>
+                    <p id="calibre_link-81" class="calibre15">Though not so separate that any PLSG student or any
+                        Danforth Prep student couldn’t just waltz through the woods to the opposite school. Or, as is
+                        the fashion sometimes, meet in the Grove itself and … I don’t even know. Make out up against a
+                        tree. Smoke drugs.</p>
+                    <p class="calibre15">(“Smoke drugs?” Zoe said when I hypothesized this to her once. “Smoke. Drugs.
+                        Yeah, I bet that’s it. I bet they get high on that reefer. They smoke that Mary Jane. Maybe they
+                        even <i class="calibre13">consume alcohol</i>. Can you imagine?”</p>
+                    <p class="calibre15">“Okay, I get it. That was stupid.”</p>
+                    <p class="calibre15">“I’m not saying we need to corral your ass into this century, but we probably
+                        need to corral your ass into this century.”)</p>
+                    <p class="calibre15">Apparently, the Grove is also a spot where students occasionally meet to
+                        exchange first-day-of-school baked goods, as is the tradition between Caris and her boyfriend,
+                        Robbie.</p>
+                    <p class="calibre15">Technically, we’re not supposed to be back here at lunch. But of course that’s
+                        never really stopped anyone.</p>
+                    <p class="calibre15">I stand off to the side&mdash;glaringly superfluous now&mdash;as Caris and
+                        Robbie kiss and exchange snacks. If Iris and Paige are&mdash;were&mdash;the cutest couple at
+                        PLSG, Caris and Robbie are probably now the pair to beat for cutest in the PLSG&ndash;Danforth
+                        collective.</p>
+                    <p class="calibre15">When Caris and Robbie start doing more kissing than talking (maybe she’s more
+                        <i class="calibre13">mad with lust</i> than I thought), I wander off. There’s no official path
+                        through the Grove, but one has been worn down over the years. A track cleared via repeated use.
+                    </p>
+                    <p class="calibre15">I pull a sandwich out of my bag&mdash;it is lunchtime, after all&mdash;and
+                        start in on it as I meander through the trees. I hear voices up ahead, and I spot people as I
+                        round the bend leading down to Danforth’s fields.</p>
+                    <p class="calibre15">A group has gathered at the base of one of the tallest trees, just at the edge
+                        of the woods. A few girls from my class&mdash;Lena Ideker, Sudha, and Alicia, as well as a
+                        couple of juniors&mdash;are joined by several Danforth guys.</p>
+                    <p class="calibre15">I recognize one of them in particular. I don’t know Gideon Prewitt personally,
+                        but I know a good deal <i class="calibre13">of</i> him, because everyone knows of him. He’s an
+                        undeniable presence in the social media scene of PLSG. Constantly referenced, constantly tagged,
+                        constantly popping up in pictures to press kisses against the cheeks of girls who are usually
+                        smiling so wide their eyes crinkle with it.</p>
+                    <p class="calibre15">Right now Gideon is leaning into Lena Ideker’s space. She’s smiling coyly up at
+                        him, her back resting against the tree trunk behind them.</p>
+                    <p id="calibre_link-82" class="calibre15">I could never look so cool. So unaffected.</p>
+                    <p class="calibre15">I watch as he says something to her. She responds with a nod, says something in
+                        reply, and he throws his head back in a laugh. It rings out&mdash;a bright, loud burst of
+                        laughter&mdash;reaching even me where I stand.</p>
+                    <p class="calibre15">“There you are!”</p>
+                    <p class="calibre15">I turn as Caris and Robbie approach, holding their baked goods and each other’s
+                        hands.</p>
+                    <p class="calibre15">“Sorry. You seemed … involved,” I say.</p>
+                    <p class="calibre15">Caris’s cheeks are flushed. Robbie’s hair is much more mussed than it was when
+                        he first greeted us.</p>
+                    <p class="calibre15">Caris ducks her head, but before she can speak, a call bursts out from the
+                        group nearby:</p>
+                    <p class="calibre15">“ROBERT A. FISCHMAN,” a deep voice bellows. We all turn. Gideon Prewitt is
+                        still standing with Lena under the tree, but he’s looking our way, both of his arms raised in
+                        the air like a referee declaring <i class="calibre13">Goal!</i> “BIG FISH ROB. GET OVER HERE.
+                        BRING YOUR LOVELY GIRLFRIEND. BRING HER LOVELY FRIEND.”</p>
+                    <p class="calibre15">Robbie raises his eyebrows at us. Caris looks to me, smiles prettily, and I
+                        shrug.</p>
+                    <p class="calibre15">So we go over.</p>
+                    <p class="calibre15">Gideon Prewitt moves toward us when we reach the group. He shakes Robbie’s hand
+                        enthusiastically.</p>
+                    <p class="calibre15">“You’ve got some lip gloss on your cheek, pal,” he says. “And on your neck.
+                        And&mdash;” He drops Robbie’s hand and pulls the collar of Robbie’s shirt aside, then wiggles
+                        his eyebrows at Caris. “Get it, girl.”</p>
+                    <p class="calibre15">Caris turns redder, her cuteness intensifying.</p>
+                    <p class="calibre15">“How was your summer, Caris?” Gideon says. “Was it great?”</p>
+                    <p class="calibre15">She nods rigorously. “Yeah, it was awesome.” She grips Robbie’s hand. “I mean,
+                        we mostly just hung out. But it was really fun.”</p>
+                    <p class="calibre15">“Well, then I don’t need to ask Big Fish Rob how his summer was. Must’ve been
+                        the best if he was spending time with you.” Gideon turns his gaze to me. “Who’s your friend?”
+                    </p>
+                    <p class="calibre15">“Oh, this is Claudia,” Caris says.</p>
+                    <p class="calibre15">“Third wheel extraordinaire,” I murmur as I reach for the hand Gideon has
+                        extended toward me.</p>
+                    <p class="calibre15">I don’t think he’s heard me, but his grin widens as he clasps my hand. “Nice to
+                        meet you. How was your summer?”</p>
+                    <p class="calibre15"><i class="calibre13">Are you personally responsible for the quality of
+                            everyone’s summer?</i> I want to ask, but I don’t. “Very average,” I say instead.</p>
+                    <p class="calibre15">His eyes are bright. “Good. I guess? Is that good?” Before I can respond, he
+                        introduces me to the other guys in the group and then encompasses the girls in one sweeping
+                        gesture&mdash;“You must know these girls already, you must be blessed with their faces on a
+                        daily basis”&mdash;and then we hang out with them for a little while, until it’s close enough to
+                        next period that I want to get back.</p>
+                    <p id="calibre_link-83" class="calibre15">I nudge Caris, tapping at my wrist, and she nods.</p>
+                    <p class="calibre15">Gideon flashes me a dazzling smile as we prepare to leave, while Caris gives
+                        Robbie a quick peck on the lips, and then another, and another.</p>
+                    <p class="calibre15">“It was great meeting you,” Gideon says to me.</p>
+                    <p class="calibre15">“You too,” I say, and I don’t point out that today is not actually the first
+                        time we’ve met.</p>
+                    <p class="calibre15">When Caris and I get back to the dining hall, lunch is almost over.</p>
+                    <p class="calibre15">“Sorry,” she says. “I’ll share my cookies with you. Robbie’s mom made them.
+                        They’re my favorite.”</p>
+                    <p class="calibre15">“That’s okay. I ate a sandwich in the woods.” As you do.</p>
+                    <p class="calibre15">She ignores me, fumbling with the Ziploc bag and then thrusting a large,
+                        lumpy-looking cookie at me. “Just take one. They’re so good.”</p>
+                    <p class="calibre15">It appears I have no choice in the matter. “Thanks.”</p>
+                    <p class="calibre15">“No problem. Thank you. And thanks from Robbie.” She gives me a winning smile
+                        and then heads off.</p>
+                </article>
+                <button onclick="showChapter('chapter-2')">← Previous</button>
+                <button onclick="showChapter('chapter-4')">Next →</button>
+            </section>
+
+            <section id="chapter-4" class="chapter hidden">
+                <article>
+                    <h2>four</h2>
+                    <p class="calibre1">Brit lit, on the whole, doesn’t turn out to be the powder keg I expected it to
+                        be. That week, we read excerpts from <i class="calibre13">The Canterbury Tales</i>. We do some
+                        critical discussion. Paige and Iris stay at their respective poles of the room, I stay in the
+                        center, and neither of them acknowledge me. By the end of the first week, I think that maybe
+                        this will be all right.</p>
+                    <p class="calibre15">I am lulled into complacency. But then.</p>
+                    <p class="calibre15">Then, the following week, Mrs. Dennings claps her hands and says, “We’re gonna
+                        partner up.”</p>
+                    <p class="calibre15">Our first project of the year. A group project.</p>
+                    <p class="calibre15">“We’re going to need groups of two and one group of three.”</p>
+                    <p class="calibre15">I look immediately to Sam McKellar, sitting to my left, but she’s already
+                        locked eyes with Polly Allman, sitting next to her.</p>
+                    <p class="calibre15">Okay, fine. Me, Sam, and Polly then. Group of three, locked down.</p>
+                    <p class="calibre15">But before I can catch Sam’s eye, Polly has gestured to Kaitlyn, and they’re
+                        all nodding to one another in silent agreement.</p>
+                    <p class="calibre15">“We’re the group of three!” Polly declares loudly, before I can beg them to
+                        reconsider.</p>
+                    <p class="calibre15">So I’m the odd one out. I scan the room, trying not to look too frantic, but
+                        panic begins to well up as everyone else pairs off around me. That “I cannot be entirely left
+                        out” desperation, that “I cannot be the only loser without a partner” dread.</p>
+                    <p class="calibre15">Mrs. Dennings must notice. “Who still needs a partner?”</p>
+                    <p class="calibre15">Time to accept my fate. I raise my hand. And across the room, front row,
+                        opposite corner, Iris Huang raises hers.</p>
+                    <p class="calibre15">Iris glances around and we lock eyes. Something flashes across her face,
+                        something akin to horror, but it quickly disappears, replaced with cool indifference.</p>
+                    <p class="calibre15">“I’m happy to work alone,” she says to Mrs. Dennings.</p>
+                    <p class="calibre15">“No, I don’t want anyone alone on this.”</p>
+                    <p id="calibre_link-84" class="calibre15">“I’d really prefer to.”</p>
+                    <p class="calibre15">Mrs. Dennings’s lips twitch at the pushback, but she doesn’t reprimand Iris.
+                        She just casts her eyes over the group as a whole. “If you’d like, I can always <i
+                            class="calibre13">assign</i> partners&mdash;”</p>
+                    <p class="calibre15">The class lets out a collective groan of protest that not even Iris can
+                        withstand.</p>
+                    <p class="calibre15">“Fine,” Iris says. “Whatever. It’s fine.”</p>
+                    <p class="calibre15">Brilliant.</p>
+                    <p class="calibre7">* * *</p>
+                    <p class="calibre1">I basically have to chase Iris down after class. I catch up with her at her
+                        locker, where she’s furiously spinning the combination lock.</p>
+                    <p class="calibre15">“Hey, we should probably exchange numbers or whatever, to plan for the paper.”
+                    </p>
+                    <p class="calibre15">Iris pulls down on the lock a little harder than strictly necessary.</p>
+                    <p class="calibre15">“I will write the body of the paper,” she says. “You will write the
+                        introduction and the conclusion.”</p>
+                    <p class="calibre15">“But that’s not … equal at all.…”</p>
+                    <p class="calibre15">“I’m sorry, I’m offering to do the majority of the work here and you’re
+                        offended by that?”</p>
+                    <p class="calibre15">“I’m not saying&mdash;”</p>
+                    <p class="calibre15">“Intro. Conclusion.” She picks a book out of the bottom of her locker and slams
+                        the door.</p>
+                    <p class="calibre15">“What about the thesis statement? Like, we should decide that together, don’t
+                        you think? You know, do some planning…”</p>
+                    <p class="calibre15">“If it really matters that much to you, I’ll write the first half, and you can
+                        write the second half. Sound good?”</p>
+                    <p class="calibre15">“But I&mdash;”</p>
+                    <p class="calibre15">“Good,” Iris says, and walks away.</p>
+                    <p class="calibre7">* * *</p>
+                    <p class="calibre1">“She’s a monster,” I say that night.</p>
+                    <p class="calibre15">“They’re all monsters,” Zoe replies, and on-screen, Zoe’s avatar, Korbinian
+                        Brodmann, raises his bow.</p>
+                    <p class="calibre15">“No, not&mdash;” I jump aside as Korbinian spins around me, shooting half a
+                        dozen arrows in quick succession and felling the first group of beasts surrounding us. “Not
+                        them,” I say. “Iris. From school.”</p>
+                    <p class="calibre15">I switch from my saber to my broadsword and hack at a couple more.</p>
+                    <p class="calibre15">“Geez, where’s Alex?” Zoe says as we continue to get swarmed.</p>
+                    <p id="calibre_link-85" class="calibre15">“Work. School. Who knows.”</p>
+                    <p class="calibre15">“He said he’d play. This tank doesn’t know what the hell he’s doing.”</p>
+                    <p class="calibre15">“Alex wouldn’t tank anyway, he’s trying to level up his mage.”</p>
+                    <p class="calibre15">Tanks play a critical role in online role-playing games like Battle Quest. They
+                        essentially function to distract monsters and bosses and allow fighters to get hits in. Alex is
+                        good at it&mdash;he’s the best tank of the three of us&mdash;and he would’ve been better than
+                        the random person we recruited online.</p>
+                    <p class="calibre15">We finish the rest of the dungeon off pretty quickly and score our loot. Not
+                        too bad for a routine sweep, though it would’ve been faster with Alex.</p>
+                    <p class="calibre15">“Tell me about this girl again?” Zoe says.</p>
+                    <p class="calibre15">“Iris. She’s a nightmare. We’re writing a paper together and she won’t even
+                        talk to me.”</p>
+                    <p class="calibre15">“Why?”</p>
+                    <p class="calibre15">“Because she’s&mdash;” I stop, shake my head. “I don’t know, she just doesn’t
+                        like me.”</p>
+                    <p class="calibre15">“I find that hard to believe. Everyone likes you.”</p>
+                    <p class="calibre15">“You know we’ve been friends too long for you to lie like that,” I say, setting
+                        my controller aside. We’re in my room, Zoe on the bed with her MacBook and me at the desk on the
+                        old laptop I got from Julia. Technically it was from Julia’s husband, Mark. It’s terribly old,
+                        but it runs Battle Quest and it was free, and that’s what counts.</p>
+                    <p class="calibre15">I’ve been playing Battle Quest ever since Will Sorenson and I broke up. To say
+                        he got me into it in the first place wouldn’t be quite right. I only ever really watched him
+                        play. It was after we broke up that I truly dove into it, and it was Julia and Mark who walked
+                        me through it. Showed me around the world of Aradana, leveled me up fast, ran me through my
+                        first dungeons.</p>
+                    <p class="calibre15">I got Zoe and Alex into it, too, and now we’re in a guild, single-minded in one
+                        mission: battling the Lord of Wizard.</p>
+                    <p class="calibre15">The latest expansion is called Battle Quest: Lord of Wizard, but technically,
+                        the Lord of Wizard himself is only a character nominally. The story line is about a
+                        centuries-old pact between the Lord of Wizard and an ancient prince of Aradana who beseeched the
+                        Lord of Wizard to stop an encroaching civil war among the Aradanian people. The Lord of Wizard
+                        cast a powerful spell and brought the country peace on the condition that in a thousand years,
+                        he would return and claim one thing from the kingdom as his own. The prince, a somewhat
+                        short-term thinker, agreed.</p>
+                    <p class="calibre15">A thousand years went by, and it wasn’t until the expansion pack came out that
+                        it became clear that what the Lord of Wizard wanted from the kingdom was the throne.</p>
+                    <p class="calibre15">The current prince refused, things escalated, and now the Lord of Wizard has
+                        sent troops to Aradana: an army of supernatural creatures&mdash;banshees, wendigos, the
+                        undead&mdash;and the citizens of Aradana have to fight back, slay the troops, the troop leaders,
+                        and finally the army’s top general, and win the war.</p>
+                    <p id="calibre_link-86" class="calibre15">That’s all fine and good (to be honest, it’s a lot like
+                        the war that was prevented in the original Battle Quest), but the real buzz about the expansion
+                        is that a series of side quests, performed in a precise order, accomplishing a very specific set
+                        of tasks and acquiring a very specific set of items, will allow you to unlock a secret story
+                        line that involves battling the Lord of Wizard personally.</p>
+                    <p class="calibre15">We’re determined to do it. People have been very tight-lipped about it
+                        online&mdash;some say it’s because no one has ever reached that final battle, or because it’s
+                        all just a rumor. But Julia and Mark are obsessed&mdash;they follow gamers, read message boards
+                        religiously, and have online friends who are dead serious about it&mdash;and they swear it’s
+                        real.</p>
+                    <p class="calibre15">Zoe and I play a little longer this evening, just doing random sweeps for
+                        monsters. We’ve been trying to unravel the rumored Lord of Wizard quests when the whole group is
+                        assembled, and Julia and Mark are probably still at work.</p>
+                    <p class="calibre15">Alex shows up just as we’re winding down.</p>
+                    <p class="calibre15">He sticks his head in my door. “You guys wanna do dungeons?”</p>
+                    <p class="calibre15">“We could’ve used you like an hour ago,” Zoe says, one eyebrow raised.</p>
+                    <p class="calibre15">“Sorry. Work. I can play now though?”</p>
+                    <p class="calibre15">Zoe makes a face. “I should probably get going. I have homework, and Claude has
+                        to work on a paper with her new best friend, Iris.”</p>
+                    <p class="calibre15">“I thought you hated Iris,” Alex says, looking at me.</p>
+                    <p class="calibre15">“I don’t hate anyone.”</p>
+                    <p class="calibre15">“Not even Voldemort?”</p>
+                    <p class="calibre15">“I mean, yes, obviously. But I don’t&mdash;”</p>
+                    <p class="calibre15">“You don’t hate the Joker?” Zoe says. “What about Darth Vader? Do you hate
+                        Darth Vader, or is it mostly, you know, like cool indifference?”</p>
+                    <p class="calibre15">Alex leans against the doorframe. “Okay, Fuck Marry Kill: Voldemort, the Joker,
+                        and Darth Vader.”</p>
+                    <p class="calibre15">“Geez, you guys,” I say as I go to shut down Battle Quest.</p>
+                    <p class="calibre15">“Fuck the Joker,” Zoe says.</p>
+                    <p class="calibre15">“What?” Alex squawks.</p>
+                    <p class="calibre15">She shrugs. “Ledger over Nicholson, though.”</p>
+                    <p class="calibre15">“Ew,” I say, and Google pictures of the Joker, because I don’t know what a
+                        Nicholson Joker looks like. Zoe knows more about movies than me. Movies, and art, and math, and
+                        science, and pretty much everything. Zoe’s character isn’t named Korbinian Brodmann for
+                        nothing&mdash;he’s a nineteenth century neuroscientist who categorized different regions of the
+                        brain. My character, for contrast, is named Viola Constantinople, which was literally the first
+                        name I thought of upon launching my character profile.</p>
+                    <p id="calibre_link-87" class="calibre15">“Kill Darth Vader, and marry Voldemort,” Zoe finishes.</p>
+                    <p class="calibre15">“What the hell?” Alex says. “That’s the exact wrong answer.”</p>
+                    <p class="calibre15">I don’t want to participate, but I can’t stop myself: “Why would you marry
+                        Voldemort? Why would you not kill Voldemort?”</p>
+                    <p class="calibre15">“I think&mdash;”</p>
+                    <p class="calibre15">“No, literally, who chooses to not kill Voldemort?” Alex says.</p>
+                    <p class="calibre15">“I think I could change the course of his whole life,” Zoe says simply.</p>
+                    <p class="calibre15">“You don’t think you could change Darth Vader?” I say.</p>
+                    <p class="calibre15">“Nah, girl, Padmé tried.”</p>
+                    <p class="calibre15">“I feel like I would fuck Darth Vader, because he’s got like powers and stuff,
+                        you know?” Alex says. “How would the Force factor in? How would we negotiate the suit and stuff?
+                        It’s a guaranteed wild ride from start to finish.”</p>
+                    <p class="calibre15">“I hate everything about this conversation,” I say, shutting down my computer.
+                    </p>
+                    <p class="calibre15">“You love it. You love us,” Zoe says, and she’s right. I do.</p>
+                </article>
+                <button onclick="showChapter('chapter-3')">← Previous</button>
+                <button onclick="showChapter('chapter-5')">Next →</button>
+            </section>
+
+            <section id="chapter-5" class="chapter hidden">
+                <article>
+                    <h2>five</h2>
+                    <p class="calibre1">Iris sends me exactly one half of a paper the day before it’s due. I have to
+                        stay up half the night trying to finish it, but I do, and we get it in on time. Hopefully, this
+                        is the last joint effort she and I ever undertake.</p>
+                    <p class="calibre15">It’s a futile hope, though. I know when Mrs. Dennings holds us back after
+                        class, the week after the papers are due.</p>
+                    <p class="calibre15">“I wanted to speak with you both privately before I hand papers back,” she says
+                        quietly, though we’re the only ones in the room and have taken seats in the desks closest to
+                        hers. “I’ve had you both before. I know you’re very bright students.” She picks up a paper off
+                        the stack on her desk. “But I was surprised by the quality of the work you handed in.”</p>
+                    <p class="calibre15">I see the grade printed at the top of the page, and it sets off a Klaxon in my
+                        brain. I can’t afford to do badly in a class. Literally. I need a scholarship for college, so
+                        every little bit counts. Any little screwup could put that in jeopardy.</p>
+                    <p class="calibre15">“What exactly are the issues?” Iris says curtly.</p>
+                    <p class="calibre15">“I think the main thing is a real lack of cohesion,” Mrs. Dennings says, not
+                        unkindly, and then outlines a number of other problems that make me regret Iris asking.</p>
+                    <p class="calibre15">I stare down at my desk. I can see Iris in my peripheral vision, sitting up
+                        straight, her hands clasped in her lap.</p>
+                    <p class="calibre15">When Mrs. Dennings finishes, Iris speaks: “Is there anything we can do to make
+                        it up? A revision? An extra credit assignment?”</p>
+                    <p class="calibre15">Mrs. Dennings purses her lips for a moment. And then: “Yes, in fact. There is.”
+                    </p>
+                    <p class="calibre7">* * *</p>
+                    <p class="calibre1">The halls are deserted when we get out of the lit room, lunch having started
+                        already. Iris pushes past me.</p>
+                    <p class="calibre15">“Hey&mdash;” I start, and I’m not sure what I’m about to follow it up with, if
+                        the words <i class="calibre13">watch where you’re going</i> or <i class="calibre13">don’t take
+                            this out on me</i> or <i class="calibre13">this is your fault, too</i> will actually leave
+                        my lips, or if they’ll shrivel up and die upon one look from Iris.</p>
+                    <p id="calibre_link-88" class="calibre15">She doesn’t give me the chance to find out, whirling
+                        around and beating me to it: “This is all your fault, you know.”</p>
+                    <p class="calibre15">Our next unit is Shakespeare. And conveniently, the drama department at
+                        Danforth Prep is doing <i class="calibre13">A Midsummer Night’s Dream</i> as their fall
+                        production. In conjunction with PLSG.</p>
+                    <p class="calibre15">So in addition to rewriting our paper, Iris and I have been “strongly urged” to
+                        audition for extra credit.</p>
+                    <p class="calibre15">“At least we get a chance to make it up,” I say. Overwhelming relief is my main
+                        feeling at the moment&mdash;maybe the semester’s gotten off to a rocky start, but this one
+                        failure won’t haunt my transcript forever.</p>
+                    <p class="calibre15">“We shouldn’t be in this position in the first place. We wouldn’t be here if
+                        you hadn’t fucked up.”</p>
+                    <p class="calibre15">“I didn’t know what you were trying to say! Your thesis made no sense, and you
+                        didn’t give me enough time to rework it.”</p>
+                    <p class="calibre15">“Like I’d let you rewrite something I wrote. Like I’d trust you with that.”</p>
+                    <p class="calibre15">It comes out before I can stop it: “I don’t get why you don’t like me. You
+                        don’t even know me enough to not like me.”</p>
+                    <p class="calibre15">“I don’t need to know you.”</p>
+                    <p class="calibre15">“Just because I&mdash;” <i class="calibre13">Overheard you getting brutally
+                            dumped</i>. I stop short.</p>
+                    <p class="calibre15">“Because you what?” Iris says.</p>
+                    <p class="calibre15">“Nothing.”</p>
+                    <p class="calibre15">She looks away. “This is your fault,” she says again. “If you had finished
+                        earlier, we could’ve fixed it, <i class="calibre13">I</i> could’ve fixed it. But now we’re being
+                        <i class="calibre13">High School Musical</i>-ed, and it’s all your fault.”</p>
+                    <p class="calibre15">“We’re what?”</p>
+                    <p class="calibre15">“<i class="calibre13">High School Musical</i>. In the third one, they get in
+                        trouble, and the English teacher makes them work on the school play?”</p>
+                    <p class="calibre15">She looks so angry, for a moment it’s hard to comprehend that she’s describing
+                        a Disney Channel franchise to me.</p>
+                    <p class="calibre15">“You know the policy here, don’t you?” she says. “If you audition, you have to
+                        work on the play. So no matter if we get parts or not”&mdash;<i class="calibre13">or not</i>
+                        will be the case for me&mdash;“we have to work on the show. One bad paper and our semester is
+                        fucked.”</p>
+                    <p class="calibre15">“It’s not … fucked.”</p>
+                    <p class="calibre15">“Yeah, maybe if you don’t have anything else going on in your life, but in case
+                        you haven’t noticed, I actually <i class="calibre13">do</i> stuff around here.”</p>
+                    <p class="calibre15">“I do stuff,” I say.</p>
+                    <p id="calibre_link-89" class="calibre15">“What do you do?” Iris says. “I mean, besides take up
+                        space. What do you actually do?”</p>
+                    <p class="calibre15">I open my mouth to speak but then shut it again. I have never met anyone with
+                        such a highly concentrated meanness in them.</p>
+                    <p class="calibre15">“What?” Iris spits. I’m not intimidated&mdash;well, maybe I am, a
+                        little&mdash;but it’s more of a bone-deep desire to avoid confrontation. I have a general life
+                        tenet that I feel can be applied to pretty much anything&mdash;<i class="calibre13">worth it</i>
+                        or <i class="calibre13">not worth it</i>. And fighting back is not worth it in this moment.</p>
+                    <p class="calibre15">So I just shake my head. Iris’s lip curls in disgust, and she turns and walks
+                        away.</p>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-6')">Next →</button>
+            </section>
+
+            <section id="chapter-6" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-2')">Next →</button>
+            </section>
+
+            <section id="chapter-7" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-2')">Next →</button>
+            </section>
+
+            <section id="chapter-8" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-2')">Next →</button>
+            </section>
+
+            <section id="chapter-9" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-8')">← Previous</button>
+                <button onclick="showChapter('chapter-10')">Next →</button>
+            </section>
+
+            <section id="chapter-10" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-9')">← Previous</button>
+                <button onclick="showChapter('chapter-11')">Next →</button>
+            </section>
+
+            <section id="chapter-5" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-6')">Next →</button>
+            </section>
+
+            <section id="chapter-5" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-6')">Next →</button>
+            </section>
+
+            <section id="chapter-5" class="chapter hidden">
+                <article>
+                </article>
+                <button onclick="showChapter('chapter-4')">← Previous</button>
+                <button onclick="showChapter('chapter-6')">Next →</button>
+            </section>
+
+        </main>
+
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+
+        <script>
+            let size = 18;
+            function resizeText(change) {
+                size += change;
+                document.documentElement.style.setProperty('--type-size', size + 'px');
+            }
+
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+
+            function showChapter(chapterId) {
+                document.querySelectorAll('.chapter').forEach(c => c.classList.add('hidden'));
+
+                const chapter = document.getElementById(chapterId);
+                chapter.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: "auto" });
+            }
+        </script>
+
+
+    </body>
+</body>
+
+</html>
