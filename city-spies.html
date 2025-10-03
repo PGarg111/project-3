@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <title>City Spies</title>
     <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
+    <style>
+        body {
+            background: linear-gradient(-45deg, #04305f, #b7b0b0, #3a506b, #00b4d8);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
 
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </head>
 
 <body class="book-page">
@@ -4025,7 +4045,8 @@
                     <p class="calibre17">“I just did,” he said.</p>
                     <p class="calibre17">“What about Tru?” she asked. “She gave you an order. Actually, she called it a
                         <i class="calibre8">directive</i>, which sounds even more
-                        official than an order.”</p>
+                        official than an order.”
+                    </p>
                     <p id="calibre_link-153" class="calibre17">“Yes, but once we’re in the field, I’m the alpha, and
                         that means I decide what is and what isn’t part of the mission,” Mother said. “Besides, I can
                         handle Tru.”</p>
