@@ -7,27 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>A Pho Love Story</title>
     <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
-    <style>
-        body {
-        background: linear-gradient(-45deg, #f6e7d7, #d9a066, #fffaf0);
-        background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-        }
-  </style>
 </head>
 
 <body class="book-page" id="top">
@@ -76,7 +55,7 @@
         </header>
 
         <nav class="toc">
-            <strong>Contents</strong>
+            <button onclick="showChapter('blurb')"><strong>Contents</strong></button>
             <button onclick="showChapter('chapter-1')">Chapter 1</button>
             <button onclick="showChapter('chapter-2')">Chapter 2</button>
             <button onclick="showChapter('chapter-3')">Chapter 3</button>
@@ -132,7 +111,31 @@
         </nav>
 
         <main class="book">
-            <section id="chapter-1" class="chapter">
+            <section id="blurb" class="chapter">
+                <article>
+                    <p>
+                        If Bao Nguyen had to describe himself, he’d say he was a rock. Steady and strong, but not particularly interesting. His grades are average, his social status unremarkable. He works at his parents’ pho restaurant, and even there, he is his parents’ fifth favorite employee. Not ideal.
+                    </p>
+                    <p>
+                        If Linh Mai had to describe herself, she’d say she was a firecracker. Stable when unlit, but full of potential for joy and fire. She loves art and dreams pursuing a career in it. The only problem? Her parents rely on her in ways they’re not willing to admit, including working practically full-time at her family’s pho restaurant.
+                    </p>
+
+                    <p>
+                        For years, the Mais and the Nguyens have been at odds, having owned competing, neighboring pho restaurants. Bao and Linh, who’ve avoided each other for most of their lives, both suspect that the feud stems from feelings much deeper than friendly competition.
+                    </p>
+
+                    <p>
+                        But then a chance encounter brings Linh and Bao in the same vicinity despite their best efforts and sparks fly, leading them both to wonder what took so long for them to connect. But then, of course, they immediately remember.
+                    </p>
+
+                    <p>
+                        Can Linh and Bao find love in the midst of feuding families and complicated histories?
+                    </p>
+                </article>
+                <button onclick="showChapter('chapter-1')">Next →</button>
+            </section>
+
+            <section id="chapter-1" class="chapter hidden">
                 <article>
                     <h3>Chapter 1</h3>
                     <h2>Bao</h2>
@@ -387,6 +390,7 @@
                     </p>
 
                 </article>
+                <button onclick="showChapter('blurb')">← Previous</button>
                 <button onclick="showChapter('chapter-2')">Next →</button>
             </section>
 

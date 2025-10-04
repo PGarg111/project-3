@@ -7,27 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>City Spies</title>
     <link rel="shortcut icon" href="Book-icon-bible-removebg-preview.png" type="image/jpg">
-    <style>
-        body {
-            background: linear-gradient(-45deg, #04305f, #b7b0b0, #3a506b, #00b4d8);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    </style>
 </head>
 
 <body class="book-page">
@@ -76,7 +55,7 @@
         </header>
 
         <nav class="toc">
-            <strong>Contents</strong>
+            <button onclick="showChapter('blurb')"><strong>Contents</strong></button>
             <button onclick="showChapter('chapter-1')">Chapter 1</button>
             <button onclick="showChapter('chapter-2')">Chapter 2</button>
             <button onclick="showChapter('chapter-3')">Chapter 3</button>
@@ -119,7 +98,24 @@
         </nav>
 
         <main class="book">
-            <section id="chapter-1" class="chapter">
+            <section id="blurb" class="chapter">
+                <article>
+                    <p>
+                       Sara Martinez is a hacker. She recently broke into the New York City foster care system to expose her foster parents as cheats and lawbreakers. However, instead of being hailed as a hero, Sara finds herself facing years in a juvenile detention facility and banned from using computers for the same stretch of time. Enter Mother, a British spy who not only gets Sara released from jail but also offers her a chance to make a home for herself within a secret MI6 agency.
+                    </p>
+                    <p>
+                        Operating out of a base in Scotland, the City Spies are five kids from various parts of the world. When they’re not attending the local boarding school, they’re honing their unique skills, such as sleight of hand, breaking and entering, observation, and explosives. All of these allow them to go places in the world of espionage where adults can’t.
+                    </p>
+                    <p>
+                        Before she knows what she’s doing, Sara is heading to Paris for an international youth summit, hacking into a rival school’s computer to prevent them from winning a million euros, dangling thirty feet off the side of a building, and trying to stop a villain…all while navigating the complex dynamics of her new team.
+                    </p>
+                    <p>
+                        No one said saving the world was easy…
+                    </p>
+                </article>
+                <button onclick="showChapter('chapter-1')">Next →</button>
+            </section>
+            <section id="chapter-1" class="chapter hidden">
                 <article>
                     <h2>1. <strong>A Man Called Mother</strong></h2>
                     <p>
@@ -441,6 +437,7 @@
                     </p>
                     </p>
                 </article>
+                <button onclick="showChapter('blurb')">← Previous</button>
                 <button onclick="showChapter('chapter-2')">Next →</button>
             </section>
 
