@@ -41,22 +41,20 @@
                 </script>
             </div>
 
-            <div class="reader-controls">
-                <button class="control" onclick="toggleTheme()">🌓</button>
+            <div>
+                <button onclick="toggleTheme()">🌓</button>
 
             </div>
-            <div class="reader-controls">
-                <button onclick="resizeText(-2)"
-                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A-</button>
-                <button onclick="resizeText(2)"
-                    style="border: 1px solid grey;border-radius: 5px; background-color: white;border-color: rgb(176, 173, 173)">A+</button>
+            <div>
+                <button onclick="resizeText(-2)">A-</button>
+                <button onclick="resizeText(2)">A+</button>
             </div>
 
         </header>
 
         <nav class="toc">
-            <button onclick="showChapter('blurb')"><strong>Contents</strong></button>
-            <button onclick="showChapter('chapter-1')">Chapter 1</button>
+            <button onclick="showChapter('blurb')" style="font-size: 16px; background-color: white; border-color: white; border-radius: 5px;"><strong>Contents</strong></button>
+            <button onclick="showChapter('chapter-1')" >Chapter 1</button>
             <button onclick="showChapter('chapter-2')">Chapter 2</button>
             <button onclick="showChapter('chapter-3')">Chapter 3</button>
             <button onclick="showChapter('chapter-4')">Chapter 4</button>
