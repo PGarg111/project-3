@@ -232,6 +232,26 @@ table img {
     display: block;
 }
 
+td {
+  vertical-align: top;   /* keeps captions aligned at the top */
+  height: 320px;         /* set a fixed height for all cells */
+  width: 200px;          /* optional: keeps cells uniform width */
+  text-align: center;    /* center content inside */
+}
+
+td img {
+  height: 300px;         /* same height for all images */
+  width: auto;           /* keep proportions */
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;              /* make table take full width */
+  table-layout: fixed;      /* evenly distribute columns */
+  border-collapse: collapse;
+}
+
 
 
 
