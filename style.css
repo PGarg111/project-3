@@ -218,6 +218,7 @@ table img {
     object-fit: cover;
     border-radius: 8px;
     display: block;
+    border:2px solid black;
 }
 
 .picture-2 {
@@ -230,6 +231,9 @@ table img {
     border-radius: 8px;
     display: block;
 }
+
+
+
 
 .header {
     margin-top: 60px;
