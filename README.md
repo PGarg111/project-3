@@ -19,5 +19,7 @@ My project was created using HTML, CSS, and Javascript with the help of Calibre 
 My biggest challenges were with Javascript. Since it was my first time with Javascript, I went through a lot of tutorials, mostly on w3 schools. My biggest issue was that I couldn't write Javascript. I can look at Javascript and figure out what it's doing because of my knowledge with Python, but didn't know how to write. But learning Javascript and applying it to the website actually made my job easier. Before I was making a different page for each chapter, but with Javascript I was able to put all the chapters on one page and navigate using Javascript. The transfer of books into the website wasn't challenging at all, it was just time consuming, especially if the book converted wrong (I used Calibre for conversion). 
 
 This is the link to my website: https://pgarg111.github.io/project-3/index.html
+Updated version!!!!!: https://pgarg111.github.io/StoryHeaven_Edited/index.html --> VIEW THIS ONE (its better)
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
